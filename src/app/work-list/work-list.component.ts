@@ -11,8 +11,6 @@ import { WorkService } from '../work.service';
 
 export class WorkListComponent implements OnInit {
 
-  // selectedWork: Work;
-
   works: Work[];
 
   constructor(private workService: WorkService) { }
@@ -20,10 +18,6 @@ export class WorkListComponent implements OnInit {
   ngOnInit() {
     this.getWorks();
   }
-
-  // onSelect(work: Work): void {
-  //   this.selectedWork = work;
-  // }
 
   getWorks(): void {
     this.workService.getWorks()

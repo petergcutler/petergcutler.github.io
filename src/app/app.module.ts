@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { CvComponent } from './cv/cv.component';
 import { WritingComponent } from './writing/writing.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ArticleHeadingComponent } from './article-heading/article-heading.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CvComponent,
     WritingComponent,
     DashboardComponent,
+    ArticleHeadingComponent,
   ],
   imports: [
     BrowserModule,

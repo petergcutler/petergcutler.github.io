@@ -1,7 +1,6 @@
-main {
+.dashboard-content {
   @include respond-to('medium') {
-    position: absolute;
-    left: 15em;
+    padding-top: 44vh;
   }
 }
 
@@ -15,9 +14,14 @@ main {
 }
 
 .welcome {
-  font-size: 4em;
-  font-weight: bold;
+  font-family: 'Garamond', serif;
+  font-size: 2em;
+  // font-weight: bold;
   color: white;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+
+  @include respond-to('medium') {
+    font-size: 4em;
+  }
 }

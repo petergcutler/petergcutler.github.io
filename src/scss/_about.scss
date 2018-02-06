@@ -1,0 +1,5 @@
+.about-content {
+  @include respond-to('medium') {
+    padding-left: 15em;
+  }
+}
