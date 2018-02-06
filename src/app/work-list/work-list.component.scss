@@ -1,0 +1,14 @@
+.work-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.work-item {
+  background-color: #e8e8e8;
+  color: #181818;
+  width: 24em;
+  height: 12em;
+  margin: .5em;
+  padding: 1em;
+}

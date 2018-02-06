@@ -1,0 +1,16 @@
+<!-- <app-work-details [work]="selectedWork"></app-work-details> -->
+
+<div class="work-wrapper">
+  <!-- <div
+    class="work-item"
+    *ngFor="let work of works"
+    (click)="onSelect(work)"
+    [class.selected]="work === selectedWork">
+    {{work.name}}
+  </div> -->
+  <div
+    class="work-item"
+    *ngFor="let work of works">
+    <a routerLink="/work/{{work.id}}">{{work.name}}</a>
+  </div>
+</div>

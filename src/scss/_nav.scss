@@ -1,0 +1,79 @@
+header {
+  display: block;
+  background-color: $nav-color;
+  color: #fff;
+  padding-top: 2.2em;
+  padding-left: 1.2em;
+  height: 8em;
+
+  @include respond-to('medium') {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100%;
+    width: 15em;
+    padding: 2.5em;
+  }
+}
+
+.logo {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 1.8rem;
+  margin-bottom: .6em;
+}
+
+.logo-description {
+  display: none;
+
+  @include respond-to('medium') {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: $logo-desc-color;
+  }
+}
+
+.nav-list {
+  display: inline-block;
+
+  @include respond-to('medium') {
+    display: block;
+  }
+}
+
+.nav-link {
+  padding-right: 2em;
+  color: $nav-link-color;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  @include respond-to('medium') {
+    display: block;
+    padding-right: 0;
+    padding-bottom: 1.2em;
+  }
+
+  &:hover {
+    color: $nav-link-hover-color;
+  }
+}
+
+// cv -> CV
+.cv-link {
+  text-transform: uppercase;
+}
+
+// "Email" link only shows above medium
+.contact a {
+  display: none;
+
+  @include respond-to('medium') {
+    display: block;
+  }
+}

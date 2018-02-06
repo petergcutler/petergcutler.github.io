@@ -1,0 +1,23 @@
+main {
+  @include respond-to('medium') {
+    position: absolute;
+    left: 15em;
+  }
+}
+
+.dashboard-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.welcome {
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
