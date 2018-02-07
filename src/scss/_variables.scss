@@ -1,12 +1,19 @@
 // Colors
-$nav-color: #455C7B;
-$nav-link-color: rgba(255,255,255,0.8);
-$nav-link-hover-color: #DA727E;
-$logo-desc-color: rgba(255,255,255,0.5);
+$bay-blue: #455C7B;
+$light-gray: rgba(0, 0, 0, 0.1);
+$medium-gray: rgba(0, 0, 0, 0.5);
+$deep-gray: #222;
+
+$nav: $bay-blue;
+$nav-link: rgba(255,255,255,0.8);
+$nav-link-hover: #DA727E;
+$header-rule: $light-gray;
+$logo-desc: rgba(255,255,255,0.5);
 
 // Media Queries
 $breakpoints: (
   'medium': (min-width: 640px),
-  'large': (min-width: 1280px),
-  'huge': (min-width: 1920px)
+  'large': (min-width: 900px),
+  'larger': (min-width: 1000px),
+  'huge': (min-width: 1280px)
 );

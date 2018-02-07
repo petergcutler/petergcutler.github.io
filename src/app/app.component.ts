@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  // Use my name as a logo
-  title = 'Peter Cutler';
-
   // Define the site's sections for sidebar links
   links = [
     'about',

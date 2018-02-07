@@ -1,6 +1,6 @@
-header {
+.sidebar-header {
   display: block;
-  background-color: $nav-color;
+  background-color: $nav;
   color: #fff;
   padding-top: 2.2em;
   padding-left: 1.2em;
@@ -34,7 +34,7 @@ header {
     display: block;
     font-size: 1rem;
     font-weight: normal;
-    color: $logo-desc-color;
+    color: $logo-desc;
   }
 }
 
@@ -48,7 +48,7 @@ header {
 
 .nav-link {
   padding-right: 2em;
-  color: $nav-link-color;
+  color: $nav-link;
   list-style-type: none;
   text-decoration: none;
   text-transform: capitalize;
@@ -60,7 +60,7 @@ header {
   }
 
   &:hover {
-    color: $nav-link-hover-color;
+    color: $nav-link-hover;
   }
 }
 
