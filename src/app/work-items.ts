@@ -1,14 +1,14 @@
 import { Work } from './work-list';
 
 export const WORKS: Work[] = [
-  { id: 1, name: 'UW 1' },
-  { id: 2, name: 'UW 2' },
-  { id: 3, name: 'UW 3' },
-  { id: 4, name: 'CS 1' },
-  { id: 5, name: 'CS 2' },
-  { id: 6, name: 'CS 3' },
-  { id: 7, name: 'VOX Global 1' },
-  { id: 8, name: 'VOX Global 2' },
-  { id: 9, name: 'VOX Global 3' },
-  { id: 10, name: 'GA 1' }
+  { id: 1, name: 'Secure Storage for Seattle\'s Homeless Shelters' },
+  { id: 2, name: 'Oculus Rift - Onboarding with 3d Environments' },
+  { id: 3, name: 'Red Cross Red Crescent and Designing for Complex Systems' },
+  { id: 4, name: 'Research with Yarn: Evaluating Serial and Holistic Storytelling' },
+  { id: 5, name: 'Crowdskout: Simplifying Complex Data Visualization' },
+  { id: 6, name: 'Crowdskout: Overhauling Date & Time Selections' },
+  { id: 7, name: 'Crowdskout: Segmenting Audiences Effectively' },
+  { id: 8, name: 'Crowdskout: Empowering Users to Create Complex Forms' },
+  { id: 9, name: 'VOX Global: Brand and Website Redesign' },
+  { id: 10, name: 'VOX Global: Communicating Sustainability Stories for AT&T' }
 ];

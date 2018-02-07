@@ -5,15 +5,13 @@
       Work
     </div>
     <div class="subheading">
-      Projects from clients, professional work, and school
+      Projects from clients and schools
     </div>
   </header>
 
   <div class="work-main">
-    <div class="work-wrapper">
-      <div class="work-item" *ngFor="let work of works" routerLink="/work/{{work.id}}">
-        <span>{{work.name}}</span>
-      </div>
+    <div class="work-item" *ngFor="let work of works" routerLink="/work/{{work.id}}">
+      <span>{{work.name}}</span>
     </div>
   </div>
 

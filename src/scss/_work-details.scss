@@ -1,0 +1,38 @@
+.subheading {
+  margin-top: .4em;
+}
+
+.go-back {
+  display: inline;
+  color: $big-barracuda;
+  cursor: pointer;
+
+  &:hover {
+    color: $elder-salmon;
+  }
+}
+
+.back-text {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.arrow-left-solid {
+  &::before {
+    content: '\25C4';
+    font-size: .8em;
+    position: relative;
+    top: -0.1em;
+    padding-right: 0.3em;
+  }
+}
+
+// .arrow-left-stroke {
+//   &::before {
+//     content: '\25C5';
+//     font-size: 1.8em;
+//     position: relative;
+//     top: 0.15em;
+//     padding-right: 0.3em;
+//   }
+// }

@@ -1,17 +1,24 @@
 // Colors
 $bay-blue: #455C7B;
+$big-barracuda: #2C3E50;
 $angry-salmon: #DA727E;
+$elder-salmon: #E74C3C;
 $light-gray: rgba(0, 0, 0, 0.1);
 $light-white: rgba(255, 255, 255, 0.8);
 $dark-white: rgba(255,255,255,0.5);
 $medium-gray: rgba(0, 0, 0, 0.5);
 $deep-gray: #222;
 
-$nav: $bay-blue;
-$nav-link: $light-white;
-$nav-link-hover: $angry-salmon;
+$white: #fff;
+
+// Nav
+$nav: $big-barracuda;
+$nav-link: $white;
+$nav-link-hover: $elder-salmon;
+$logo-description: $dark-white;
+
+// Mains
 $header-rule: $light-gray;
-$logo-desc: $dark-white;
 
 // Media Queries
 $breakpoints: (

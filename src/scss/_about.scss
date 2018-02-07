@@ -19,8 +19,8 @@
 
 .contact-heading {
   font-weight: bold;
-  margin: 1.4em 0;
-  color: $bay-blue;
+  margin: 1.4em 0 1em 0;
+  color: $big-barracuda;
 }
 
 .contact-row {
@@ -28,9 +28,16 @@
 }
 
 .contact-link {
+  font-family: 'Garamond', serif;
+  font-size: 1.2em;
   text-decoration: none;
   color: $deep-gray;
-  border-bottom: 1px solid $bay-blue;
+  border-bottom: 1px solid $big-barracuda;
+
+  &:hover {
+    color: $elder-salmon;
+    border-bottom: 1px solid $elder-salmon;
+  }
 }
 
 .bio {

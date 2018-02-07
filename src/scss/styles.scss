@@ -3,10 +3,18 @@
 @import './variables';
 @import './includes';
 
+// Common elements
+@import './buttons';
+
 // Site components
 @import './nav';
 @import './main';
 @import './header-footer';
+
+// Pages
 @import './dashboard';
 @import './about';
-@import './work';
+@import './cv';
+@import './work-list';
+@import './work-details';
+@import './writing';

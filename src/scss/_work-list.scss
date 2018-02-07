@@ -1,16 +1,18 @@
-.work-wrapper {
+.work-main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .work-item {
-  background-color: $angry-salmon;
-  color: $light-white;
   width: 24em;
   height: 12em;
   margin: .5em;
   padding: 1em;
+  background-color: $white;
+  color: $deep-gray;
+  border: 1px solid $deep-gray;
+  border-radius: .2em;
   cursor: pointer;
 
   &:hover {

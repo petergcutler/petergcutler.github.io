@@ -19,7 +19,7 @@
 
 .logo {
   display: block;
-  color: #fff;
+  color: $nav-link;
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
@@ -34,7 +34,7 @@
     display: block;
     font-size: 1rem;
     font-weight: normal;
-    color: $logo-desc;
+    color: $logo-description;
   }
 }
 
@@ -46,21 +46,25 @@
   }
 }
 
-.nav-link {
+.nav-item {
+  display: inline;
   padding-right: 2em;
-  color: $nav-link;
-  list-style-type: none;
-  text-decoration: none;
-  text-transform: capitalize;
 
   @include respond-to('medium') {
     display: block;
     padding-right: 0;
     padding-bottom: 1.2em;
   }
+}
+
+.nav-link {
+  display: inline;
+  color: $nav-link;
+  text-decoration: none;
+  text-transform: capitalize;
 
   &:hover {
-    color: $nav-link-hover;
+    border-bottom: 2px solid $nav-link-hover;
   }
 }
 
@@ -74,6 +78,6 @@
   display: none;
 
   @include respond-to('medium') {
-    display: block;
+    display: inline;
   }
 }

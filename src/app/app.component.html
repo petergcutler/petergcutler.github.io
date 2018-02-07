@@ -1,21 +1,22 @@
 <header class="sidebar-header">
-  <a class="logo" href="">
+  <a class="logo" routerLink="/about">
     Peter Cutler
-    <span class="logo-description">Usability Person</span>
+    <span class="logo-description">UX Researcher</span>
   </a>
   <nav class="main-nav">
     <ul class="nav-list">
-      <a
-        class="nav-link {{link}}-link"
-        href=""
-        routerLink="/{{link}}"
-        *ngFor="let link of links">
-        {{link}}
-      </a>
+      <li class="nav-item" *ngFor="let link of links" >
+        <a
+          class="nav-link {{link}}-link"
+          href=""
+          routerLink="/{{link}}">
+          {{link}}
+        </a>
+      </li>
     </ul>
   </nav>
   <div class="contact">
-    <a class="nav-link" href="">Email</a>
+    <a class="nav-link" href="mailto:petergcutler@gmail.com">Email</a>
   </div>
 </header>
 <main class="main-window">
