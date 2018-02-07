@@ -1,16 +1,25 @@
-<!-- <app-work-details [work]="selectedWork"></app-work-details> -->
+<article class="work-content">
 
-<div class="work-wrapper">
-  <!-- <div
-    class="work-item"
-    *ngFor="let work of works"
-    (click)="onSelect(work)"
-    [class.selected]="work === selectedWork">
-    {{work.name}}
-  </div> -->
-  <div
-    class="work-item"
-    *ngFor="let work of works">
-    <a routerLink="/work/{{work.id}}">{{work.name}}</a>
+  <header class="subject-header">
+    <div class="heading">
+      Work
+    </div>
+    <div class="subheading">
+      Projects from clients, professional work, and school
+    </div>
+  </header>
+
+  <div class="work-main">
+    <div class="work-wrapper">
+      <div class="work-item" *ngFor="let work of works" routerLink="/work/{{work.id}}">
+        <span>{{work.name}}</span>
+      </div>
+    </div>
   </div>
-</div>
+
+  <footer class="main-footer">
+    <div class="copyright-text">
+      &copy; Copyright 2018, Peter Cutler
+    </div>
+  </footer>
+</article>

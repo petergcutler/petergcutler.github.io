@@ -1,14 +1,17 @@
 // Colors
 $bay-blue: #455C7B;
+$angry-salmon: #DA727E;
 $light-gray: rgba(0, 0, 0, 0.1);
+$light-white: rgba(255, 255, 255, 0.8);
+$dark-white: rgba(255,255,255,0.5);
 $medium-gray: rgba(0, 0, 0, 0.5);
 $deep-gray: #222;
 
 $nav: $bay-blue;
-$nav-link: rgba(255,255,255,0.8);
-$nav-link-hover: #DA727E;
+$nav-link: $light-white;
+$nav-link-hover: $angry-salmon;
 $header-rule: $light-gray;
-$logo-desc: rgba(255,255,255,0.5);
+$logo-desc: $dark-white;
 
 // Media Queries
 $breakpoints: (
