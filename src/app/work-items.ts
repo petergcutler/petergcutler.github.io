@@ -10,5 +10,6 @@ export const WORKS: Work[] = [
   { id: 7, name: 'Crowdskout: Segmenting Audiences Effectively' },
   { id: 8, name: 'Crowdskout: Empowering Users to Create Complex Forms' },
   { id: 9, name: 'VOX Global: Brand and Website Redesign' },
-  { id: 10, name: 'VOX Global: Communicating Sustainability Stories for AT&T' }
+  { id: 10, name: 'VOX Global: Motion Design for Lumina Foundation and AT&T' },
+  { id: 11, name: 'VOX Global: Communicating Sustainability Stories for AT&T' }
 ];
