@@ -33,7 +33,7 @@ const routes: Routes = [
     component: WorkListComponent
   },
   {
-    path: 'work/:id',
+    path: 'work/:url',
     component: WorkDetailsComponent
   },
   {

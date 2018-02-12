@@ -11,8 +11,8 @@ export class WorkService {
 
   constructor() {}
 
-  getWork(id: number): Observable<Work> {
-    return of(WORKS.find(work => work.id === id));
+  getWork(url: string): Observable<Work> {
+    return of(WORKS.find(work => work.url === url));
   }
 
   getWorks(): Observable<Work[]> {

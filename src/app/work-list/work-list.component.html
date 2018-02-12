@@ -9,8 +9,8 @@
       class="work-item"
       *ngFor="let work of works; index as i;"
       [ngStyle]="{'background-color': colors[i]}"
-      routerLink="/work/{{work.id}}">
-      <span>{{work.name}}</span>
+      routerLink="/work/{{work.url}}">
+      <span>{{work.display}}</span>
     </div>
   </div>
 

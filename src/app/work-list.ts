@@ -1,5 +1,6 @@
 export class Work {
   id: number;
-  name: string;
+  url: string;
+  display: string;
   templateFile: string;
 }

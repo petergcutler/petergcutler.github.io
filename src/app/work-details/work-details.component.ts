@@ -24,8 +24,8 @@ export class WorkDetailsComponent implements OnInit {
   }
 
   getWork(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.workService.getWork(id).subscribe(work => this.work = work);
+    const url = this.route.snapshot.paramMap.get('url');
+    this.workService.getWork(url).subscribe(work => this.work = work);
   }
 
   goBack(): void {
