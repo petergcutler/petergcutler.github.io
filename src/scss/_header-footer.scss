@@ -1,5 +1,5 @@
 .subject-header {
-  border-bottom: 1px solid $header-rule;
+  border-bottom: $border-thin solid $header-rule;
   line-height: 1.6em;
   margin-bottom: 2em;
 
@@ -15,7 +15,7 @@
 }
 
 .main-footer {
-  border-top: 1px solid $header-rule;
+  border-top: $border-thin solid $header-rule;
   margin-top: 2em;
 
   .copyright-text {

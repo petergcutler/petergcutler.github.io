@@ -11,7 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { CvComponent } from './cv/cv.component';
 import { WritingComponent } from './writing/writing.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ArticleHeadingComponent } from './article-heading/article-heading.component';
+import { ArticleHeaderComponent } from './article-header/article-header.component';
+import { ArticleFooterComponent } from './article-footer/article-footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ArticleHeadingComponent } from './article-heading/article-heading.compo
     CvComponent,
     WritingComponent,
     DashboardComponent,
-    ArticleHeadingComponent,
+    ArticleHeaderComponent,
+    ArticleFooterComponent,
   ],
   imports: [
     BrowserModule,

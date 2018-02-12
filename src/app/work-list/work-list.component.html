@@ -1,23 +1,18 @@
 <article class="work-content">
-
-  <header class="subject-header">
-    <div class="heading">
-      Work
-    </div>
-    <div class="subheading">
-      Projects from clients and schools
-    </div>
-  </header>
+  <app-article-header
+    header="Work"
+    subheader="Projects from clients and schools">
+  </app-article-header>
 
   <div class="work-main">
-    <div class="work-item" *ngFor="let work of works" routerLink="/work/{{work.id}}">
+    <div
+      class="work-item"
+      *ngFor="let work of works; index as i;"
+      [ngStyle]="{'background-color': colors[i]}"
+      routerLink="/work/{{work.id}}">
       <span>{{work.name}}</span>
     </div>
   </div>
 
-  <footer class="main-footer">
-    <div class="copyright-text">
-      &copy; Copyright 2018, Peter Cutler
-    </div>
-  </footer>
+  <app-article-footer></app-article-footer>
 </article>

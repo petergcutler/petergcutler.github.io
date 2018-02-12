@@ -64,7 +64,7 @@
   text-transform: capitalize;
 
   &:hover {
-    border-bottom: 2px solid $nav-link-hover;
+    border-bottom: $border-medium solid $nav-link-hover;
   }
 }
 

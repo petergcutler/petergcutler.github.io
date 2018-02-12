@@ -32,11 +32,11 @@
   font-size: 1.2em;
   text-decoration: none;
   color: $deep-gray;
-  border-bottom: 1px solid $big-barracuda;
+  border-bottom: $border-thin solid $big-barracuda;
 
   &:hover {
     color: $elder-salmon;
-    border-bottom: 1px solid $elder-salmon;
+    border-bottom: $border-thin solid $elder-salmon;
   }
 }
 

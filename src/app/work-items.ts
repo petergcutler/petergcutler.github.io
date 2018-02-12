@@ -1,15 +1,59 @@
 import { Work } from './work-list';
 
 export const WORKS: Work[] = [
-  { id: 1, name: 'Secure Storage for Seattle\'s Homeless Shelters' },
-  { id: 2, name: 'Oculus Rift - Onboarding with 3d Environments' },
-  { id: 3, name: 'Red Cross Red Crescent and Designing for Complex Systems' },
-  { id: 4, name: 'Research with Yarn: Evaluating Serial and Holistic Storytelling' },
-  { id: 5, name: 'Crowdskout: Simplifying Complex Data Visualization' },
-  { id: 6, name: 'Crowdskout: Overhauling Date & Time Selections' },
-  { id: 7, name: 'Crowdskout: Segmenting Audiences Effectively' },
-  { id: 8, name: 'Crowdskout: Empowering Users to Create Complex Forms' },
-  { id: 9, name: 'VOX Global: Brand and Website Redesign' },
-  { id: 10, name: 'VOX Global: Motion Design for Lumina Foundation and AT&T' },
-  { id: 11, name: 'VOX Global: Communicating Sustainability Stories for AT&T' }
+  {
+    id: 1,
+    name: 'Secure Storage for Seattle\'s Homeless Shelters',
+    templateFile: 'path'
+  },
+  {
+    id: 2,
+    name: 'Oculus Rift - Onboarding in a 3d Environment',
+    templateFile: './work-items/work-uw-oculus_onboarding.html'
+  },
+  {
+    id: 3,
+    name: 'Red Cross Red Crescent and Designing for Complex Systems',
+    templateFile: 'path'
+  },
+  {
+    id: 4,
+    name: 'Research with Yarn: Evaluating Serial and Holistic Storytelling',
+    templateFile: 'path'
+  },
+  {
+    id: 5,
+    name: 'Crowdskout: Simplifying Complex Data Visualization',
+    templateFile: 'path'
+  },
+  {
+    id: 6,
+    name: 'Crowdskout: Overhauling Date & Time Selections',
+    templateFile: 'path'
+  },
+  {
+    id: 7,
+    name: 'Crowdskout: Segmenting Audiences Effectively',
+    templateFile: 'path'
+  },
+  {
+    id: 8,
+    name: 'Crowdskout: Empowering Users to Create Complex Forms',
+    templateFile: 'path'
+  },
+  {
+    id: 9,
+    name: 'VOX Global: Brand and Website Redesign',
+    templateFile: 'path'
+  },
+  {
+    id: 10,
+    name: 'VOX Global: Motion Design for Lumina Foundation and AT&T',
+    templateFile: 'path'
+  },
+  {
+    id: 11,
+    name: 'VOX Global: Communicating Sustainability Stories for AT&T',
+    templateFile: 'path'
+  }
 ];

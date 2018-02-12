@@ -16,7 +16,7 @@
 .article-link {
   text-decoration: none;
   color: $deep-gray;
-  border-bottom: 1px solid $big-barracuda;
+  border-bottom: $border-thin solid $big-barracuda;
 
   &:hover {
     color: $elder-salmon;
