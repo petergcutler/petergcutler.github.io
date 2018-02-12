@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Work } from '../work-list';
 
 @Component({
   selector: 'app-work-content',
@@ -12,5 +14,8 @@ export class WorkContentComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  @Input()
+  work: Work;
 
 }

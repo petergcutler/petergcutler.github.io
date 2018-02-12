@@ -11,8 +11,8 @@
     </div>
   </header>
 
-  <div *ngIf="work" class="work-detail">
-  </div>
+  <app-work-content work="work" *ngIf="work" class="work-content">
+  </app-work-content>
 
   <app-article-footer></app-article-footer>
 </article>

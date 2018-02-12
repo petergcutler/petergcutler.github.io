@@ -4,9 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent }   from './about/about.component';
 import { CvComponent } from './cv/cv.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { WorkListComponent } from './work-list/work-list.component';
-import { WorkDetailsComponent } from './work-details/work-details.component';
 import { WritingComponent } from './writing/writing.component';
+
+import { WorkListComponent } from './work/work-list/work-list.component';
+import { WorkDetailsComponent } from './work/work-details/work-details.component';
 
 const routes: Routes = [
   // Available if you want to create an independent homepage "dashboard"

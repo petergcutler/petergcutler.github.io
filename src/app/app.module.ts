@@ -1,32 +1,42 @@
+// Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// App
 import { AppComponent } from './app.component';
-import { WorkListComponent } from './work-list/work-list.component';
-import { WorkDetailsComponent } from './work-details/work-details.component';
+import { AppRoutingModule } from './app-routing.module';
 
-import { WorkService } from './work.service';
-import { AppRoutingModule } from './/app-routing.module';
+// Services
+import { WorkService } from './work/work.service';
+
+// Pages
 import { AboutComponent } from './about/about.component';
 import { CvComponent } from './cv/cv.component';
+import { WorkListComponent } from './work/work-list/work-list.component';
 import { WritingComponent } from './writing/writing.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { WorkDetailsComponent } from './work/work-details/work-details.component';
+
+
+// 'directives'
+import { WorkContentComponent } from './work/work-content/work-content.component';
 import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
-import { WorkContentComponent } from './work-content/work-content.component';
+
+// Not in use
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WorkListComponent,
-    WorkDetailsComponent,
     AboutComponent,
     CvComponent,
+    WorkListComponent,
     WritingComponent,
-    DashboardComponent,
+    WorkDetailsComponent,
+    WorkContentComponent,
     ArticleHeaderComponent,
     ArticleFooterComponent,
-    WorkContentComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
