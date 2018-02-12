@@ -10,6 +10,7 @@ import { WorkService }  from '../work.service';
   templateUrl: './work-details.component.html',
   styleUrls: ['./work-details.component.scss']
 })
+
 export class WorkDetailsComponent implements OnInit {
   @Input() work: Work;
 

@@ -13,6 +13,7 @@ import { WritingComponent } from './writing/writing.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
+import { WorkContentComponent } from './work-content/work-content.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ArticleFooterComponent } from './article-footer/article-footer.componen
     DashboardComponent,
     ArticleHeaderComponent,
     ArticleFooterComponent,
+    WorkContentComponent,
   ],
   imports: [
     BrowserModule,
