@@ -14,7 +14,7 @@ export class WorkContentComponent {
   @Input()
   work: Work;
 
-  private myTemplate: any = '';
+  myTemplate: any = '';
 
   constructor(private router: Router, http: Http) {
     let workTitleUrl = this.router.url.slice(5);

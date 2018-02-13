@@ -5,28 +5,19 @@ export const WORKS: Work[] = [
     id: 1,
     url: 'secure-storage-for-homeless-shelters',
     display: 'Secure Storage for Seattle\'s Homeless Shelters',
-    description: 'According to my theory you interfered with \
-      with your parent\'s first meeting. They don\'t meet, they \
-      don\'t fall in love, they won\'t get married and they wont\
-      have kids. That\'s why your older brother\'s disappeared \
-      from that photograph. Your sister will follow and unless \
-      you repair the damages, you will be next. Ahh. I\'ll be at\
-      my grandma\'s. Here, let me give you the number. Bye. \
-      Nothing\'s coming to my mind. Hey c\'mon, I had to change, \
-      you think I\'m going back in that zoot suit? The old man \
-      really came through it worked.',
+    description: '',
     client: 'University of Washington',
     tags: ['user research', 'design'],
     img: './path'
   },
   {
-    id: 2,
-    url: 'oculus-rift-onboarding-in-3d',
-    display: 'Oculus Rift - Onboarding in a 3d Environment',
-    description: '',
-    client: 'UW',
-    tags: [''],
-    img: ''
+    id: 2, // Stays
+    url: 'oculus-rift-onboarding-in-3d', // Stays
+    display: 'Oculus Rift - Onboarding in a 3d Environment', // Stays
+    description: '', // Goes
+    client: 'UW', // Goes
+    tags: [''], // Goes
+    img: '' // Stays... or {{url}}.jpg becomes the asset
   },
   {
     id: 3,
