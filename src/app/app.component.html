@@ -5,12 +5,12 @@
   </a>
   <nav class="main-nav">
     <ul class="nav-list">
-      <li class="nav-item" *ngFor="let link of links" >
+      <li class="nav-item" *ngFor="let page of pages">
         <a
-          class="nav-link {{link}}-link"
-          href=""
-          routerLink="/{{link}}">
-          {{link}}
+          class="nav-link {{page}}-link"
+          routerLink="/{{page}}"
+          routerLinkActive="nav-link-active">
+          {{page}}
         </a>
       </li>
     </ul>

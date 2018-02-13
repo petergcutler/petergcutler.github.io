@@ -1,0 +1,36 @@
+.work-entry {
+  display: grid;
+  grid-gap: 2em;
+  // max-width: 48em;
+
+  @include respond-to('large') {
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 4em;
+  }
+
+  @include respond-to('larger') {
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 6em;
+  }
+}
+
+.work-client {
+  font-weight: bold;
+  color: $deep-gray;
+  white-space: nowrap;
+}
+
+.work-tags {
+  margin-top: 1em;
+  color: $medium-gray;
+  text-transform: capitalize;
+  line-height: 1.2em;
+}
+
+.work-description {
+  position: relative;
+  top: -0.3em;
+  font-family: 'Garamond', serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}

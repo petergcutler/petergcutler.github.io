@@ -8,11 +8,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   // Define the site's sections for sidebar links
-  links = [
+  pages = [
     'about',
     'cv',
     'work',
     'writing'
   ];
-
 }

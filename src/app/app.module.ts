@@ -1,6 +1,11 @@
 // Angular
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { BrowserModule } from '@angular/platform-browser';
+// import { CommonModule } from '@angular/common';
+// import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 
 // App
 import { AppComponent } from './app.component';
@@ -15,7 +20,6 @@ import { CvComponent } from './cv/cv.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
 import { WritingComponent } from './writing/writing.component';
 import { WorkDetailsComponent } from './work/work-details/work-details.component';
-
 
 // 'directives'
 import { WorkContentComponent } from './work/work-content/work-content.component';
@@ -40,6 +44,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    // CommonModule,
     AppRoutingModule
   ],
   providers: [

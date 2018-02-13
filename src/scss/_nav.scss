@@ -68,6 +68,10 @@
   }
 }
 
+.nav-link-active {
+  border-bottom: $border-medium solid $nav-link-hover;
+}
+
 // cv -> CV
 .cv-link {
   text-transform: uppercase;
