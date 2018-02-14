@@ -25,16 +25,14 @@ export class WorkListComponent implements OnInit {
   // ];
 
   colors = [
-    '#55efc4', // light greenish blue green
+    '#BF9A00', // light greenish blue green
     '#f5cd79', // summertime yellow
-    // '#81ecec', // faded poster blue
     '#74b9ff', // green darner tail blue
     '#a29bfe', // shy moment purple
     '#fab1a0', // first date pink
     '#ff7675', // pink glamour pink
     '#fd79a8', // piko eight pink
     '#f3a683', // creamy peach pink
-
     '#63cdda', // squeaky blue
   ];
 

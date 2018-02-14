@@ -5,13 +5,18 @@
   </app-article-header>
 
   <div class="work-main">
+
     <div
       class="work-item"
       *ngFor="let work of works; index as i;"
-      [ngStyle]="{'background-color': colors[i]}"
       routerLink="/work/{{work.url}}">
-      <span>{{work.display}}</span>
+      <span class="work-item-title">{{work.display}}</span>
+      <img
+        class="work-item-image"
+        src="../assets/images/work/thumbnails/{{work.url}}.png"
+        alt="{{work.display}}">
     </div>
+
   </div>
 
   <app-article-footer></app-article-footer>
