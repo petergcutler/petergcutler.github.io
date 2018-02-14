@@ -1,3 +1,24 @@
+<!-- <div class="work-image">
+  {{work.img}} work-image
+</div> -->
+<div class="work-entry">
+  <div class="work-metadata">
+    <div class="work-client">
+      {{work.client}}
+    </div>
+    <div class="work-tags">
+      <ul>
+        <li class="work-tag" *ngFor="let tag of work.tags">{{tag}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="work-description">
+    {{work.description}}
+  </div>
+</div>
+
+
 <div>
 
   <p class="first-paragraph">
