@@ -1,9 +1,9 @@
 .work-content {
-  max-width: 28em;
+  max-width: 30em;
   margin: 0 auto;
 
   @include respond-to('large') {
-    max-width: 60em;
+    max-width: 57em;
     margin: 0 auto;
   }
 }
@@ -26,8 +26,28 @@
   max-height: 20em;
   color: $white;
   cursor: pointer;
+
   &:hover {
     @include box-shadow(3);
+  }
+
+  @include respond-to('large') {
+    max-width: 24em;
+    max-height: 16em;
+  }
+
+  &.secure-storage-in-shelters {
+    background-image: url('/assets/images/work/thumbnails/secure-storage-in-shelters.png');
+    background-size: cover;
+    // width: 100%;
+    // height: auto;
+  }
+
+  &.oculus-rift-onboarding-in-3d {
+    background-image: url('/assets/images/work/thumbnails/oculus-rift-onboarding-in-3d.png');
+    background-size: cover;
+    // width: 100%;
+    // height: auto;
   }
 }
 
@@ -39,7 +59,7 @@
 }
 
 .work-item-image {
-  display: block;
+  visibility: hidden;
   max-width: 100%;
   object-fit: cover;
 }
