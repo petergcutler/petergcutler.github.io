@@ -39,15 +39,16 @@
   &.secure-storage-in-shelters {
     background-image: url('/assets/images/work/thumbnails/secure-storage-in-shelters.png');
     background-size: cover;
-    // width: 100%;
-    // height: auto;
   }
 
   &.oculus-rift-onboarding-in-3d {
     background-image: url('/assets/images/work/thumbnails/oculus-rift-onboarding-in-3d.png');
     background-size: cover;
-    // width: 100%;
-    // height: auto;
+  }
+
+  &.rcrc-complex-systems-and-vca {
+    background-image: url('/assets/images/work/thumbnails/rcrc-complex-systems-and-vca.png');
+    background-size: cover;
   }
 }
 
@@ -59,7 +60,7 @@
 }
 
 .work-item-image {
-  visibility: hidden;
+  visibility: hidden; // hide cover img, but retain sizing
   max-width: 100%;
   object-fit: cover;
 }

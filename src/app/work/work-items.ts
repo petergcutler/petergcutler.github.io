@@ -1,27 +1,38 @@
 import { Work } from './work-list';
 
+/**
+ * Reference object for Work
+ *
+ * @property  {number} id - the work id
+ * @property  {string} url - the url, describes:
+ *   the route and url for the browser
+ *   the thumbnail's image url in assets (.png)
+ *   the html template in the assets (.html)
+ * @property  {string} display - the display title
+ */
+
 export const WORKS: Work[] = [
   {
     id: 1,
-    url: 'secure-storage-in-shelters',
+    url: 'uw-secure-storage-in-shelters',
     display: 'Secure Storage for Homeless Shelters',
     img: ''
   },
   {
     id: 2,
-    url: 'oculus-rift-onboarding-in-3d',
+    url: 'uw-oculus-rift-onboarding-in-3d',
     display: 'Oculus Rift - Onboarding in a 3d Environment',
     img: ''
   },
   {
     id: 3,
-    url: 'rcrc-complex-systems-and-vca',
+    url: 'uw-rcrc-complex-systems-and-vca',
     display: 'Red Cross Red Crescent and Designing for Complex Systems',
     img: ''
   },
   {
     id: 4,
-    url: 'research-with-yarn',
+    url: 'uw-research-with-yarn',
     display: 'Research with Yarn: Evaluating Serial and Holistic Storytelling',
     img: ''
   },
