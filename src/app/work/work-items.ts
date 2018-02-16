@@ -30,37 +30,57 @@ export const WORKS: Work[] = [
     id: 2,
     url: 'uw-oculus-rift-onboarding-in-3d',
     display: 'Oculus Rift: Onboarding in a 3d Environment',
-    imageCredit: {}
+    imageCredit: {} // Self-generated
   },
   {
     id: 3,
     url: 'uw-rcrc-complex-systems-and-vca',
     display: 'Red Cross (RCRC): Managing Complex Systems',
-    imageCredit: {}
+    imageCredit: {
+      artist: 'Babak Fakhamzadeh',
+      artistSite: 'https://www.flickr.com/photos/mastababa/',
+      source: 'https://www.flickr.com/'
+    }
   },
   {
     id: 4,
     url: 'uw-research-with-yarn',
     display: 'Testing the Yarn App: Holistic Storytelling',
-    imageCredit: {}
+    imageCredit: {
+      artist: 'Shubhi Patil',
+      artistSite: 'https://www.flickr.com/photos/126584658@N03/',
+      source: 'https://www.flickr.com/'
+    }
   },
   {
     id: 5,
     url: 'crowdskout-data-visualization-systems',
     display: 'Crowdskout: Simplifying Data Visualization',
-    imageCredit: {}
+    imageCredit: {
+      artist: 'Marcin Ignac',
+      artistSite: 'https://www.flickr.com/photos/marcinignac/',
+      source: 'https://www.flickr.com/'
+    }
   },
   {
     id: 6,
     url: 'crowdskout-date-and-time',
     display: 'Crowdskout: Revamping Date & Time Selections',
-    imageCredit: {}
+    imageCredit: {
+      artist: 'Ben Jenkins',
+      artistSite: 'https://www.flickr.com/photos/129547099@N04/',
+      source: 'https://www.flickr.com/'
+    }
   },
   {
     id: 7,
     url: 'crowdskout-segmenting-audiences',
     display: 'Crowdskout: Segmenting Audiences Effectively',
-    imageCredit: {}
+    imageCredit: {
+      artist: 'Brent',
+      artistSite: 'https://www.flickr.com/photos/39449369@N03/',
+      source: 'https://www.flickr.com/'
+    }
   },
   {
     id: 8,
