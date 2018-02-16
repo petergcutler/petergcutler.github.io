@@ -9,11 +9,11 @@ import { Work } from './work-list';
  *   the thumbnail's image url in assets (.png)
  *   the html template in the assets (.html)
  * @property  {string} display - the display title
+ * @property {object} imageCredit - properties to attribute the thumbnail image.
+ *   @property {string} imageCredit.artist - the artist's name
+ *   @property {string} imageCredit.artistSite - the artist's site
+ *   @property {string} imageCredit.source - the site of discovery
  */
-
-// Image by [Author’s Name with a hyperlink to his/her website] via [Name of the website where you found the picture with the hyperlink attached].
-
-// Image by Kristian Hagelin (https://www.flickr.com/photos/64346264@N08/) via Flickr
 
 export const WORKS: Work[] = [
   {
