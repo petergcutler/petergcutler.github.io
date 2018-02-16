@@ -33,7 +33,7 @@ export const WORKS: Work[] = [
   {
     id: 4,
     url: 'uw-research-with-yarn',
-    display: 'Research with Yarn: Evaluating Serial and Holistic Storytelling',
+    display: 'Research with Yarn: Holistic Storytelling',
     img: ''
   },
   {
