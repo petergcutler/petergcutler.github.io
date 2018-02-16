@@ -24,3 +24,14 @@
     color: $medium-gray;
   }
 }
+
+.image-attribution {
+  font-size: .9em;
+  color: $medium-gray;
+  margin-top: 1.4em;
+
+  a {
+    text-decoration: none;
+    color: $big-barracuda;
+  }
+}

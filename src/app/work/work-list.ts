@@ -5,5 +5,5 @@ export class Work {
   // description: string;
   // client: string;
   // tags: Array<string>;
-  img: string;
+  imageCredit: object;
 }

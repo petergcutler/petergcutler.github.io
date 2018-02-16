@@ -1,3 +1,9 @@
+
+<div *ngIf="imageCredit.artist" class="image-attribution">
+  <span>Thumbnail image by
+    <a target="_blank" href="{{imageCredit.artistSite}}">{{imageCredit.artist}}</a>
+    via <a target="_blank" href="{{imageCredit.source}}">Flickr</a>.</span>
+</div>
 <footer class="main-footer">
   <div class="copyright-text">
     &copy; Copyright 2018, Peter Cutler

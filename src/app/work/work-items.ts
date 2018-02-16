@@ -11,71 +11,79 @@ import { Work } from './work-list';
  * @property  {string} display - the display title
  */
 
+// Image by [Author’s Name with a hyperlink to his/her website] via [Name of the website where you found the picture with the hyperlink attached].
+
+// Image by Kristian Hagelin (https://www.flickr.com/photos/64346264@N08/) via Flickr
+
 export const WORKS: Work[] = [
   {
     id: 1,
     url: 'uw-secure-storage-in-shelters',
     display: 'Secure Storage for Tent Cities',
-    img: ''
+    imageCredit: {
+      artist: 'Kristian Hagelin',
+      artistSite: 'https://www.flickr.com/photos/64346264@N08/',
+      source: 'https://www.flickr.com/'
+    }
   },
   {
     id: 2,
     url: 'uw-oculus-rift-onboarding-in-3d',
-    display: 'Oculus Rift - Onboarding in a 3d Environment',
-    img: ''
+    display: 'Oculus Rift: Onboarding in a 3d Environment',
+    imageCredit: {}
   },
   {
     id: 3,
     url: 'uw-rcrc-complex-systems-and-vca',
-    display: 'Red Cross and the Design of Complex Systems',
-    img: ''
+    display: 'Red Cross (RCRC): Managing Complex Systems',
+    imageCredit: {}
   },
   {
     id: 4,
     url: 'uw-research-with-yarn',
-    display: 'Research with Yarn: Holistic Storytelling',
-    img: ''
+    display: 'Testing the Yarn App: Holistic Storytelling',
+    imageCredit: {}
   },
   {
     id: 5,
     url: 'crowdskout-data-visualization-systems',
-    display: 'Crowdskout: Simplifying Complex Data Visualization',
-    img: ''
+    display: 'Crowdskout: Simplifying Data Visualization',
+    imageCredit: {}
   },
   {
     id: 6,
     url: 'crowdskout-date-and-time',
-    display: 'Crowdskout: Overhauling Date & Time Selections',
-    img: ''
+    display: 'Crowdskout: Revamping Date & Time Selections',
+    imageCredit: {}
   },
   {
     id: 7,
     url: 'crowdskout-segmenting-audiences',
     display: 'Crowdskout: Segmenting Audiences Effectively',
-    img: ''
+    imageCredit: {}
   },
   {
     id: 8,
     url: 'crowdskout-complex-form-editor',
     display: 'Crowdskout: Empowering Users to Create Complex Forms',
-    img: ''
+    imageCredit: {}
   },
   {
     id: 9,
     url: 'vox-global-brand-redesign',
     display: 'VOX Global: Brand and Website Redesign',
-    img: ''
+    imageCredit: {}
   },
   {
     id: 10,
     url: 'vox-global-motion-design',
     display: 'VOX Global: Motion Design for Lumina Foundation and AT&T',
-    img: ''
+    imageCredit: {}
   },
   {
     id: 11,
     url: 'vox-global-communicating-sustainability-for-att',
     display: 'VOX Global: Communicating Sustainability Stories for AT&T',
-    img: ''
+    imageCredit: {}
   }
 ];
