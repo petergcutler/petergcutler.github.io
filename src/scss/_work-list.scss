@@ -26,6 +26,7 @@
   max-height: 20em;
   color: $white;
   cursor: pointer;
+  background-size: cover;
 
   &:hover {
     @include box-shadow(3);
@@ -36,19 +37,17 @@
     max-height: 16em;
   }
 
-  &.secure-storage-in-shelters {
-    background-image: url('/assets/images/work/thumbnails/secure-storage-in-shelters.png');
-    background-size: cover;
+  // IMPORTANT! Class name AND path name are sensitive
+  &.uw-secure-storage-in-shelters {
+    background-image: url('/assets/images/work/thumbnails/uw-secure-storage-in-shelters.png');
   }
 
-  &.oculus-rift-onboarding-in-3d {
-    background-image: url('/assets/images/work/thumbnails/oculus-rift-onboarding-in-3d.png');
-    background-size: cover;
+  &.uw-oculus-rift-onboarding-in-3d {
+    background-image: url('/assets/images/work/thumbnails/uw-oculus-rift-onboarding-in-3d.png');
   }
 
-  &.rcrc-complex-systems-and-vca {
-    background-image: url('/assets/images/work/thumbnails/rcrc-complex-systems-and-vca.png');
-    background-size: cover;
+  &.uw-rcrc-complex-systems-and-vca {
+    background-image: url('/assets/images/work/thumbnails/uw-rcrc-complex-systems-and-vca.png');
   }
 }
 
@@ -60,7 +59,6 @@
 }
 
 .work-item-image {
-  visibility: hidden; // hide cover img, but retain sizing
   max-width: 100%;
-  object-fit: cover;
+  visibility: hidden; // hide cover img, but retain sizing
 }

@@ -27,7 +27,7 @@ export const WORKS: Work[] = [
   {
     id: 3,
     url: 'uw-rcrc-complex-systems-and-vca',
-    display: 'Red Cross Red Crescent and Designing for Complex Systems',
+    display: 'Red Cross and the Design of Complex Systems',
     img: ''
   },
   {
