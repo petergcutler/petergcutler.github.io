@@ -15,7 +15,7 @@ export const WORKS: Work[] = [
   {
     id: 1,
     url: 'uw-secure-storage-in-shelters',
-    display: 'Secure Storage for Homeless Shelters',
+    display: 'Secure Storage for Tent Cities',
     img: ''
   },
   {
