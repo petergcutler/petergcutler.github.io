@@ -29,8 +29,8 @@ export const WORKS: Work[] = [
   {
     id: 2,
     url: 'uw-oculus-rift-onboarding-in-3d',
-    display: 'Oculus Rift: Onboarding in a 3d Environment',
-    imageCredit: null
+    display: 'Oculus Rift: Onboarding in a 3d Environment'
+    // self-generated image
   },
   {
     id: 3,
@@ -85,25 +85,21 @@ export const WORKS: Work[] = [
   {
     id: 8,
     url: 'crowdskout-complex-form-editor',
-    display: 'Crowdskout: Empowering Users to Create Complex Forms',
-    imageCredit: null
+    display: 'Crowdskout: Empowering Users to Create Complex Forms'
   },
   {
     id: 9,
     url: 'vox-global-brand-redesign',
-    display: 'VOX Global: Brand and Website Redesign',
-    imageCredit: null
+    display: 'VOX Global: Brand and Website Redesign'
   },
   {
     id: 10,
     url: 'vox-global-motion-design',
-    display: 'VOX Global: Motion Design for Lumina Foundation and AT&T',
-    imageCredit: null
+    display: 'VOX Global: Motion Design for Lumina Foundation and AT&T'
   },
   {
     id: 11,
     url: 'vox-global-communicating-sustainability-for-att',
-    display: 'VOX Global: Communicating Sustainability Stories for AT&T',
-    imageCredit: null
+    display: 'VOX Global: Communicating Sustainability Stories for AT&T'
   }
 ];
