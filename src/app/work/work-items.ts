@@ -30,7 +30,7 @@ export const WORKS: Work[] = [
     id: 2,
     url: 'uw-oculus-rift-onboarding-in-3d',
     display: 'Oculus Rift: Onboarding in a 3d Environment',
-    imageCredit: {} // Self-generated
+    imageCredit: null
   },
   {
     id: 3,
@@ -86,24 +86,24 @@ export const WORKS: Work[] = [
     id: 8,
     url: 'crowdskout-complex-form-editor',
     display: 'Crowdskout: Empowering Users to Create Complex Forms',
-    imageCredit: {}
+    imageCredit: null
   },
   {
     id: 9,
     url: 'vox-global-brand-redesign',
     display: 'VOX Global: Brand and Website Redesign',
-    imageCredit: {}
+    imageCredit: null
   },
   {
     id: 10,
     url: 'vox-global-motion-design',
     display: 'VOX Global: Motion Design for Lumina Foundation and AT&T',
-    imageCredit: {}
+    imageCredit: null
   },
   {
     id: 11,
     url: 'vox-global-communicating-sustainability-for-att',
     display: 'VOX Global: Communicating Sustainability Stories for AT&T',
-    imageCredit: {}
+    imageCredit: null
   }
 ];
