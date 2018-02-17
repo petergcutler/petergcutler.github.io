@@ -84,8 +84,13 @@ export const WORKS: Work[] = [
   },
   {
     id: 8,
-    url: 'crowdskout-complex-form-editor',
-    display: 'Crowdskout: Empowering Users to Create Complex Forms'
+    url: 'crowdskout-form-editor',
+    display: 'Crowdskout: Complex Form and Survey Editor',
+    imageCredit: {
+      artist: 'Ming-Lun Hsieh',
+      artistSite: 'https://www.flickr.com/photos/minglun_hsieh/',
+      source: 'https://www.flickr.com/'
+    }
   },
   {
     id: 9,
