@@ -70,13 +70,24 @@
     background-image: url('/assets/images/work/thumbnails/crowdskout-form-editor.png');
   }
 
+  &.vox-global-brand-redesign {
+    background-image: url('/assets/images/work/thumbnails/vox-global-brand-redesign.png');
+  }
 
+  &.vox-global-motion-design {
+    background-image: url('/assets/images/work/thumbnails/vox-global-motion-design.png');
+  }
+
+  &.vox-global-sustainability-for-att {
+    background-image: url('/assets/images/work/thumbnails/vox-global-sustainability-for-att.png');
+  }
 
 }
 
 .work-item-title {
   display: block;
   position: absolute;
+  line-height: 1.6em;
   padding-top: 1em;
   padding-left: 1em;
 }

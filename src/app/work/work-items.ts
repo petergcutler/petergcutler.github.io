@@ -104,7 +104,7 @@ export const WORKS: Work[] = [
   },
   {
     id: 11,
-    url: 'vox-global-communicating-sustainability-for-att',
+    url: 'vox-global-sustainability-for-att',
     display: 'VOX Global: Communicating Sustainability Stories for AT&T'
   }
 ];
