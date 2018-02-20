@@ -21,15 +21,47 @@
   }
 }
 
+.work-item-title {
+  position: absolute;
+  line-height: 1.6em;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.work-item-image {
+  max-width: 100%;
+  visibility: hidden; // hide cover img, but retain sizing
+}
+
 .work-item {
+  position: relative;
   max-width: 30em;
   max-height: 20em;
   color: $white;
-  cursor: pointer;
   background-size: cover;
+  border-bottom: 0;
+  transition: border-bottom .3s ease-out;
+  cursor: pointer;
 
-  &:hover {
-    @include box-shadow(3);
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #494949 100%
+    );
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+  }
+
+  &:hover:before{
+    opacity: 0.6;
   }
 
   @include respond-to('large') {
@@ -81,18 +113,4 @@
   &.vox-global-sustainability-for-att {
     background-image: url('/assets/images/work/thumbnails/vox-global-sustainability-for-att.png');
   }
-
-}
-
-.work-item-title {
-  display: block;
-  position: absolute;
-  line-height: 1.6em;
-  padding-top: 1em;
-  padding-left: 1em;
-}
-
-.work-item-image {
-  max-width: 100%;
-  visibility: hidden; // hide cover img, but retain sizing
 }
