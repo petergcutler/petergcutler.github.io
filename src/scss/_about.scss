@@ -20,7 +20,7 @@
 .contact-heading {
   font-weight: bold;
   margin: 1.4em 0 1em 0;
-  color: $big-barracuda;
+  color: $header-subtitle;
 }
 
 .contact-row {
@@ -29,10 +29,9 @@
 
 .contact-link {
   font-family: 'Garamond', serif;
-  font-size: 1.2em;
   text-decoration: none;
-  color: $deep-gray;
-  border-bottom: $border-thin solid $big-barracuda;
+  color: $header-title;
+  border-bottom: $border-thin solid $elder-salmon;
 
   &:hover {
     color: $elder-salmon;
@@ -42,6 +41,7 @@
 
 .bio {
   p {
+    color: $cool-shirt;
     font-family: 'Garamond', serif;
     font-size: 1.2em;
     line-height: 1.4em;
@@ -49,7 +49,7 @@
 
     // &::selection {
     //   background: $bay-blue;
-    //   color: $light-white;
+    //   color: $light-gray;
     // }
   }
 }

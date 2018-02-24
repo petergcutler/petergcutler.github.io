@@ -1,25 +1,49 @@
 // Colors
+$pastry-blue: #3498DB;
 $bay-blue: #455C7B;
 $big-barracuda: #2C3E50;
 $angry-salmon: #DA727E;
 $elder-salmon: #E74C3C;
+
+// Monochrome
+$white: #fff;
+$white-smoke: hsl(0, 0%, 92%);
+$wild-sand: hsl(0, 0%, 85%);
+$silver: hsl(0, 0%, 78%);
+$chalice: hsl(0, 0%, 71%);
+$mercury: hsl(0, 0%, 64%);
+$chalice: hsl(0, 0%, 57%);
+$dove-gray: hsl(0, 0%, 50%);
+$charcoal: hsl(0, 0%, 40%);
+$mine-shaft: hsl(0, 0%, 30%);
+$cool-shirt: hsl(0, 0%, 25%);
+$nightrider: hsl(0, 0%, 22%);
+$nero: hsl(0, 0%, 15%);
+$black: hsl(0, 0%, 0%);
+
 $light-gray: rgba(0, 0, 0, 0.1);
 $light-white: rgba(255, 255, 255, 0.8);
 $dark-white: rgba(255,255,255,0.5);
 $medium-gray: rgba(0, 0, 0, 0.5);
 $deep-gray: #222;
 
-$white: #fff;
+
 $nav2: #30336b;
 
 // Nav
-$nav: $big-barracuda;
-$nav-link: $white;
+$nav: $white;
+$nav-mobile: $wild-sand;
+$nav-border: $cool-shirt;
+$nav-link: $cool-shirt;
 $nav-link-hover: $elder-salmon;
-$logo-description: $dark-white;
+$logo: $cool-shirt;
+$logo-description: $cool-shirt;
+
 
 // Mains
 $header-rule: $light-gray;
+$header-title: $cool-shirt;
+$header-subtitle: $medium-gray;
 
 // Borders
 $border-thin: 1px;
@@ -30,5 +54,6 @@ $breakpoints: (
   'medium': (min-width: 640px),
   'large': (min-width: 900px),
   'larger': (min-width: 1000px),
+  'largest': (min-width: 1137px),
   'huge': (min-width: 1280px)
 );

@@ -1,7 +1,8 @@
 .sidebar-header {
   display: block;
-  background-color: $nav;
-  color: #fff;
+  background-color: $nav-mobile;
+  border-right: 0;
+  // border-bottom: 40px solid $nav-border;
   padding-top: 2.2em;
   padding-left: 1.2em;
   height: 8em;
@@ -13,18 +14,37 @@
     position: fixed;
     height: 100%;
     width: 15em;
+    background-color: $nav;
+    border-bottom: 0;
+    // border-right: 2px solid $nav-border;
     padding: 2.5em;
+  }
+}
+
+.nav-list {
+  display: inline-block;
+
+  @include respond-to('medium') {
+    display: block;
   }
 }
 
 .logo {
   display: block;
-  color: $nav-link;
+  color: $logo;
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
   line-height: 1.8rem;
   margin-bottom: .6em;
+
+  @include respond-to('medium') {
+    font-size: 1.3rem;
+  }
+
+  @include respond-to('largest') {
+    font-size: 1.4rem;
+  }
 }
 
 .logo-description {
@@ -38,13 +58,7 @@
   }
 }
 
-.nav-list {
-  display: inline-block;
 
-  @include respond-to('medium') {
-    display: block;
-  }
-}
 
 .nav-item {
   display: inline;
