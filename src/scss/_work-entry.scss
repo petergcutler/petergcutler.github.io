@@ -50,7 +50,7 @@
 }
 
 .work-body {
-  max-width: 28em;
+  max-width: 30em;
   font-family: 'georgia', serif;
   font-size: 1.1em;
   line-height: 1.6em;
@@ -107,4 +107,8 @@
   list-style-position: outside;
   padding-left: 3.4em;
   margin-bottom: 1em;
+
+  li + li {
+    margin-top: 0.6em;
+  }
 }
