@@ -1,8 +1,4 @@
-.first-paragraph {
-  color: green;
-}
-
-.work-introduction {
+.work-intro {
   display: grid;
   grid-gap: 2em;
   padding-bottom: 2em;
@@ -13,48 +9,102 @@
     grid-template-columns: 1fr 3fr;
     grid-gap: 4em;
   }
+
+  .work-metadata {
+    line-height: 1.4em;
+
+    @include respond-to('large') {
+      min-width: 12em;
+      max-width: 20em;
+    }
+
+    @include respond-to('larger') {
+      min-width: 16em;
+    }
+  }
+
+  .work-title {
+    font-weight: bold;
+    color: $deep-gray;
+  }
+
+  .work-tags {
+    margin-top: 1em;
+    color: $medium-gray;
+    text-transform: capitalize;
+    line-height: 1.4em;
+  }
+
+  .work-description {
+    position: relative;
+    top: -0.3em;
+    font-family: 'georgia', serif;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: $nero;
+
+    p + p {
+      margin-top: 1.2em;
+    }
+  }
 }
 
 .work-body {
+  max-width: 28em;
+  font-family: 'georgia', serif;
+  font-size: 1.1em;
+  line-height: 1.6em;
   margin-top: 1em;
-}
 
-.work-metadata {
-  line-height: 1.4em;
-
-  @include respond-to('large') {
-    min-width: 12em;
-    max-width: 20em;
-  }
-
-  @include respond-to('larger') {
-    min-width: 16em;
+  p {
+    margin-bottom: 1.2em;
   }
 }
 
-.work-title {
-  font-weight: bold;
-  color: $deep-gray;
-  // white-space: nowrap;
-}
-
-.work-tags {
-  margin-top: 1em;
-  color: $medium-gray;
-  text-transform: capitalize;
-  line-height: 1.4em;
-}
-
-.work-description {
+.work-body-h2 {
+  display: inline-block;
   position: relative;
-  top: -0.3em;
-  font-family: 'Garamond', serif;
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  color: $nero;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: $elder-salmon;
+    left: 0;
+    bottom: -1.4em;
+    width: 20%;
+  }
 }
 
-.work-body {
-  font-family: 'Garamond', serif;
-  font-size: 1em;
-  line-height: 1.4em;
+.work-body-image {
+  display: block;
+  max-width: 28em;
+  height: auto;
+  margin: 1.4em 0;
+}
+
+.border {
+  border: 1px solid $silver;
+}
+
+.work-body-link {
+  text-decoration: none;
+  color: $elder-salmon;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.work-body-list {
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-left: 3.4em;
+  margin-bottom: 1em;
 }
