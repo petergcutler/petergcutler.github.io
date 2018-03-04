@@ -1,58 +1,7 @@
-.work-intro {
-  display: grid;
-  grid-gap: 2em;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
-  border-bottom: $border-thin solid $header-rule;
-
-  @include respond-to('larger') {
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 4em;
-  }
-
-  .work-metadata {
-    line-height: 1.4em;
-
-    @include respond-to('large') {
-      min-width: 12em;
-      max-width: 20em;
-    }
-
-    @include respond-to('larger') {
-      min-width: 16em;
-    }
-  }
-
-  .work-title {
-    font-weight: bold;
-    color: $deep-gray;
-  }
-
-  .work-tags {
-    margin-top: 1em;
-    color: $medium-gray;
-    text-transform: capitalize;
-    line-height: 1.4em;
-  }
-
-  .work-description {
-    position: relative;
-    top: -0.3em;
-    font-family: 'georgia', serif;
-    font-size: 1.1em;
-    line-height: 1.6em;
-    color: $nero;
-
-    p + p {
-      margin-top: 1.2em;
-    }
-  }
-}
-
 .work-body {
   max-width: 30em;
   font-family: 'georgia', serif;
-  font-size: 1.1em;
+  font-size: 1.05em;
   line-height: 1.6em;
   margin-top: 1em;
 
