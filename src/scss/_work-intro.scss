@@ -1,21 +1,15 @@
-.work-entry-header {
-  display: inline-block;
-  padding-bottom: 2em;
-  margin-bottom: 1em;
-  width: 100%;
-}
+.work-header {
+  display: grid;
 
-.sub {
-  display: inline-block;
-  max-width: 26em;
-  width: 50%;
-  margin-left: 8em;
+  @include respond-to('larger') {
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-content: space-between;
+  }
 }
 
 .work-title {
-  display: inline-block;
   position: relative;
-  max-width: 6em;
+  width: 6em;
   font-size: 2.4em;
   font-family: 'georgia', serif;
   font-weight: bold;
@@ -34,55 +28,52 @@
     &::before {
       content: none;
     }
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      background-color: $elder-salmon;
-      right: -1.4em;
-      bottom: 0;
-    }
   }
 }
 
-.work-tags {
-  margin-top: 3em;
-  color: $medium-gray;
-  text-transform: capitalize;
-  line-height: 1.4em;
-}
+.work-title-border {
+  max-width: 1em;
+  position: relative;
+  justify-self: center;
 
-.helper {
-  height: 100%;
-  padding: 0;
-  text-align: center;
-}
-
-.helper,
-.work-subtitle {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: $elder-salmon;
+  }
 }
 
 .work-subtitle {
   position: relative;
-  display: inline-block;
-  max-width: 18em;
+  align-self: center;
   font-family: 'georgia', serif;
   font-size: 1.2em;
   line-height: 1.6em;
   margin-top: 3em;
+  max-width: 26em;
 
   @include respond-to('larger') {
-    display: inline-block;
-    font-size: 1.4em;
-    top: 36%;
-    padding-top: 12%;
-    transform: translateY(-50%);
     margin-top: 0;
+    font-size: 1.4em;
+  }
+
+  @include respond-to('largest') {
+    min-width: 18em;
+  }
+}
+
+.work-tags {
+  color: $medium-gray;
+  text-transform: capitalize;
+  line-height: 1.4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  @include respond-to('larger') {
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 }
 
