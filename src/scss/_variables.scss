@@ -4,6 +4,7 @@ $bay-blue: #455C7B;
 $big-barracuda: #2C3E50;
 $angry-salmon: #DA727E;
 $elder-salmon: #E74C3C;
+$hip-salmon: #E77068;
 
 // Monochrome
 $white: #fff;
@@ -31,7 +32,7 @@ $deep-gray: #222;
 $nav2: #30336b;
 
 // Nav
-$nav: $white;
+$nav: $hip-salmon;
 $nav-mobile: $wild-sand;
 $nav-border: $cool-shirt;
 $nav-link: $cool-shirt;
@@ -51,6 +52,7 @@ $border-medium: 2px;
 // Media Queries
 $breakpoints: (
   'medium': (min-width: 640px),
+  // TODO add a break for 780 to switch nav to header position
   'large': (min-width: 900px),
   'larger': (min-width: 1000px),
   'largest': (min-width: 1137px),
