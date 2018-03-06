@@ -1,13 +1,13 @@
 $shift-nav-to-top: 'mediumer';
 
-.inner-border {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  right: 1em;
-  bottom: 1em;
-  border: 10px solid $sunburnt-salmon;
-}
+// .inner-border {
+//   position: absolute;
+//   top: 1em;
+//   left: 1em;
+//   right: 1em;
+//   bottom: 1em;
+//   border: 10px solid $sunburnt-salmon;
+// }
 
 .main-window {
   @include respond-to($shift-nav-to-top) {
