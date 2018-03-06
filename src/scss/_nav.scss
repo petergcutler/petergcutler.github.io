@@ -15,6 +15,20 @@ $shift-nav-to-top: 'mediumer';
   }
 }
 
+.about-content,
+.cv-content,
+.work-content,
+.work-details,
+.writing-content {
+  padding: 2.5em 2em;
+  max-width: 56em;
+  margin: 0 auto;
+
+  @include respond-to($shift-nav-to-top) {
+    padding: 2.5em 3.5em;
+  }
+}
+
 .sidebar-header {
   display: block;
   // background-color: $nav-mobile;

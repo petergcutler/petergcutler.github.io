@@ -1,13 +1,1 @@
-.about-content,
-.cv-content,
-.work-content,
-.work-details,
-.writing-content {
-  padding: 2.5em 2em;
-  max-width: 56em;
-  margin: 0 auto;
 
-  @include respond-to('large') {
-    padding: 2.5em 3.5em;
-  }
-}

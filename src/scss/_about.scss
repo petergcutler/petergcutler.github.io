@@ -1,16 +1,17 @@
 .about-main {
   display: grid;
   grid-gap: 2em;
-  max-width: 48em;
 
-  @include respond-to('large') {
+  @include respond-to('mediumer') {
     grid-template-columns: 2fr 3fr;
   }
 
-  @include respond-to('larger') {
-    grid-template-columns: 2fr 5fr;
-  }
+  // @include respond-to('larger') {
+  //   grid-template-columns: 2fr 5fr;
+  // }
 }
+
+// TODO About looks bad between 720 and 840.
 
 .self-image {
   width: 100%;
@@ -46,6 +47,15 @@
     font-size: 1.2em;
     line-height: 1.4em;
     padding-bottom: 1em;
+
+    a {
+      text-decoration: none;
+      color: $elder-salmon;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
     // &::selection {
     //   background: $bay-blue;
