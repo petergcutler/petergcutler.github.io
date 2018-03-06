@@ -10,7 +10,7 @@ export class AppComponent {
   // Define the site's sections for sidebar links
   pages = [
     'about',
-    'cv',
+    // 'cv',
     'work',
     'writing'
   ];

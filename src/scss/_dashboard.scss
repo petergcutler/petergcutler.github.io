@@ -1,7 +1,4 @@
 .dashboard-content {
-  @include respond-to('medium') {
-    padding-top: 44vh;
-  }
 }
 
 .dashboard-image {
@@ -14,14 +11,6 @@
 }
 
 .welcome {
-  font-family: 'Garamond', serif;
   font-size: 2em;
-  // font-weight: bold;
-  color: white;
   text-align: center;
-  // text-transform: uppercase;
-
-  @include respond-to('medium') {
-    font-size: 4em;
-  }
 }

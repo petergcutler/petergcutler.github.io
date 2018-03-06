@@ -1,9 +1,3 @@
-.main-window {
-  @include respond-to('medium') {
-    padding-left: 15em;
-  }
-}
-
 .about-content,
 .cv-content,
 .work-content,

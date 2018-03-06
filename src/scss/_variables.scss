@@ -5,6 +5,12 @@ $big-barracuda: #2C3E50;
 $angry-salmon: #DA727E;
 $elder-salmon: #E74C3C;
 $hip-salmon: #E77068;
+$sunburnt-salmon: #FF9C8C;
+
+$yurtle: #8CFFE6;
+$raindroopy: #8CF3FF;
+
+$baywater-bonanza: #3FD4D9;
 
 // Monochrome
 $white: #fff;
@@ -22,6 +28,10 @@ $nightrider: hsl(0, 0%, 22%);
 $nero: hsl(0, 0%, 15%);
 $black: hsl(0, 0%, 0%);
 
+$surly-kraken: #1C1E20;
+$gentle-kraken: #282B2E;
+
+
 $light-gray: rgba(0, 0, 0, 0.1);
 $light-white: rgba(255, 255, 255, 0.8);
 $dark-white: rgba(255,255,255,0.5);
@@ -32,17 +42,17 @@ $deep-gray: #222;
 $nav2: #30336b;
 
 // Nav
-$nav: $hip-salmon;
-$nav-mobile: $wild-sand;
-$nav-border: $cool-shirt;
-$nav-link: $cool-shirt;
-$nav-link-hover: $elder-salmon;
-$logo: $cool-shirt;
-$logo-description: $cool-shirt;
+$nav: $white;
+$nav-mobile: $sunburnt-salmon;
+$nav-border: $gentle-kraken;
+$nav-link: $gentle-kraken;
+$nav-link-hover: $gentle-kraken;
+$logo: $gentle-kraken;
+$logo-description: $gentle-kraken;
 
 // Mains
 $header-rule: $light-gray;
-$header-title: $cool-shirt;
+$header-title: $gentle-kraken;
 $header-subtitle: $medium-gray;
 
 // Borders
@@ -52,7 +62,7 @@ $border-medium: 2px;
 // Media Queries
 $breakpoints: (
   'medium': (min-width: 640px),
-  // TODO add a break for 780 to switch nav to header position
+  'mediumer': (min-width: 720px),
   'large': (min-width: 900px),
   'larger': (min-width: 1000px),
   'largest': (min-width: 1137px),
