@@ -1,4 +1,4 @@
-$shift-nav-to-top: 'mediumer';
+$shift-nav-to-side: 'mediumer';
 
 // .inner-border {
 //   position: absolute;
@@ -10,7 +10,7 @@ $shift-nav-to-top: 'mediumer';
 // }
 
 .main-window {
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     padding-left: 15em;
   }
 }
@@ -24,7 +24,7 @@ $shift-nav-to-top: 'mediumer';
   max-width: 56em;
   margin: 0 auto;
 
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     padding: 2.5em 3.5em;
   }
 }
@@ -39,7 +39,7 @@ $shift-nav-to-top: 'mediumer';
   padding-left: 1.2em;
   height: 8em;
 
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,13 +56,13 @@ $shift-nav-to-top: 'mediumer';
 .nav-list {
   display: inline-block;
 
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     display: block;
   }
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   color: $logo;
   font-weight: bold;
   font-size: 1.2rem;
@@ -70,15 +70,16 @@ $shift-nav-to-top: 'mediumer';
   line-height: 1.8rem;
   margin-bottom: .6em;
 
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     font-size: 1.4rem;
+    display: block;
   }
 }
 
 .logo-description {
   display: none;
 
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     display: block;
     font-size: 1rem;
     font-weight: normal;
@@ -90,7 +91,7 @@ $shift-nav-to-top: 'mediumer';
   display: inline;
   padding-right: 2em;
 
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     display: block;
     padding-right: 0;
     padding-bottom: 1.2em;
@@ -121,7 +122,7 @@ $shift-nav-to-top: 'mediumer';
 .contact a {
   display: none;
 
-  @include respond-to($shift-nav-to-top) {
+  @include respond-to($shift-nav-to-side) {
     display: inline;
   }
 }
