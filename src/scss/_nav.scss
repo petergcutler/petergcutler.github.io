@@ -7,7 +7,6 @@ $shift-nav-to-side: 'mediumer';
 }
 
 .about-content,
-.cv-content,
 .work-content,
 .work-details,
 .writing-content {
@@ -84,11 +83,6 @@ $shift-nav-to-side: 'mediumer';
 
 .nav-link-active {
   border-bottom: $border-medium solid $nav-link-hover;
-}
-
-// cv -> CV
-.cv-link {
-  text-transform: uppercase;
 }
 
 // "Email" link only shows above medium

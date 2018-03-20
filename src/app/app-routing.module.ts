@@ -2,7 +2,6 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent }   from './about/about.component';
-import { CvComponent } from './cv/cv.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WritingComponent } from './writing/writing.component';
 
@@ -24,10 +23,6 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
-  },
-  {
-    path: 'cv',
-    component: CvComponent
   },
   {
     path: 'work',

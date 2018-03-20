@@ -15,7 +15,6 @@ import { WorkService } from './work/work.service';
 
 // Pages
 import { AboutComponent } from './about/about.component';
-import { CvComponent } from './cv/cv.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
 import { WritingComponent } from './writing/writing.component';
 import { WorkDetailsComponent } from './work/work-details/work-details.component';
@@ -32,7 +31,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    CvComponent,
     WorkListComponent,
     WritingComponent,
     WorkDetailsComponent,
