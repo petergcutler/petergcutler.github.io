@@ -1,14 +1,5 @@
 $shift-nav-to-side: 'mediumer';
 
-// .inner-border {
-//   position: absolute;
-//   top: 1em;
-//   left: 1em;
-//   right: 1em;
-//   bottom: 1em;
-//   border: 10px solid $sunburnt-salmon;
-// }
-
 .main-window {
   @include respond-to($shift-nav-to-side) {
     padding-left: 15em;
@@ -31,10 +22,6 @@ $shift-nav-to-side: 'mediumer';
 
 .sidebar-header {
   display: block;
-  // background-color: $nav-mobile;
-  // border-right: 0;
-  // border-bottom: 40px solid $nav-border;
-  // border: 1px solid green;
   padding-top: 2.2em;
   padding-left: 1.2em;
   height: 8em;
@@ -46,9 +33,6 @@ $shift-nav-to-side: 'mediumer';
     position: fixed;
     height: 100%;
     width: 15em;
-    background-color: $nav;
-    // border-bottom: 0;
-    // border-right: 2px solid $nav-border;
     padding: 2.5em;
   }
 }
@@ -73,17 +57,6 @@ $shift-nav-to-side: 'mediumer';
   @include respond-to($shift-nav-to-side) {
     font-size: 1.4rem;
     display: block;
-  }
-}
-
-.logo-description {
-  display: none;
-
-  @include respond-to($shift-nav-to-side) {
-    display: block;
-    font-size: 1rem;
-    font-weight: normal;
-    color: $logo-description;
   }
 }
 

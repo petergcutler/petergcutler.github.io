@@ -1,15 +1,15 @@
 .button-bright {
   display: inline-block;
-  padding: .6em;
+  padding: 1em;
   margin: 1em 0;
-  border: $border-thin solid $bay-blue;
+  border: $border-thin solid $dark-gray;
   border-radius: .2em;
   cursor: pointer;
   text-decoration: none;
-  color: $bay-blue;
+  color: $dark-gray;
 
   &:hover {
-    color: $elder-salmon;
-    border: $border-thin solid $elder-salmon;
+    color: $accent-red;
+    border: $border-thin solid $accent-red;
   }
 }

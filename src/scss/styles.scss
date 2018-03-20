@@ -1,5 +1,10 @@
+// External
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 // Core, do not re-order
 @import './resets';
+@import './colors';
+@import './fonts';
 @import './variables';
 @import './includes';
 
@@ -8,7 +13,6 @@
 
 // Site components
 @import './nav';
-@import './main';
 @import './header-footer';
 @import './work-intro';
 @import './work-entry';
@@ -16,7 +20,6 @@
 // Pages
 @import './dashboard';
 @import './about';
-@import './cv';
 @import './work-list';
 @import './work-details';
 @import './writing';

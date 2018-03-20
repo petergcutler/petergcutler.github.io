@@ -1,37 +1,37 @@
 .subject-header {
-  border-bottom: $border-thin solid $header-rule;
+  border-bottom: $border-thin solid $lightest-gray;
   line-height: 1.6em;
   margin-bottom: 2em;
 
   .heading {
     font-weight: bold;
-    color: $header-title;
+    color: $dark-gray;
   }
 
   .subheading {
-    color: $header-subtitle;
+    color: $light-gray;
     padding-bottom: 1em;
   }
 }
 
 .main-footer {
-  border-top: $border-thin solid $header-rule;
+  border-top: $border-thin solid $lightest-gray;
   margin-top: 2em;
 
   .copyright-text {
     margin-top: 1.4em;
     font-size: .9em;
-    color: $medium-gray;
+    color: $light-gray;
   }
 }
 
 .image-attribution {
   font-size: .9em;
-  color: $medium-gray;
+  color: $light-gray;
   margin-top: 1.4em;
 
   a {
     text-decoration: none;
-    color: $big-barracuda;
+    color: $accent-red;
   }
 }

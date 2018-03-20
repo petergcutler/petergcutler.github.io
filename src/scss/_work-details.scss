@@ -13,11 +13,11 @@
 
 .go-back {
   display: inline;
-  color: $big-barracuda;
+  color: $light-gray;
   cursor: pointer;
 
   &:hover {
-    color: $elder-salmon;
+    color: $accent-red;
   }
 }
 

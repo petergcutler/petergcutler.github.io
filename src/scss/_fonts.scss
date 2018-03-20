@@ -1,0 +1,23 @@
+/* Set default font and text settings */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Define custom fonts */
+$work-body-font: 'Source Sans Pro', 'Arial', sans-serif;
+$work-heading-font: 'Georgia', serif;
+
+// Font size
+$hugest: 2.375rem;
+$huge: 2.125rem;
+$prettybig: 1.75rem;
+$hugeish: 1.5rem;
+$largest: 1.375rem;
+$large: 1.25rem;
+$normaler: 1.125rem;
+$normal: 1rem;
+$small: 0.875rem;

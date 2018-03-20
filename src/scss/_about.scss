@@ -5,23 +5,22 @@
   @include respond-to('mediumer') {
     grid-template-columns: 2fr 3fr;
   }
-
-  // @include respond-to('larger') {
-  //   grid-template-columns: 2fr 5fr;
-  // }
 }
 
 // TODO About looks bad between 720 and 840.
 
 .self-image {
   width: 100%;
-  max-width: 300px;
+
+  @include respond-to('medium') {
+    max-width: 300px;
+  }
 }
 
 .contact-heading {
   font-weight: bold;
   margin: 1.4em 0 1em 0;
-  color: $header-subtitle;
+  color: $light-gray;
 }
 
 .contact-row {
@@ -31,35 +30,30 @@
 .contact-link {
   font-family: 'Garamond', serif;
   text-decoration: none;
-  color: $header-title;
-  border-bottom: $border-thin solid $elder-salmon;
+  color: $dark-gray;
+  border-bottom: $border-thin solid $accent-red;
 
   &:hover {
-    color: $elder-salmon;
-    border-bottom: $border-thin solid $elder-salmon;
+    color: $accent-red;
+    border-bottom: $border-thin solid $accent-red;
   }
 }
 
 .bio {
   p {
-    color: $gentle-kraken;
+    color: $dark-gray;
     font-family: 'Garamond', serif;
-    font-size: 1.2em;
+    font-size: $large;
     line-height: 1.4em;
     padding-bottom: 1em;
 
     a {
       text-decoration: none;
-      color: $elder-salmon;
+      color: $accent-red;
 
       &:hover {
         text-decoration: underline;
       }
     }
-
-    // &::selection {
-    //   background: $bay-blue;
-    //   color: $light-gray;
-    // }
   }
 }
