@@ -85,3 +85,25 @@
     margin-top: 0.6em;
   }
 }
+
+.work-body-image-grid {
+  display: none;
+  // justify-content: space-between;
+  // grid-template-rows: 1fr 1fr 1fr;
+  //
+  // .work-body-image {
+  //   max-width: 50%;
+  //   height: auto;
+  // }
+
+  @include respond-to('medium') {
+    display: grid;
+    // grid-template-rows: unset;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .work-body-image {
+      max-width: 90%;
+      height: auto;
+    }
+  }
+}
