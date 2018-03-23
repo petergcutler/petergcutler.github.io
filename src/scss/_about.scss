@@ -46,14 +46,14 @@
     font-size: $large;
     line-height: 1.4em;
     padding-bottom: 1em;
+  }
+}
 
-    a {
-      text-decoration: none;
-      color: $accent-red;
+.about-body-link {
+  text-decoration: none;
+  color: $accent-red;
 
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }

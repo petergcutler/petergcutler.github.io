@@ -33,6 +33,18 @@
   }
 }
 
+.work-body-h3 {
+  display: inline-block;
+  position: relative;
+  font-family: $work-heading-font;
+  font-size: $normaler;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  color: $darkest-gray;
+  border-bottom: 1px solid $accent-red;
+}
+
 .work-body-figure {
   // display: block;
   margin: 1.4em 0;
@@ -64,6 +76,10 @@
 
 .border {
   border: 1px solid $light-gray;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .work-body-link {
