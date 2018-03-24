@@ -40,10 +40,17 @@
   font-size: $normaler;
   font-weight: bold;
   line-height: 1.5em;
-  margin-top: .5em;
+  margin-top: 1em;
   margin-bottom: 1em;
   color: $darkest-gray;
-  border-bottom: 1px solid $accent-red;
+  // Mobile underline via text-decoration
+  text-decoration: underline;
+  text-decoration-color: $accent-red;
+
+  @include respond-to('medium') {
+    border-bottom: 1px solid $accent-red;
+    text-decoration: none;
+  }
 }
 
 .work-body-figure {
