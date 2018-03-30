@@ -18,7 +18,7 @@ import { Work } from './work-list';
 export const WORKS: Work[] = [
   {
     id: 1,
-    url: 'uw-secure-storage-in-shelters',
+    url: 'uw-secure-storage',
     display: 'Secure Storage for Tent Cities',
     imageCredit: {
       artist: 'Kristian Hagelin',
@@ -28,13 +28,13 @@ export const WORKS: Work[] = [
   },
   {
     id: 2,
-    url: 'uw-oculus-rift-onboarding-in-3d',
+    url: 'uw-oculus-onboarding',
     display: 'Oculus Rift: Onboarding in a 3d Environment'
     // self-generated image
   },
   {
     id: 3,
-    url: 'uw-rcrc-complex-systems-and-vca',
+    url: 'uw-complex-systems',
     display: 'Red Cross (RCRC): Managing Complex Systems',
     imageCredit: {
       artist: 'Babak Fakhamzadeh',
@@ -44,7 +44,7 @@ export const WORKS: Work[] = [
   },
   {
     id: 4,
-    url: 'uw-research-with-yarn',
+    url: 'uw-yarn',
     display: 'Testing the Yarn App: Holistic Storytelling',
     imageCredit: {
       artist: 'Shubhi Patil',
@@ -54,7 +54,7 @@ export const WORKS: Work[] = [
   },
   {
     id: 5,
-    url: 'crowdskout-data-visualization-systems',
+    url: 'crowdskout-data-viz',
     display: 'Crowdskout: Simplifying Data Visualization',
     imageCredit: {
       artist: 'Marcin Ignac',
@@ -64,7 +64,7 @@ export const WORKS: Work[] = [
   },
   {
     id: 6,
-    url: 'crowdskout-date-and-time',
+    url: 'crowdskout-datetime',
     display: 'Crowdskout: Revamping Date & Time Selections',
     imageCredit: {
       artist: 'Ben Jenkins',
@@ -74,7 +74,7 @@ export const WORKS: Work[] = [
   },
   {
     id: 7,
-    url: 'crowdskout-segmenting-audiences',
+    url: 'crowdskout-segmenting',
     display: 'Crowdskout: Segmenting Audiences Effectively',
     imageCredit: {
       artist: 'Brent',
@@ -104,7 +104,7 @@ export const WORKS: Work[] = [
   },
   {
     id: 11,
-    url: 'vox-global-sustainability-for-att',
+    url: 'vox-global-att-csr',
     display: 'VOX Global: Communicating Sustainability Stories for AT&T'
   }
 ];
