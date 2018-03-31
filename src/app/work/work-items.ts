@@ -54,6 +54,16 @@ export const WORKS: Work[] = [
   },
   {
     id: 5,
+    url: 'crowdskout-segmenting',
+    display: 'Crowdskout: Segmenting Audiences Effectively',
+    imageCredit: {
+      artist: 'Brent',
+      artistSite: 'https://www.flickr.com/photos/39449369@N03/',
+      source: 'https://www.flickr.com/'
+    }
+  },
+  {
+    id: 6,
     url: 'crowdskout-data-viz',
     display: 'Crowdskout: Simplifying Data Visualization',
     imageCredit: {
@@ -63,22 +73,12 @@ export const WORKS: Work[] = [
     }
   },
   {
-    id: 6,
+    id: 7,
     url: 'crowdskout-datetime',
     display: 'Crowdskout: Revamping Date & Time Selections',
     imageCredit: {
       artist: 'Ben Jenkins',
       artistSite: 'https://www.flickr.com/photos/129547099@N04/',
-      source: 'https://www.flickr.com/'
-    }
-  },
-  {
-    id: 7,
-    url: 'crowdskout-segmenting',
-    display: 'Crowdskout: Segmenting Audiences Effectively',
-    imageCredit: {
-      artist: 'Brent',
-      artistSite: 'https://www.flickr.com/photos/39449369@N03/',
       source: 'https://www.flickr.com/'
     }
   },
