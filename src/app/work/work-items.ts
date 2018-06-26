@@ -34,6 +34,11 @@ export const WORKS: Work[] = [
   },
   {
     id: 3,
+    url: 'vox-global-motion-design',
+    display: 'VOX Global: Motion Design for Lumina Foundation and AT&T'
+  },
+  {
+    id: 4,
     url: 'uw-complex-systems',
     display: 'Red Cross (RCRC): Managing Complex Systems',
     imageCredit: {
@@ -43,7 +48,7 @@ export const WORKS: Work[] = [
     }
   },
   {
-    id: 4,
+    id: 5,
     url: 'uw-yarn',
     display: 'Testing the Yarn App: Holistic Storytelling',
     imageCredit: {
@@ -53,7 +58,7 @@ export const WORKS: Work[] = [
     }
   },
   {
-    id: 5,
+    id: 6,
     url: 'crowdskout-segmenting',
     display: 'Crowdskout: Segmenting Audiences Effectively',
     imageCredit: {
@@ -63,7 +68,7 @@ export const WORKS: Work[] = [
     }
   },
   {
-    id: 6,
+    id: 7,
     url: 'crowdskout-data-viz',
     display: 'Crowdskout: Simplifying Data Visualization',
     imageCredit: {
@@ -73,7 +78,7 @@ export const WORKS: Work[] = [
     }
   },
   {
-    id: 7,
+    id: 8,
     url: 'crowdskout-datetime',
     display: 'Crowdskout: Revamping Date & Time Selections',
     imageCredit: {
@@ -83,7 +88,7 @@ export const WORKS: Work[] = [
     }
   },
   {
-    id: 8,
+    id: 9,
     url: 'crowdskout-form-editor',
     display: 'Crowdskout: Complex Form and Survey Editor',
     imageCredit: {
@@ -93,14 +98,9 @@ export const WORKS: Work[] = [
     }
   },
   {
-    id: 9,
+    id: 10,
     url: 'vox-global-brand-redesign',
     display: 'VOX Global: Brand and Website Redesign'
-  },
-  {
-    id: 10,
-    url: 'vox-global-motion-design',
-    display: 'VOX Global: Motion Design for Lumina Foundation and AT&T'
   },
   {
     id: 11,
