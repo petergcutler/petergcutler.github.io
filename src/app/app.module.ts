@@ -31,7 +31,6 @@ import { VoxGlobalBrandRedesignComponent }  from './work/work-items/vox-global-b
 import { VoxGlobalMotionDesignComponent }   from './work/work-items/vox-global-motion-design/vox-global-motion-design.component';
 
 // 'directives'
-import { WorkContentComponent } from './work/work-content/work-content.component';
 import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
 
@@ -45,7 +44,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     WorkListComponent,
     WritingComponent,
     WorkDetailsComponent,
-    WorkContentComponent,
     ArticleHeaderComponent,
     ArticleFooterComponent,
     DashboardComponent,

@@ -1,4 +1,4 @@
-import { Work } from './work-list';
+import { Work } from './work-schema';
 
 /**
  * Reference object for Work

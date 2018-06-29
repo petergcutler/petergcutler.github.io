@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Work } from '../work-list';
+import { Work } from '../work-schema';
 import { WorkService } from '../work.service';
 
 @Component({
