@@ -11,8 +11,7 @@
     </div>
   </header>
 
-  <app-work-content [work]="work" *ngIf="work" class="work-content">
-  </app-work-content>
+  <router-outlet></router-outlet>
 
   <app-article-footer [imageCredit]="work.imageCredit" ></app-article-footer>
 </article>

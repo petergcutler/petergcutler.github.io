@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
 import { Work } from './work-list';
-import { WORKS } from './work-items';
+import { WORKS } from './works';
 
 @Injectable()
 export class WorkService {

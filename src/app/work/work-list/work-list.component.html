@@ -9,7 +9,7 @@
       class="work-item"
       [ngClass]="work.url"
       *ngFor="let work of works; index as i;"
-      routerLink="/work/{{work.url}}">
+      routerLink="/work/details/{{work.url}}">
       <span class="work-item-title">{{work.display}}</span>
       <img
         class="work-item-image"

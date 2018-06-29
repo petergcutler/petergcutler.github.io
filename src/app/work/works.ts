@@ -20,11 +20,20 @@ export const WORKS: Work[] = [
     id: 1,
     url: 'uw-secure-storage',
     display: 'Secure Storage for Tent Cities',
+    description: 'Designing a user-centered solution to help homeless Seattle residents store their possessions securely and sustainably',
+    client: 'University of Washington',
     imageCredit: {
       artist: 'Kristian Hagelin',
       artistSite: 'https://www.flickr.com/photos/64346264@N08/',
       source: 'https://www.flickr.com/'
-    }
+    },
+    tags: [
+      'UX Research',
+      'Research Planning',
+      'Information Architecture',
+      'Wireframing',
+      'Prototyping'
+    ]
   },
   {
     id: 2,
