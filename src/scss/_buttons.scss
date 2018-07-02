@@ -13,3 +13,28 @@
     border: $border-thin solid $accent-red;
   }
 }
+
+.button-underline {
+  display: inline-block;
+  position: relative;
+  font-size: .75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $mine-shaft;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    background-color: $accent-red;
+    left: 0;
+    bottom: -0.8em;
+    width: 30%;
+    transition: width 0.3s ease-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

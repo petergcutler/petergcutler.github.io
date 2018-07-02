@@ -1,11 +1,18 @@
-
-<div *ngIf="imageCredit" class="image-attribution">
-  <span>Thumbnail image by
-    <a target="_blank" href="{{imageCredit.artistSite}}">{{imageCredit.artist}}</a>
-    via <a target="_blank" href="{{imageCredit.source}}">Flickr</a>.</span>
-</div>
 <footer class="main-footer">
-  <div class="copyright-text">
-    &copy; Copyright 2018, Peter Cutler
+
+  <div *ngIf="longPage" class="scroll-to-top">
+    <span (click)="scrollToTop()" class="scroll-button button-underline">Back to Top</span>
+  </div>
+
+  <!-- <div *ngIf="imageCredit" class="image-attribution">
+    <span>Thumbnail image by
+      <a target="_blank" href="{{imageCredit.artistSite}}">{{imageCredit.artist}}</a>
+      via <a target="_blank" href="{{imageCredit.source}}">Flickr</a>.</span>
+  </div> -->
+
+  <div class="border-footer">
+    <span class="copyright-text">
+      &copy; Copyright 2018, Peter Cutler
+    </span>
   </div>
 </footer>

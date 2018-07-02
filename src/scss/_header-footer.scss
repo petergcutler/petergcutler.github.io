@@ -15,11 +15,15 @@
 }
 
 .main-footer {
+  display: block;
+}
+
+.border-footer {
   border-top: $border-thin solid $lightest-gray;
   margin-top: 2em;
+  padding-top: 1.4em;
 
   .copyright-text {
-    margin-top: 1.4em;
     font-size: .9em;
     color: $light-gray;
   }
@@ -33,5 +37,15 @@
   a {
     text-decoration: none;
     color: $accent-red;
+  }
+}
+
+.scroll-to-top {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 4em;
+
+  .scroll-button {
+    display: inline-block;
   }
 }
