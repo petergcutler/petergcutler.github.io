@@ -1,0 +1,19 @@
+<ngx-gallery
+  #gallery
+  [style.display]="galleryVisible ? 'inline-block' : 'none'"
+  (previewClose)="galleryVisible = false"
+  [options]="galleryOptions"
+  [images]="galleryImages">
+</ngx-gallery>
+
+<figure class="work-body-figure">
+  <img
+    [src]="imageSrc"
+    [alt]="description"
+    (click)="open(gallery)"
+    class="work-body-image"
+    [ngClass]="{'border': borderOn}">
+  <figcaption class="work-body-image-caption">
+    {{description}}
+  </figcaption>
+</figure>

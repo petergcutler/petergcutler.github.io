@@ -1,3 +1,6 @@
+import 'hammerjs';
+import * as _ from "lodash";
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

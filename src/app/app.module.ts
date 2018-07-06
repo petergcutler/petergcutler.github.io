@@ -33,6 +33,11 @@ import { VoxGlobalMotionDesignComponent }   from './work/work-items/vox-global-m
 // 'directives'
 import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
+import { ImageViewerComponent } from './image-viewer/image-viewer.component';
+
+
+import { NgxGalleryModule } from 'ngx-gallery';
+
 
 // Not in use
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -46,6 +51,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     WorkDetailsComponent,
     ArticleHeaderComponent,
     ArticleFooterComponent,
+    ImageViewerComponent,
     DashboardComponent,
     // Work
     UwSecureStorageComponent,
@@ -63,7 +69,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxGalleryModule
   ],
   providers: [
     WorkService

@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './uw-secure-storage.component.html',
   styleUrls: ['./uw-secure-storage.component.scss']
 })
+
 export class UwSecureStorageComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

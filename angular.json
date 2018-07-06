@@ -21,9 +21,12 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/scss/styles.scss"
+              "src/scss/styles.scss",
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/lodash/lodash.js"
+            ]
           },
           "configurations": {
             "production": {

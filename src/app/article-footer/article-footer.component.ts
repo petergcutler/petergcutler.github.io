@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -12,7 +11,7 @@ export class ArticleFooterComponent implements OnInit {
   @Input()
   imageCredit: object;
 
-  public longPage : boolean;
+  private longPage: boolean;
 
   scrollToTop(): void {
     window.scroll({
@@ -30,8 +29,6 @@ export class ArticleFooterComponent implements OnInit {
 
     if (url === 'work/details') {
       this.longPage = true;
-    } else {
-      this.longPage = false;
     }
   }
 
