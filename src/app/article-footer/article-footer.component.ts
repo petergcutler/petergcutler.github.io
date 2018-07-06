@@ -16,7 +16,7 @@ export class ArticleFooterComponent implements OnInit {
   scrollToTop(): void {
     window.scroll({
       top: 0,
-      behavior: "smooth"
+      behavior: "auto"
     });
   }
 

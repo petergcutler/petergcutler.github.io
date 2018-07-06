@@ -12,7 +12,7 @@ export class ImageViewerComponent implements OnInit {
 
   @Input() images: object[];
   @Input() options: object;
-  @Input() imageSrc: string;
+  @Input() path: string;
   @Input() description: string;
   @Input() borderOn: boolean;
 
@@ -26,28 +26,22 @@ export class ImageViewerComponent implements OnInit {
     g.openPreview(0);
   }
 
-  setImagePaths(o, v): void {
-    _.set(o, 'small', v);
-    _.set(o, 'medium', v);
-    _.set(o, 'big', v);
-  };
+  addImage(array, object): void {
+    let image = {};
 
-  buildGalleryImages(imageArray, setter): void {
-    let imageObject = {};
+    _.set(image, 'big', object.path);
+    _.set(image, 'description', object.description);
 
+    array.push(image);
+  }
+
+  buildGalleryImages(array, addImage): void {
     if (this.images) {
       _.each(this.images, function(i) {
-        setter(imageObject, i);
-        imageArray.push(imageObject);
+        addImage(array, i);
       });
-    } else if (this.imageSrc) {
-      setter(imageObject, this.imageSrc);
-
-      if (this.description) {
-        _.set(imageObject, 'description', this.description);
-      }
-
-      imageArray.push(imageObject)
+    } else {
+      addImage(array, this)
     }
   }
 
@@ -67,7 +61,6 @@ export class ImageViewerComponent implements OnInit {
           thumbnails: false,
           previewSwipe: true,
           previewCloseOnEsc: true,
-          previewCloseOnClick: true,
           previewKeyboardNavigation: true,
           arrowNextIcon: 'fa fa-arrow-circle-right',
           arrowPrevIcon: 'fa fa-arrow-circle-left',
@@ -75,7 +68,7 @@ export class ImageViewerComponent implements OnInit {
     ];
     this.galleryImages = [];
 
-    this.buildGalleryImages(this.galleryImages, this.setImagePaths);
+    this.buildGalleryImages(this.galleryImages, this.addImage);
     this.buildCustomOptions(this.galleryOptions[0], this.galleryImages);
   }
 }

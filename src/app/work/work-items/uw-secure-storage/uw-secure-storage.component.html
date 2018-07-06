@@ -80,7 +80,7 @@
     </p>
 
     <app-image-viewer
-      imageSrc="../assets/images/work/uw-secure-storage/homeless-housing-programs.png"
+      path="../assets/images/work/uw-secure-storage/homeless-housing-programs.png"
       description="The four types of homeless housing programs in Seattle"
       [borderOn]="true">
     </app-image-viewer>
@@ -98,7 +98,7 @@
     </p>
 
     <app-image-viewer
-      imageSrc="../assets/images/work/uw-secure-storage/homelessness-budgets.jpeg"
+      path="../assets/images/work/uw-secure-storage/homelessness-budgets.jpeg"
       description="The homelessness spending budget in Seattle"
       [borderOn]="true">
     </app-image-viewer>
@@ -128,7 +128,7 @@
     </p>
 
     <app-image-viewer
-      imageSrc="../assets/images/work/uw-secure-storage/hope-lockers.jpg"
+      path="../assets/images/work/uw-secure-storage/hope-lockers.jpg"
       description="Sketches of the H.O.P.E. lockers in Salt Lake City"
       [borderOn]="true">
     </app-image-viewer>
@@ -138,7 +138,7 @@
     </p>
 
     <app-image-viewer
-      imageSrc="../assets/images/work/uw-secure-storage/denver-lockers.jpg"
+      path="../assets/images/work/uw-secure-storage/denver-lockers.jpg"
       description="One of the lockers from Denver's program"
       [borderOn]="true">
     </app-image-viewer>
@@ -185,55 +185,12 @@
       Our group had a particular interest in Seattle's tent cities. These communities in particular are transitional, highly vulnerable, and were heavily publicized during the mayoral elections. To gain an understanding of the needs of residents of transitional housing, we visited Nickelsville Ballard to tour and interview.
     </p>
 
-    <figure class="work-body-figure">
-      <img
-        src="../assets/images/work/uw-secure-storage/nickelsville-1a.png"
-        class="work-body-image border"
-        alt="Nickelsville Ballard">
-      <figcaption class="work-body-image-caption">
-        A long view of a corridor in Nickelsville Ballard
-      </figcaption>
-    </figure>
-
-    <figure class="work-body-figure">
-      <img
-        src="../assets/images/work/uw-secure-storage/nickelsville-2a.png"
-        class="work-body-image border"
-        alt="Nickelsville community storage">
-      <figcaption class="work-body-image-caption">
-        This shed serves as the only communal storage area in Nickelsville
-      </figcaption>
-    </figure>
-
-    <figure class="work-body-figure">
-      <img
-        src="../assets/images/work/uw-secure-storage/nickelsville-3a.png"
-        class="work-body-image border"
-        alt="Nickelsville cooking and relaxing area">
-      <figcaption class="work-body-image-caption">
-        An enclosed area for cooking and relaxing
-      </figcaption>
-    </figure>
-
-    <figure class="work-body-figure">
-      <img
-        src="../assets/images/work/uw-secure-storage/nickelsville-4a.png"
-        class="work-body-image border"
-        alt="Nickelsville eating area">
-      <figcaption class="work-body-image-caption">
-        A semi-enclosed area for eating
-      </figcaption>
-    </figure>
-
-    <figure class="work-body-figure">
-      <img
-        src="../assets/images/work/uw-secure-storage/nickelsville-5a.png"
-        class="work-body-image border"
-        alt="Nickelsville unused structural support">
-      <figcaption class="work-body-image-caption">
-        An uncovered structural support for another shelter
-      </figcaption>
-    </figure>
+    <app-image-viewer
+      [images]="nickelsvilleImages"
+      path="../assets/images/work/uw-secure-storage/nickelsville-1a.png"
+      description="Gallery of Nickelsville Ballard"
+      [borderOn]="true">
+    </app-image-viewer>
 
     <p>
       Our guide, Jamie, gave us a tour and answered our questions in an interview. From our interview with Jamie, we gained a much deeper understanding of the relationship residents have with their belongings and storage. Some of our takeaways included:
@@ -270,12 +227,18 @@
       Looking at our findings from the field visit and from our survey responses, we created a set of personas to represent the most common findings from our research. Rather than editorialize approximate stories for our personas, we based the descriptions and metadata of each persona on the most common, real tropes we found in our research data.
     </p>
 
+    <!-- <app-image-viewer
+      path="../assets/images/work/uw-secure-storage/HCDE-518-Personas-3.png"
+      description="Scenario-based persona"
+      [borderOn]="true">
+    </app-image-viewer> -->
+
     <figure class="work-body-figure">
       <a target="_blank" href="https://www.dropbox.com/s/yvkthd4v1x5a0we/HCDE518_Personas.pdf?dl=0">
         <img
           src="../assets/images/work/uw-secure-storage/HCDE-518-Personas-3.png"
           class="work-body-image border"
-          alt="One of our scenario-based persona">
+          alt="Scenario-based persona">
       </a>
       <figcaption class="work-body-image-caption">
         One of the personas synthesized from our research findings. Click to view all.
