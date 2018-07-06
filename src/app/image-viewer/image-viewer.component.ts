@@ -19,7 +19,7 @@ export class ImageViewerComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
 
-  private galleryVisible: boolean = false;
+  public galleryVisible: boolean = false;
 
   open(g): void {
     this.galleryVisible = !this.galleryVisible;

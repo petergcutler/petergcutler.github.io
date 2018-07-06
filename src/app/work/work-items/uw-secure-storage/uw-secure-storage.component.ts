@@ -12,7 +12,7 @@ export class UwSecureStorageComponent implements OnInit {
 
   ngOnInit() {}
 
-  private nickelsvilleImages: object[] = [
+  public nickelsvilleImages: object[] = [
     {
       path: '../assets/images/work/uw-secure-storage/nickelsville-1a.png',
       description: 'A long view of a corridor in Nickelsville Ballard'

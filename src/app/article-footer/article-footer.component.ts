@@ -11,7 +11,7 @@ export class ArticleFooterComponent implements OnInit {
   @Input()
   imageCredit: object;
 
-  private longPage: boolean;
+  public longPage: boolean;
 
   scrollToTop(): void {
     window.scroll({
