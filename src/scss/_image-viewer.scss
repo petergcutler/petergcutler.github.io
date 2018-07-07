@@ -1,0 +1,31 @@
+.gallery-info {
+  position: relative;
+  top: -3em;
+  right: -2em;
+  margin-top: -2em;
+  color: $white;
+  cursor: zoom-in;
+
+  &.black {
+    color: $cool-shirt;
+  }
+
+  &.salmon {
+    color: $elder-salmon;
+  }
+}
+
+.gallery-text {
+  font-size: 1em;
+  position: relative;
+  top: -0.3em;
+  right: -0.6em;
+}
+
+.spacer {
+  padding: 0 0.33em;
+}
+
+.gallery-icon {
+  font-size: 1.5em;
+}

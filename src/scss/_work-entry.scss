@@ -83,7 +83,7 @@
   // display: block;
   max-width: 100%;
   height: auto;
-  cursor: pointer;
+  cursor: zoom-in;
 
   @include respond-to('medium') {
     max-width: 30em;

@@ -2,6 +2,7 @@
   #gallery
   [style.display]="galleryVisible ? 'inline-block' : 'none'"
   (previewClose)="galleryVisible = false"
+  (previewOpen)="galleryVisible = true"
   [options]="galleryOptions"
   [images]="galleryImages">
 </ngx-gallery>
@@ -16,4 +17,20 @@
   <figcaption class="work-body-image-caption">
     {{description}}
   </figcaption>
+  <div
+    *ngIf="galleryImages.length > 1"
+    (click)="open(gallery)"
+    class="gallery-info"
+    [ngClass]="textColor">
+    <a class="gallery-icon fas fa-clone"></a>
+    <span class="gallery-text">
+      <span class="gallery-count">
+        {{galleryImages.length}} Photos
+      </span>
+      <a class="spacer">&#124;</a>
+      <span class="gallery-prompt">
+        View Slideshow
+      </span>
+    </span>
+  </div>
 </figure>

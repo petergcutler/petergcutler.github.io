@@ -1,6 +1,13 @@
 // External
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
+$fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/fa-regular';
+@import '~@fortawesome/fontawesome-free/scss/fa-solid';
+@import '~@fortawesome/fontawesome-free/scss/fa-brands';
+
 // Core, do not re-order
 @import './resets';
 @import './colors';
@@ -14,6 +21,7 @@
 // Site components
 @import './nav';
 @import './header-footer';
+@import './image-viewer';
 @import './work-intro';
 @import './work-entry';
 

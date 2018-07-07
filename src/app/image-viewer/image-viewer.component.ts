@@ -4,6 +4,7 @@ import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
 @Component({
   selector: 'app-image-viewer',
   templateUrl: './image-viewer.component.html',
+  styleUrls: ['./image-viewer.component.scss']
 })
 
 export class ImageViewerComponent implements OnInit {
@@ -15,6 +16,7 @@ export class ImageViewerComponent implements OnInit {
   @Input() path: string;
   @Input() description: string;
   @Input() borderOn: boolean;
+  @Input() textColor: string;
 
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
@@ -22,7 +24,6 @@ export class ImageViewerComponent implements OnInit {
   public galleryVisible: boolean = false;
 
   open(g): void {
-    this.galleryVisible = !this.galleryVisible;
     g.openPreview(0);
   }
 
@@ -61,9 +62,11 @@ export class ImageViewerComponent implements OnInit {
           thumbnails: false,
           previewSwipe: true,
           previewCloseOnEsc: true,
+          previewCloseOnClick: true,
           previewKeyboardNavigation: true,
-          arrowNextIcon: 'fa fa-arrow-circle-right',
-          arrowPrevIcon: 'fa fa-arrow-circle-left',
+          arrowNextIcon: 'fa fa-angle-right',
+          arrowPrevIcon: 'fa fa-angle-left',
+          // closeIcon: 'fa fa-times-circle-o'
         }
     ];
     this.galleryImages = [];
