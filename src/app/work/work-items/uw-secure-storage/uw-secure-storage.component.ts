@@ -56,7 +56,7 @@ export class UwSecureStorageComponent implements OnInit {
       description: 'A system using commercial footlockers'
     },
     {
-      path: '../assets/images/work/uw-secure-storage/sketch-2.jpg',
+      path: '../assets/images/work/uw-secure-storage/sketch-2.png',
       description: 'A system using public recycling bins'
     },
     {
