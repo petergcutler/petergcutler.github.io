@@ -127,21 +127,20 @@
       As we researched existing solutions across the domain, we found that most of the designed solutions didn't account for the wide variety of housing programs that exist. Existing solutions also frequently employed costly materials or failed to align with the resource scarcity of the system.
     </p>
 
-    <app-image-viewer
-      path="../assets/images/work/uw-secure-storage/hope-lockers.jpg"
-      description="Sketches of the H.O.P.E. lockers in Salt Lake City"
-      [borderOn]="true">
-    </app-image-viewer>
+    <div class="work-body-image-grid">
+      <app-image-viewer
+        path="../assets/images/work/uw-secure-storage/hope-lockers.jpg"
+        description="Sketches of the H.O.P.E. lockers in Salt Lake City">
+      </app-image-viewer>
+      <app-image-viewer
+        path="../assets/images/work/uw-secure-storage/denver-lockers.jpg"
+        description="One of the lockers from Denver's program">
+      </app-image-viewer>
+    </div>
 
     <p>
       The H.O.P.E. lockers, shown above, cost $10,000 to build. The funds were raised through an indiegogo campaign. Another storage pilot program in Denver, shown below, cost $100,000 to initiate, and included a high upkeep cost each month onward.
     </p>
-
-    <app-image-viewer
-      path="../assets/images/work/uw-secure-storage/denver-lockers.jpg"
-      description="One of the lockers from Denver's program"
-      [borderOn]="true">
-    </app-image-viewer>
 
     <p>
       Based on the narrow scope of existing solutions, we saw an opportunity for a cheaper, more sustainable, community-oriented system.
@@ -227,13 +226,20 @@
       Looking at our findings from the field visit and from our survey responses, we created a set of personas to represent the most common findings from our research. Rather than editorialize approximate stories for our personas, we based the descriptions and metadata of each persona on the most common, real tropes we found in our research data.
     </p>
 
-    <app-image-viewer
-      [images]="personaImages"
-      path="../assets/images/work/uw-secure-storage/HCDE518_Personas-3.jpg"
-      description="A gallery of our scenario-based personas"
-      [borderOn]="true"
-      textColor="black">
-    </app-image-viewer>
+    <div class="work-body-image-grid">
+      <app-image-viewer
+        [images]="personaImages"
+        path="../assets/images/work/uw-secure-storage/HCDE518_Personas-3.jpg"
+        description="A gallery of our scenario-based personas"
+        [borderOn]="true"
+        textColor="black">
+      </app-image-viewer>
+      <app-image-viewer
+        [images]="sketchImages"
+        path="../assets/images/work/uw-secure-storage/sketch-2.jpg"
+        description="A gallery of early sketches from design brainstorms">
+      </app-image-viewer>
+    </div>
 
     <p>
       With a more codified understanding of our diverse users, we began to design simple, sketch-based concepts for our early solutions. I developed three sketches that each explored ways to add storage at a minimal cost, using commonly available materials.
@@ -250,12 +256,6 @@
         Finally, taking the idea of the mixed materials found around Nickelsville, create <a class="work-body-link" target="_blank" href="https://www.dropbox.com/s/a4irrwtd3mrstxm/sketch-3.jpg?dl=0">a library of "component-based" storage solutions</a> that users can browse to create a storage solution from the materials they have on hand.
       </li>
     </ul>
-
-    <app-image-viewer
-      [images]="sketchImages"
-      path="../assets/images/work/uw-secure-storage/sketch-2.jpg"
-      description="A gallery of early sketches from design brainstorms">
-    </app-image-viewer>
 
     <h2 class="work-body-h2">
       Iterating on a Single Design

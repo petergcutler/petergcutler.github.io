@@ -64,7 +64,4 @@ export class UwSecureStorageComponent implements OnInit {
       description: 'A modular system based around sub-components'
     }
   ];
-
-
-
 }

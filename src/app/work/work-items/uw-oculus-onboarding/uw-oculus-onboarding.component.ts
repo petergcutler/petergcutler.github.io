@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './uw-oculus-onboarding.component.html',
   styleUrls: ['./uw-oculus-onboarding.component.scss']
 })
+
 export class UwOculusOnboardingComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

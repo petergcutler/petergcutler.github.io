@@ -9,18 +9,18 @@
 
 <figure class="work-body-figure">
   <img
+    class="work-body-image"
     [src]="path"
     [alt]="description"
     (click)="open(gallery)"
-    class="work-body-image"
     [ngClass]="{'border': borderOn}">
   <figcaption class="work-body-image-caption">
     {{description}}
   </figcaption>
   <div
+    class="gallery-info"
     *ngIf="galleryImages.length > 1"
     (click)="open(gallery)"
-    class="gallery-info"
     [ngClass]="textColor">
     <a class="gallery-icon fas fa-clone"></a>
     <span class="gallery-text">
