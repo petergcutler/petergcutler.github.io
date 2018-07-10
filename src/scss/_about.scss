@@ -28,7 +28,7 @@
 }
 
 .contact-link {
-  font-family: 'Garamond', serif;
+  font-family: $work-body-font;
   text-decoration: none;
   color: $dark-gray;
   border-bottom: $border-thin solid $accent-red;
@@ -42,7 +42,7 @@
 .bio {
   p {
     color: $dark-gray;
-    font-family: 'Garamond', serif;
+    font-family: $work-body-font;
     font-size: $large;
     line-height: 1.4em;
     padding-bottom: 1em;
