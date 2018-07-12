@@ -1,4 +1,10 @@
 .work-header {
+  border-bottom: $border-thin solid $lightest-gray;
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+.work-titling {
   display: grid;
   justify-content: space-between;
   grid-template-rows: 3fr 1fr auto;
@@ -88,8 +94,6 @@
   font-size: $normaler;
   color: $dark-gray;
   line-height: 1.6em;
-  padding-bottom: 2em;
-  border-bottom: $border-thin solid $lightest-gray;
 
   p {
     max-width: 40em;

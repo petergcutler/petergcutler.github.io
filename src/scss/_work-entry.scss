@@ -1,13 +1,61 @@
-.work-body {
+.work-section {
   max-width: 40em;
   font-family: $work-body-font;
   font-size: $normaler;
   color: $dark-gray;
   line-height: 1.6em;
-  margin-top: 1em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  border-bottom: $border-thin solid $lightest-gray;
 
-  p {
+  h2 {
+    // No margin-top needed, h2 is never after other elements w/in a section
+    margin-bottom: 3em;
+    line-height: 1.5em;
+  }
+
+  h3 {
+    margin-top: 2em;
     margin-bottom: 1.2em;
+    line-height: 1.5em;
+
+    &:nth-child(1) {
+      margin-top: 0em;
+    }
+  }
+
+
+  p, .work-video-embed, ul {
+    margin-bottom: 1.2em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  app-image-viewer,
+  .work-body-figure,
+  .work-body-image-grid {
+    margin-bottom: 2.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Handle margin-bottom differently when a grid
+  .work-body-image-grid>app-image-viewer {
+    margin-bottom: 0;
+  }
+
+  app-image-viewer {
+    display: block;
+  }
+
+  // the last section kills the border pattern
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 2em;
   }
 }
 
@@ -17,9 +65,6 @@
   font-family: $work-heading-font;
   font-size: $prettybig;
   font-weight: bold;
-  line-height: 1.5em;
-  margin-bottom: 3em;
-  margin-top: 2em;
   color: $darkest-gray;
 
   &::after {
@@ -39,9 +84,6 @@
   font-family: $work-heading-font;
   font-size: $normaler;
   font-weight: bold;
-  line-height: 1.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
   color: $darkest-gray;
   // Mobile underline via text-decoration
   text-decoration: underline;
@@ -74,19 +116,18 @@
   list-style-type: circle;
   list-style-position: outside;
   padding-left: 3.4em;
-  margin-bottom: 1em;
 
   li + li {
-    margin-top: 0.6em;
+    margin-top: .6em;
   }
 }
 
+// Wrapping YouTube videos in a responsive div (NA for Vimeo)
 .work-body-youtube-video {
   position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-  margin-bottom: 1.5em;
 }
 
 .work-body-youtube-video iframe {

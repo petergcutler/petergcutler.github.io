@@ -1,8 +1,8 @@
-<header class="sidebar-header">
+<nav class="main-nav">
   <a class="logo" routerLink="/about">
     Peter Cutler
   </a>
-  <nav class="main-nav">
+  <section class="main-pages">
     <ul class="nav-list">
       <li class="nav-item" *ngFor="let page of pages">
         <a
@@ -13,11 +13,13 @@
         </a>
       </li>
     </ul>
-  </nav>
-  <div class="contact">
-    <a class="nav-link" href="mailto:petergcutler@gmail.com">Email</a>
-  </div>
-</header>
+  </section>
+  <section class="contact-links">
+    <a class="nav-link email-link" href="mailto:petergcutler@gmail.com">
+      Email
+    </a>
+  </section>
+</nav>
 <main class="main-window">
   <router-outlet></router-outlet>
 </main>

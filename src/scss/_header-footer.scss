@@ -1,7 +1,7 @@
 .subject-header {
   border-bottom: $border-thin solid $lightest-gray;
   line-height: 1.6em;
-  margin-bottom: 2em;
+  padding-bottom: 1em;
 
   .heading {
     font-weight: bold;
@@ -10,7 +10,6 @@
 
   .subheading {
     color: $light-gray;
-    padding-bottom: 1em;
   }
 }
 

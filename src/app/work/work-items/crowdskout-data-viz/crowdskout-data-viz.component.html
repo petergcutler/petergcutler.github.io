@@ -1,45 +1,38 @@
-<div class="work-entry">
-  <div class="work-intro">
-    <div class="work-header">
+<article class="work-entry">
+
+  <header class="work-header">
+    <section class="work-titling">
       <h1 class="work-title">
         Simplifying Data Visualization
       </h1>
-
       <div class="work-title-border"></div>
-
       <div class="work-subtitle">
         Developing an intuitive system for data visualization in Crowdskout
       </div>
-    </div>
-
+    </section>
     <ul class="work-tags">
       <li class="work-tag">Front-End Engineering</li>
       <li class="work-tag">JavaScript</li>
       <li class="work-tag">AngularJS</li>
       <li class="work-tag">D3.js</li>
     </ul>
-
     <div class="work-description">
       <p>
         I joined Crowdskout in 2015 with a directive to overhaul Crowdskout's data visualization system. Working with a team of engineers, I researched and built the foundations of the system. The system was designed so that a novice user could quickly learn and operate it to design and deliver complex visualizations without any training.
       </p>
     </div>
+  </header>
 
-  </div>
-  <div class="work-body">
-
+  <section class="work-section">
     <h2 class="work-body-h2">
       Building a System with D3 and AmCharts
     </h2>
-
     <p>
       We built the system using a mix of <a class="work-body-link" target="_blank" href="https://d3js.org/">D3</a> and a library called <a class="work-body-link" target="_blank" href="https://www.amcharts.com/">amCharts</a>, also built on D3. The visualization component integrated with the Crowdskout app as an Angular component, coded with a mix of vanilla JavaScript and AngularJS.
     </p>
-
     <p>
       Using a multi-step editor, a user could select an audience segment, criteria, and a graph type, and create a graph that could be customized or exported in a variety of ways.
     </p>
-
     <app-image-viewer
       [images]="csDataVizImages"
       path="../assets/images/work/crowdskout-data-viz/viz-4a.png"
@@ -47,11 +40,9 @@
       textColor="salmon"
       [borderOn]="true">
     </app-image-viewer>
-
     <p>
       Crowdskout's data visualization component is a complex, interactive module of the application. If you have any questions, I'm happy to walk through the design and code involved. Thanks for reading.
     </p>
+  </section>
 
-  </div>
-
-</div>
+</article>

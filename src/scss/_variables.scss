@@ -17,10 +17,12 @@ $border-medium: 2px;
 // Media Queries
 $breakpoints: (
   'small': (min-width: 350px),
+  'smallish': (min-width: 420px),
   'medium': (min-width: 640px),
   'mediumer': (min-width: 720px),
   'large': (min-width: 900px),
   'larger': (min-width: 1000px),
+  'largal': (min-width: 1090px),
   'largest': (min-width: 1137px),
   'huge': (min-width: 1280px)
 );

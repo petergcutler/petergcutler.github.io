@@ -1,74 +1,64 @@
-<div class="work-entry">
-  <div class="work-intro">
-    <div class="work-header">
+<article class="work-entry">
+
+  <header class="work-header">
+    <section class="work-titling">
       <h1 class="work-title">
         Segmenting Audiences Effectively
       </h1>
-
       <div class="work-title-border"></div>
-
       <div class="work-subtitle">
         Overhauling the interface for audience segmentation in Crowdskout
       </div>
-    </div>
-
+    </section>
     <ul class="work-tags">
       <li class="work-tag">Front-End Engineering</li>
       <li class="work-tag">JavaScript</li>
       <li class="work-tag">AngularJS</li>
     </ul>
-
     <div class="work-description">
       <p>
         Audience segmentation is at the heart of Crowdskout's data analytics system. In 2016, after the segmentation tool grew in complexity, we overhauled the interface to this critical tool to better support the new capabilities it offered.
       </p>
     </div>
+  </header>
 
-  </div>
-  <div class="work-body">
-
+  <section class="work-section">
     <h2 class="work-body-h2">
       Crowdskout Profiles
     </h2>
-
     <p>
       Audience segments in Crowdskout are made up of deanonymized "profiles." A mock profile is shown below. Each profile is made up of hundreds of criteria, including demographic information as well as many other types of info.
     </p>
-
     <app-image-viewer
       [images]="csProfileImages"
       path="../assets/images/work/crowdskout-segmenting/segmenting-0a.png"
       description="A gallery of Crowdskout's Profile Updates"
       textColor="salmon">
     </app-image-viewer>
-
     <p>
       Users build segments of profiles by selecting the criteria that they want to segment on, for instance, people of a certain gender, age, and/or ethnicity. Doing so, they can find all of the profiles in their database that match these criteria.
     </p>
-
     <p>
       By creating a segment, Crowdskout users can monitor these different segments of profiles, and take action to contact these individuals in different ways.
     </p>
+  </section>
 
+  <section class="work-section">
     <h2 class="work-body-h2">
-      The Crowdskout Segmenting Tool
+      The Segmenting Feature
     </h2>
-
     <p>
-      We updated the segmenting tool to improve the way users create and manage their audience segments.
+      We updated the segmenting feature to improve the way users create and manage their audience segments.
     </p>
-
     <app-image-viewer
       [images]="csSegmentingImages"
       path="../assets/images/work/crowdskout-segmenting/segmenting-1a.png"
       description="A gallery of Crowdskout's Segmenting Updates"
       textColor="salmon">
     </app-image-viewer>
-
     <p>
       Crowdskout's segmenting component is a complex, interactive module within the application. If you have any questions, I'm happy to walk through the design and code involved. Thanks for reading.
     </p>
+  </section>
 
-  </div>
-
-</div>
+</article>

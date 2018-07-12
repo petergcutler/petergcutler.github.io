@@ -19,7 +19,7 @@ $shift-nav-to-side: 'mediumer';
   }
 }
 
-.sidebar-header {
+.main-nav {
   display: block;
   padding-top: 2.2em;
   padding-left: 1.2em;
@@ -86,7 +86,7 @@ $shift-nav-to-side: 'mediumer';
 }
 
 // "Email" link only shows above medium
-.contact a {
+.contact-links a {
   display: none;
 
   @include respond-to($shift-nav-to-side) {

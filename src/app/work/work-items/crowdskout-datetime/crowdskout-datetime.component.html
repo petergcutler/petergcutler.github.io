@@ -1,41 +1,35 @@
-<div class="work-entry">
-  <div class="work-intro">
-    <div class="work-header">
+<article class="work-entry">
+
+  <header class="work-header">
+    <section class="work-titling">
       <h1 class="work-title">
         Revamping Date & Time Selections
       </h1>
-
       <div class="work-title-border"></div>
-
       <div class="work-subtitle">
         Developing a modular way to manipulate date & datetime selections in Crowdskout
       </div>
-    </div>
-
+    </section>
     <ul class="work-tags">
       <li class="work-tag">Front-End Engineering</li>
       <li class="work-tag">JavaScript</li>
       <li class="work-tag">AngularJS</li>
       <li class="work-tag">Moment.js</li>
     </ul>
-
     <div class="work-description">
       <p>
         As we grew the Crowdskout app to support more complex time-series graphs and other date & time dependent inputs, we encountered a need to overhaul our date & time UI and data treatment. I led the effort to overhaul our date & time management.
       </p>
     </div>
+  </header>
 
-  </div>
-  <div class="work-body">
-
+  <section class="work-section">
     <h2 class="work-body-h2">
       ISO8601 and Moment.js
     </h2>
-
     <p>
       Using the <a class="work-body-link" target="_blank" href="https://momentjs.com/">Moment.js</a> library as a backbone for transforming and handling our date & datetime data, I built a custom component for accepting input data, transforming, and saving data in ISO8601 format. The component was built to be a flexible AngularJS directive that could easily shift implementations between date alone, or datetime, depending on varying needs.
     </p>
-
     <div class="work-body-image-grid">
       <app-image-viewer
         path="../assets/images/work/crowdskout-datetime/datetime-1a.png"
@@ -48,11 +42,9 @@
         borderOn="true">
       </app-image-viewer>
     </div>
-
     <p>
       Crowdskout's date & time component is a complex, interactive module within the application. If you have any questions, I'm happy to walk through the design and code involved. Thanks for reading.
     </p>
+  </section>
 
-  </div>
-
-</div>
+</article>

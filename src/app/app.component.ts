@@ -8,14 +8,14 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 
 export class AppComponent {
-  // Define the site's sections for sidebar links
+  // Define the site's sections for main-pages links
   pages = [
     'about',
     'work'
     // 'writing'
   ];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
       this.router.events.subscribe((evt) => {
