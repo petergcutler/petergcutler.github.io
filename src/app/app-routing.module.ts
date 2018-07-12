@@ -50,9 +50,9 @@ const routes: Routes = [
       { path: 'crowdskout-form-editor',    component: CrowdskoutFormEditorComponent },
       { path: 'crowdskout-segmenting',     component: CrowdskoutSegmentingComponent },
       { path: 'vox-global-brand-redesign', component: VoxGlobalBrandRedesignComponent },
-      { path: 'vox-global-att-csr',        component: VoxGlobalAttCsrComponent },
+      { path: 'vox-global-att-csr',        component: VoxGlobalAttCsrComponent }
     ]
-  },
+  }
   // Available if you want to create an independent homepage "dashboard"
   // {
   //   path: '',
