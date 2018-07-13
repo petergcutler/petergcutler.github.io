@@ -14,7 +14,8 @@ import { WorkService } from './work/work.service';
 // Pages
 import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
-// import { WritingComponent } from './writing/writing.component';
+// unused writing component
+import { WritingComponent } from './writing/writing.component';
 
 // 'directives'
 import { ArticleHeaderComponent } from './article-header/article-header.component';
@@ -46,7 +47,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     AboutComponent,
     WorkListComponent,
-    // WritingComponent,
+    // unused writing component
+    WritingComponent,
     WorkFrameComponent,
     WorkHeaderComponent,
     ArticleHeaderComponent,

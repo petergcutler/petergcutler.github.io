@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 // Pages
 import { AboutComponent }       from './about/about.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
+// unused writing component
 import { WritingComponent }     from './writing/writing.component';
 import { WorkListComponent }    from './work/work-list/work-list.component';
 import { WorkFrameComponent } from './work/work-frame/work-frame.component';
