@@ -7,8 +7,9 @@ import { Work } from './work-schema';
  * @property  {string} url - the url, describes:
  *   the route and url for the browser
  *   the thumbnail's image url in assets (.png)
- *   the html template in the assets (.html)
- * @property  {string} display - the display title
+ * @property  {string} display - the title
+ * @property {strong} description - the description
+ * @property {array} tags - the tags for type of work
  * @property {object} imageCredit - properties to attribute the thumbnail image.
  *   @property {string} imageCredit.artist - the artist's name
  *   @property {string} imageCredit.artistSite - the artist's site
@@ -22,34 +23,60 @@ export const WORKS: Work[] = [
     display: 'Secure Storage for Tent Cities',
     description: 'Designing a user-centered solution to help homeless Seattle residents store their possessions securely and sustainably',
     client: 'University of Washington',
+    tags: [
+      'UX Research',
+      'Information Architecture',
+      'Semi-Structured Interviews',
+      'UX Design',
+      'Personas',
+      'Wireframing',
+      'Prototyping'
+    ],
     imageCredit: {
       artist: 'Kristian Hagelin',
       artistSite: 'https://www.flickr.com/photos/64346264@N08/',
       source: 'https://www.flickr.com/'
-    },
-    tags: [
-      'UX Research',
-      'Research Planning',
-      'Information Architecture',
-      'Wireframing',
-      'Prototyping'
-    ]
+    }
   },
   {
     id: 2,
     url: 'uw-oculus-onboarding',
-    display: 'Oculus Rift: Onboarding in a 3d Environment'
+    display: 'On-boarding with the Oculus Platform',
+    description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
+    client: 'University of Washington',
+    tags: [
+      'UX Research',
+      'Usability Testing',
+      'Qualitative Research',
+      'Quantitative Research'
+    ]
     // self-generated image
   },
   {
     id: 3,
     url: 'vox-global-motion-design',
-    display: 'VOX Global: Motion Design for Lumina Foundation and AT&T'
+    display: 'Motion Design and Animation',
+    description: 'Running a video and animation practice for VOX Global',
+    client: 'VOX Global',
+    tags: [
+      'Creative Strategy',
+      'Client Management',
+      'Visual Design',
+      'Storyboarding',
+      'Animation'
+    ]
   },
   {
     id: 4,
     url: 'uw-complex-systems',
-    display: 'Red Cross (RCRC): Managing Complex Systems',
+    display: 'Collaborative Research with the IFRC',
+    description: 'Researching a complex humanitarian system and planning a human-centered intervention to improve vulnerability assessments',
+    client: 'International Federation of Red Cross and Red Crescent Societies',
+    tags: [
+      'UX Research',
+      'Literature Review',
+      'Semi-Structured Interviews'
+    ],
     imageCredit: {
       artist: 'Babak Fakhamzadeh',
       artistSite: 'https://www.flickr.com/photos/mastababa/',
@@ -59,7 +86,15 @@ export const WORKS: Work[] = [
   {
     id: 5,
     url: 'uw-yarn',
-    display: 'Testing the Yarn App: Holistic Storytelling',
+    display: 'Structured Supports for Storytelling',
+    description: 'Researching how narrative can enhance data-driven stories of accomplishment to improve social feedback',
+    client: 'University of Washington',
+    tags: [
+      'UX Research',
+      'Semi-Structured Interviews',
+      'Surveying',
+      'Qualitative Research'
+    ],
     imageCredit: {
       artist: 'Shubhi Patil',
       artistSite: 'https://www.flickr.com/photos/126584658@N03/',
@@ -69,7 +104,15 @@ export const WORKS: Work[] = [
   {
     id: 6,
     url: 'crowdskout-segmenting',
-    display: 'Crowdskout: Segmenting Audiences Effectively',
+    display: 'Segmenting Audiences Effectively',
+    description: 'Overhauling the interface for audience segmentation in Crowdskout',
+    client: 'Crowdskout',
+    tags: [
+      'Front-End Engineering',
+      'JavaScript',
+      'AngularJS',
+      'Prototyping'
+    ],
     imageCredit: {
       artist: 'Brent',
       artistSite: 'https://www.flickr.com/photos/39449369@N03/',
@@ -79,7 +122,16 @@ export const WORKS: Work[] = [
   {
     id: 7,
     url: 'crowdskout-data-viz',
-    display: 'Crowdskout: Simplifying Data Visualization',
+    display: 'Simplifying Data Visualization',
+    description: 'Developing an intuitive system for data visualization in Crowdskout',
+    client: 'Crowdskout',
+    tags: [
+      'Front-End Engineering',
+      'JavaScript',
+      'AngularJS',
+      'D3.js',
+      'Prototyping'
+    ],
     imageCredit: {
       artist: 'Marcin Ignac',
       artistSite: 'https://www.flickr.com/photos/marcinignac/',
@@ -89,7 +141,16 @@ export const WORKS: Work[] = [
   {
     id: 8,
     url: 'crowdskout-datetime',
-    display: 'Crowdskout: Revamping Date & Time Selections',
+    display: 'Revamping Date & Time Selections',
+    description: 'Developing a modular way to manipulate date & datetime selections in Crowdskout',
+    client: 'Crowdskout',
+    tags: [
+      'Front-End Engineering',
+      'JavaScript',
+      'AngularJS',
+      'Moment.js',
+      'Prototyping'
+    ],
     imageCredit: {
       artist: 'Ben Jenkins',
       artistSite: 'https://www.flickr.com/photos/129547099@N04/',
@@ -99,7 +160,15 @@ export const WORKS: Work[] = [
   {
     id: 9,
     url: 'crowdskout-form-editor',
-    display: 'Crowdskout: Complex Form and Survey Editor',
+    display: 'A System for Interactive Forms',
+    description: 'Enabling users to create, manage, and interpret data from surveys & forms using a variety of designs and conditions',
+    client: 'Crowdskout',
+    tags: [
+      'Front-End Engineering',
+      'JavaScript',
+      'AngularJS',
+      'Prototyping'
+    ],
     imageCredit: {
       artist: 'Ming-Lun Hsieh',
       artistSite: 'https://www.flickr.com/photos/minglun_hsieh/',
@@ -109,11 +178,28 @@ export const WORKS: Work[] = [
   {
     id: 10,
     url: 'vox-global-brand-redesign',
-    display: 'VOX Global: Brand and Website Redesign'
+    display: 'Internal Rebrand for an Ad Agency',
+    description: 'Working with internal stakeholders to research and redesign VOX Global\'s brand and web presence',
+    client: 'VOX Global',
+    tags: [
+      'Semi-Structured Interviews',
+      'Language & Tone',
+      'UX Design',
+      'Creative Strategy',
+      'Visual Design'
+    ],
   },
   {
     id: 11,
     url: 'vox-global-att-csr',
-    display: 'VOX Global: Communicating Sustainability Stories for AT&T'
+    display: 'Redesigning AT&T CSR\'s Brand & Website',
+    description: 'Revamping the way AT&T presents their brand and uses storytelling to share their corporate & social responsibility campaigns',
+    client: 'VOX Global',
+    tags: [
+      'Creative Strategy',
+      'Client Management',
+      'UX Design',
+      'Visual Design'
+    ],
   }
 ];

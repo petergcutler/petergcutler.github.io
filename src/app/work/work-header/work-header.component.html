@@ -1,0 +1,28 @@
+<header class="work-header">
+
+  <section class="work-titling">
+    <h1 class="work-title">
+      {{work.display}}
+    </h1>
+    <div class="work-title-border"></div>
+    <div class="work-subtitle">
+      {{work.description}}
+    </div>
+  </section>
+
+  <p class="work-tag-header">client</p>
+  <ul class="work-tags">
+    <li class="work-tag">{{work.client}}</li>
+  </ul>
+
+  <p class="work-tag-header">tags</p>
+  <ul class="work-tags">
+    <li class="work-tag" *ngFor="let tag of work.tags">{{tag}}</li>
+  </ul>
+
+  <p *ngIf="tldrProvided" class="work-tag-header">tl;dr</p>
+  <div #tldr class="work-description">
+    <ng-content></ng-content>
+  </div>
+
+</header>

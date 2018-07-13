@@ -14,8 +14,15 @@ import { WorkService } from './work/work.service';
 // Pages
 import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
-import { WritingComponent } from './writing/writing.component';
-import { WorkDetailsComponent } from './work/work-details/work-details.component';
+// import { WritingComponent } from './writing/writing.component';
+
+// 'directives'
+import { ArticleHeaderComponent } from './article-header/article-header.component';
+import { ArticleFooterComponent } from './article-footer/article-footer.component';
+import { ImageViewerComponent } from './image-viewer/image-viewer.component';
+import { NgxGalleryModule } from 'ngx-gallery';
+import { WorkFrameComponent } from './work/work-frame/work-frame.component';
+import { WorkHeaderComponent } from './work/work-header/work-header.component';
 
 // Work
 import { UwSecureStorageComponent }         from './work/work-items/uw-secure-storage/uw-secure-storage.component';
@@ -30,14 +37,6 @@ import { VoxGlobalAttCsrComponent }         from './work/work-items/vox-global-a
 import { VoxGlobalBrandRedesignComponent }  from './work/work-items/vox-global-brand-redesign/vox-global-brand-redesign.component';
 import { VoxGlobalMotionDesignComponent }   from './work/work-items/vox-global-motion-design/vox-global-motion-design.component';
 
-// 'directives'
-import { ArticleHeaderComponent } from './article-header/article-header.component';
-import { ArticleFooterComponent } from './article-footer/article-footer.component';
-import { ImageViewerComponent } from './image-viewer/image-viewer.component';
-
-
-import { NgxGalleryModule } from 'ngx-gallery';
-
 
 // Not in use
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -47,8 +46,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     AboutComponent,
     WorkListComponent,
-    WritingComponent,
-    WorkDetailsComponent,
+    // WritingComponent,
+    WorkFrameComponent,
+    WorkHeaderComponent,
     ArticleHeaderComponent,
     ArticleFooterComponent,
     ImageViewerComponent,

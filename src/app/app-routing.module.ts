@@ -7,7 +7,7 @@ import { AboutComponent }       from './about/about.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { WritingComponent }     from './writing/writing.component';
 import { WorkListComponent }    from './work/work-list/work-list.component';
-import { WorkDetailsComponent } from './work/work-details/work-details.component';
+import { WorkFrameComponent } from './work/work-frame/work-frame.component';
 
 // Work
 import { UwSecureStorageComponent }         from './work/work-items/uw-secure-storage/uw-secure-storage.component';
@@ -38,7 +38,7 @@ const routes: Routes = [
   },
   {
     path: 'work/details',
-    component: WorkDetailsComponent,
+    component: WorkFrameComponent,
     children: [
       { path: 'uw-secure-storage',         component: UwSecureStorageComponent },
       { path: 'uw-oculus-onboarding',      component: UwOculusOnboardingComponent },

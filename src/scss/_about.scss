@@ -19,9 +19,14 @@
 }
 
 .contact-heading {
-  font-weight: bold;
+  color: $mid-gray;
+  font-family: $mini-heading-font;
+  font-size: $small;
+  font-weight: 400;
+  text-transform: uppercase;
   margin: 1.4em 0 1em 0;
-  color: $light-gray;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
 .contact-row {
@@ -29,7 +34,7 @@
 }
 
 .contact-link {
-  font-family: $work-body-font;
+  font-family: $body-font;
   text-decoration: none;
   color: $dark-gray;
   border-bottom: $border-thin solid $accent-red;
@@ -43,7 +48,7 @@
 .bio {
   p {
     color: $dark-gray;
-    font-family: $work-body-font;
+    font-family: $body-font;
     font-size: $large;
     line-height: 1.4em;
     padding-bottom: 1em;

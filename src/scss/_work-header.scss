@@ -23,7 +23,7 @@
   position: relative;
   width: 6.6em;
   font-size: $hugest;
-  font-family: $work-heading-font;
+  font-family: $heading-font;
   font-weight: bold;
   line-height: 1.4em;
 }
@@ -62,7 +62,7 @@
 .work-subtitle {
   position: relative;
   align-self: center;
-  font-family: $work-heading-font;
+  font-family: $heading-font;
   color: $dark-gray;
   font-size: $large;
   line-height: 1.6em;
@@ -74,23 +74,36 @@
   }
 }
 
-.work-tags {
-  color: $light-gray;
-  font-family: $work-body-font;
-  text-transform: capitalize;
-  line-height: 1.4em;
+.work-tag-header {
+  color: $mid-gray;
+  font-family: $mini-heading-font;
+  font-size: $small;
+  font-weight: 400;
+  text-transform: uppercase;
   margin-top: 2em;
-  margin-bottom: 2em;
+  letter-spacing: 0.1em;
+  line-height: 1.6em;
 
   @include respond-to('larger') {
     margin-top: 3em;
+  }
+}
+
+.work-tags {
+  color: $light-gray;
+  font-family: $body-font;
+  text-transform: capitalize;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+
+  @include respond-to('larger') {
     margin-bottom: 3em;
   }
 }
 
 .work-description {
   position: relative;
-  font-family: $work-body-font;
+  font-family: $body-font;
   font-size: $normaler;
   color: $dark-gray;
   line-height: 1.6em;

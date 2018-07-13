@@ -6,12 +6,12 @@ import { Work } from '../work-schema';
 import { WorkService }  from '../work.service';
 
 @Component({
-  selector: 'app-work-details',
-  templateUrl: './work-details.component.html',
-  styleUrls: ['./work-details.component.scss']
+  selector: 'app-work-frame',
+  templateUrl: './work-frame.component.html',
+  styleUrls: ['./work-frame.component.scss']
 })
 
-export class WorkDetailsComponent implements OnInit {
+export class WorkFrameComponent implements OnInit {
   @Input() work: Work;
 
   constructor(

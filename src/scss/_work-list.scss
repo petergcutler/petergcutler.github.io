@@ -11,6 +11,7 @@
 .work-main {
   display: grid;
   position: relative;
+  padding-top: 2em;
   grid-row-gap: 1em;
 
   @include respond-to('large') {
