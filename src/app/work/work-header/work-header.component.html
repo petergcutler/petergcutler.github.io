@@ -15,6 +15,11 @@
     <li class="work-tag">{{work.client}}</li>
   </ul>
 
+  <p *ngIf="work.team" class="work-tag-header">team</p>
+  <div *ngIf="work.team" class="work-tags" >
+    <p *ngFor="let name of work.team">{{name}}</p>
+  </div>
+
   <p class="work-tag-header">tags</p>
   <ul class="work-tags">
     <li class="work-tag" *ngFor="let tag of work.tags">{{tag}}</li>

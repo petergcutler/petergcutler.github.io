@@ -21,9 +21,9 @@ $shift-nav-to-side: 'mediumer';
 
 .main-nav {
   display: block;
-  padding-top: 2.2em;
-  padding-left: 1.2em;
-  height: 8em;
+  padding-top: 2em;
+  padding-left: 2em;
+  // height: 8em;
 
   @include respond-to($shift-nav-to-side) {
     display: flex;

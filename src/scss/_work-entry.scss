@@ -1,7 +1,6 @@
 .work-section {
-  max-width: 40em;
   font-family: $body-font;
-  font-size: $normaler;
+  font-size: $normalarge;
   color: $dark-gray;
   line-height: 1.6em;
   padding-top: 4em;
@@ -57,6 +56,11 @@
     border-bottom: 0;
     padding-bottom: 2em;
   }
+
+  @include respond-to('medium') {
+    max-width: 40em;
+    font-size: $large;
+  }
 }
 
 .work-body-h2 {
@@ -82,7 +86,7 @@
   display: inline-block;
   position: relative;
   font-family: $heading-font;
-  font-size: $normaler;
+  font-size: $large;
   font-weight: bold;
   color: $darkest-gray;
   // Mobile underline via text-decoration

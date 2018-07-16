@@ -1,4 +1,5 @@
 .subject-header {
+  display: block;
   border-bottom: $border-thin solid $lightest-gray;
   line-height: 1.6em;
   padding-bottom: 1em;
@@ -15,6 +16,14 @@
 
 .main-footer {
   display: block;
+}
+
+.desktop-only {
+  display: none;
+
+  @include respond-to('mediumer') {
+    display: block;
+  }
 }
 
 .border-footer {

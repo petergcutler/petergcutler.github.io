@@ -1,6 +1,5 @@
 // Angular
 import { NgModule } from '@angular/core';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
@@ -14,8 +13,6 @@ import { WorkService } from './work/work.service';
 // Pages
 import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
-// unused writing component
-import { WritingComponent } from './writing/writing.component';
 
 // 'directives'
 import { ArticleHeaderComponent } from './article-header/article-header.component';
@@ -38,23 +35,22 @@ import { VoxGlobalAttCsrComponent }         from './work/work-items/vox-global-a
 import { VoxGlobalBrandRedesignComponent }  from './work/work-items/vox-global-brand-redesign/vox-global-brand-redesign.component';
 import { VoxGlobalMotionDesignComponent }   from './work/work-items/vox-global-motion-design/vox-global-motion-design.component';
 
-
 // Not in use
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WritingComponent } from './writing/writing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     WorkListComponent,
-    // unused writing component
-    WritingComponent,
     WorkFrameComponent,
     WorkHeaderComponent,
     ArticleHeaderComponent,
     ArticleFooterComponent,
     ImageViewerComponent,
     DashboardComponent,
+    WritingComponent,
     // Work
     UwSecureStorageComponent,
     UwOculusOnboardingComponent,

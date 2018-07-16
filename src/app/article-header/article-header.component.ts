@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { ActivatedRoute } from '@angular/router';
-
 @Component({
   selector: 'app-article-header',
   templateUrl: './article-header.component.html',
@@ -10,14 +8,11 @@ import { ActivatedRoute } from '@angular/router';
 
 export class ArticleHeaderComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  @Input() header: string;
+  @Input() subheader: string;
 
-  ngOnInit() { }
+  constructor() {}
 
-  @Input()
-  header: string;
-
-  @Input()
-  subheader: string;
+  ngOnInit() {}
 
 }

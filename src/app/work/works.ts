@@ -23,6 +23,11 @@ export const WORKS: Work[] = [
     display: 'Secure Storage for Tent Cities',
     description: 'Designing a user-centered solution to help homeless Seattle residents store their possessions securely and sustainably',
     client: 'University of Washington',
+    team: [
+      'Galen Lieberworth',
+      'Omari Stringer',
+      'Anthony Ruh'
+    ],
     tags: [
       'UX Research',
       'Information Architecture',
@@ -44,6 +49,11 @@ export const WORKS: Work[] = [
     display: 'On-boarding with the Oculus Platform',
     description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
     client: 'University of Washington',
+    team: [
+      'Kartika Rathee',
+      'Joel Sytsma',
+      'Tanya Wang'
+    ],
     tags: [
       'UX Research',
       'Usability Testing',
@@ -72,6 +82,11 @@ export const WORKS: Work[] = [
     display: 'Collaborative Research with the IFRC',
     description: 'Researching a complex humanitarian system and planning a human-centered intervention to improve vulnerability assessments',
     client: 'International Federation of Red Cross and Red Crescent Societies',
+    team: [
+      'Alik Brundett',
+      'Elizabeth Quepons',
+      'Pashmeena Chawro'
+    ],
     tags: [
       'UX Research',
       'Literature Review',

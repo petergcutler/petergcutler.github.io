@@ -20,10 +20,6 @@ export class WorkFrameComponent implements OnInit {
     private location: Location
   ) {}
 
-  ngOnInit(): void {
-    this.getWork();
-  }
-
   getWork(): void {
     const url = this.route.snapshot.children[0].routeConfig.path;
     this.workService.getWork(url).subscribe(work => this.work = work);
@@ -31,6 +27,10 @@ export class WorkFrameComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  ngOnInit(): void {
+    this.getWork();
   }
 
 }

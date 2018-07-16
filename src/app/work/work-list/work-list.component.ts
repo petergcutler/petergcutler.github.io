@@ -11,9 +11,8 @@ import { WorkService } from '../work.service';
 
 export class WorkListComponent implements OnInit {
 
-  works: Work[];
-
-  colors = [
+  public works: Work[];
+  public colors = [
     '#BF9A00', // light greenish blue green
     '#f5cd79', // summertime yellow
     '#74b9ff', // green darner tail blue
@@ -25,13 +24,14 @@ export class WorkListComponent implements OnInit {
     '#63cdda', // squeaky blue
   ];
 
-  constructor(private workService: WorkService) { }
+  constructor(private workService: WorkService) {}
+
+  getWorks(): void {
+    this.workService.getWorks().subscribe(works => this.works = works);
+  }
 
   ngOnInit() {
     this.getWorks();
   }
 
-  getWorks(): void {
-    this.workService.getWorks().subscribe(works => this.works = works);
-  }
 }

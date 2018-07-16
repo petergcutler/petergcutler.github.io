@@ -9,8 +9,6 @@ import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
 
 export class ImageViewerComponent implements OnInit {
 
-  constructor() {}
-
   @Input() images: object[];
   @Input() options: object;
   @Input() path: string;
@@ -18,10 +16,11 @@ export class ImageViewerComponent implements OnInit {
   @Input() borderOn: boolean;
   @Input() textColor: string;
 
-  galleryOptions: NgxGalleryOptions[];
-  galleryImages: NgxGalleryImage[];
-
+  public galleryOptions: NgxGalleryOptions[];
+  public galleryImages: NgxGalleryImage[];
   public galleryVisible: boolean = false;
+
+  constructor() {}
 
   open(g): void {
     g.openPreview(0);

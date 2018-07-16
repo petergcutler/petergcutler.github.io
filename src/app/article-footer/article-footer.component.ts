@@ -8,10 +8,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class ArticleFooterComponent implements OnInit {
-  @Input()
-  imageCredit: object;
-
+  @Input() imageCredit: object;
   public longPage: boolean;
+
+  constructor(
+    private route: ActivatedRoute
+  ) {}
 
   scrollToTop(): void {
     window.scroll({
@@ -19,10 +21,6 @@ export class ArticleFooterComponent implements OnInit {
       behavior: "auto"
     });
   }
-
-  constructor(
-    private route: ActivatedRoute
-  ) {}
 
   checkRoute(): void {
     const url = this.route.snapshot.routeConfig.path;

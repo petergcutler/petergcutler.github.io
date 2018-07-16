@@ -1,7 +1,11 @@
 .work-header {
   border-bottom: $border-thin solid $lightest-gray;
-  padding-top: 3em;
   padding-bottom: 4em;
+  padding-top: 1em;
+
+  @include respond-to('mediumer') {
+    padding-top: 3em;
+  }
 }
 
 .work-titling {
@@ -64,7 +68,7 @@
   align-self: center;
   font-family: $heading-font;
   color: $dark-gray;
-  font-size: $large;
+  font-size: $larger;
   line-height: 1.6em;
   max-width: 26em;
 
@@ -77,11 +81,11 @@
 .work-tag-header {
   color: $mid-gray;
   font-family: $mini-heading-font;
-  font-size: $small;
+  font-size: $smaller;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   line-height: 1.6em;
 
   @include respond-to('larger') {
@@ -104,7 +108,7 @@
 .work-description {
   position: relative;
   font-family: $body-font;
-  font-size: $normaler;
+  font-size: $large;
   color: $dark-gray;
   line-height: 1.6em;
 
