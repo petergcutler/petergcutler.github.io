@@ -7,7 +7,7 @@
     max-width: 30em;
   }
 
-  @include respond-to('mediumer') {
+  @include respond-to($shift-nav-to-side) {
     max-width: 100%;
   }
 

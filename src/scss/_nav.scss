@@ -1,26 +1,19 @@
-$shift-nav-to-side: 'mediumer';
-
 .main-window {
   @include respond-to($shift-nav-to-side) {
-    padding-left: 15em;
+    padding-left: 12em;
   }
 }
 
 .about-content,
-.work-content {
+.work-content,
+.work-frame {
   padding: 0 2em;
-  max-width: 56em;
+  max-width: 57em;
   margin: 0 auto;
 
   @include respond-to($shift-nav-to-side) {
-    padding: 2.5em 3.5em;
+    padding: 0 3.5em;
   }
-}
-
-.work-frame {
-  max-width: 56em;
-  margin: 0 auto;
-  padding: 2.5em 2em;
 }
 
 .main-nav {
@@ -35,7 +28,6 @@ $shift-nav-to-side: 'mediumer';
     justify-content: space-between;
     position: fixed;
     height: 100%;
-    width: 15em;
     padding: 2.5em;
   }
 }

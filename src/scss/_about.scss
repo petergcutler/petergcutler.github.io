@@ -3,18 +3,37 @@
   grid-gap: 2em;
   padding-top: 2em;
 
-  @include respond-to('medium') {
+  @include respond-to('mediumal') {
     grid-template-columns: 2fr 3fr;
   }
 }
-
-// TODO About looks bad between 720 and 840.
 
 .self-image {
   width: 100%;
 
   @include respond-to('medium') {
     max-width: 300px;
+  }
+}
+
+.bio p {
+  color: $dark-gray;
+  font-family: $body-font;
+  font-size: $normal;
+  line-height: 1.6em;
+  padding-bottom: 1em;
+
+  @include respond-to($shift-nav-to-side) {
+    font-size: $large;
+  }
+}
+
+.about-body-link {
+  text-decoration: none;
+  color: $accent-red;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -29,27 +48,21 @@
   font-weight: bold;
 }
 
-.about-contact-links {
+.contact-link {
+  display: inline;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-right: 1.2em;
   margin-top: 2em;
+}
 
+.contact-links {
   h2 {
     display: block;
-
-    @include respond-to($shift-nav-to-side) {
-      display: none;
-    }
   }
 
   a {
-    display: inline;
-    text-decoration: none;
-    font-size: 1.4rem;
-    padding-right: 1.2em;
-    margin-top: 2em;
-
-    @include respond-to($shift-nav-to-side) {
-      display: none;
-    }
+    @extend .contact-link;
 
     &::before {
       color: $silver;
@@ -61,23 +74,39 @@
   }
 }
 
-.bio p {
-  color: $dark-gray;
-  font-family: $body-font;
-  font-size: $normal;
-  line-height: 1.6em;
-  padding-bottom: 1em;
+.about-profile-contact-links {
+  @extend .contact-links;
 
-  @include respond-to('mediumer') {
-    font-size: $large;
+  display: none;
+  margin-top: 1em;
+
+  @include respond-to('mediumal') {
+    display: block;
+  }
+
+  @include respond-to($shift-nav-to-side) {
+    display: none;
   }
 }
 
-.about-body-link {
-  text-decoration: none;
-  color: $accent-red;
+.about-bio-contact-links {
+  @extend .contact-links;
 
-  &:hover {
-    text-decoration: underline;
+  margin-top: 4em;
+
+  @include respond-to('mediumal') {
+    display: none;
+  }
+
+  h2 {
+    @include respond-to('mediumal') {
+      display: none;
+    }
+  }
+
+  a {
+    @include respond-to('mediumal') {
+      display: none;
+    }
   }
 }

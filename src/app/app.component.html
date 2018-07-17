@@ -1,7 +1,7 @@
 <nav class="main-nav">
-  <a class="logo" routerLink="/about">
-    Peter Cutler
-  </a>
+  <section class="home">
+    <a class="logo" routerLink="/about">Peter Cutler</a>
+  </section>
   <section class="main-pages">
     <ul class="nav-list">
       <li class="nav-item" *ngFor="let page of pages">
@@ -18,13 +18,10 @@
     <a target="_blank" href="mailto:petergcutler@gmail.com" class="fas fa-envelope"></a>
     <a target="_blank" href="https://twitter.com/petergcutler" class="fab fa-twitter-square"></a>
     <a target="_blank" href="https://linkedin.com/in/petergcutler/" class="fab fa-linkedin"></a>
-    <!-- <a class="nav-link" href="mailto:petergcutler@gmail.com">
-      Email
-    </a> -->
   </section>
 </nav>
 
-<section class="mobile-border"></section>
+<div class="mobile-border"></div>
 
 <main class="main-window">
   <router-outlet></router-outlet>

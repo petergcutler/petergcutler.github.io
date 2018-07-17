@@ -1,8 +1,9 @@
 .subject-header {
   display: block;
+  padding-top: 2.5em;
+  padding-bottom: 1em;
   border-bottom: $border-thin solid $lightest-gray;
   line-height: 1.6em;
-  padding-bottom: 1em;
 
   .heading {
     font-weight: bold;
@@ -21,7 +22,7 @@
 .desktop-only {
   display: none;
 
-  @include respond-to('mediumer') {
+  @include respond-to($shift-nav-to-side) {
     display: block;
   }
 }
@@ -29,7 +30,8 @@
 .border-footer {
   border-top: $border-thin solid $lightest-gray;
   margin-top: 2em;
-  padding-top: 1.4em;
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
 
   .copyright-text {
     font-size: .9em;

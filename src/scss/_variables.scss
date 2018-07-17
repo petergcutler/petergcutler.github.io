@@ -20,11 +20,16 @@ $border-medium: 2px;
 $breakpoints: (
   'small': (min-width: 350px),
   'smallish': (min-width: 420px),
+  'mediumal': (min-width: 500px),
+  'almedium': (min-width: 600px),
   'medium': (min-width: 640px),
   'mediumer': (min-width: 720px),
+  'alarge': (min-width: 840px),
   'large': (min-width: 900px),
   'larger': (min-width: 1000px),
   'largal': (min-width: 1090px),
   'largest': (min-width: 1137px),
   'huge': (min-width: 1280px)
 );
+
+$shift-nav-to-side: 'alarge';

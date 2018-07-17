@@ -3,7 +3,7 @@
   padding-bottom: 4em;
   padding-top: 1em;
 
-  @include respond-to('mediumer') {
+  @include respond-to($shift-nav-to-side) {
     padding-top: 3em;
   }
 }
@@ -16,10 +16,6 @@
   @include respond-to('larger') {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: unset;
-  }
-
-  @include respond-to('largest') {
-    grid-template-columns: 1fr 1fr 3fr;
   }
 }
 

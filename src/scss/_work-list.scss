@@ -2,7 +2,7 @@
   max-width: 30em;
   margin: 0 auto;
 
-  @include respond-to('large') {
+  @include respond-to('almedium') {
     max-width: 57em;
     margin: 0 auto;
   }
@@ -14,7 +14,7 @@
   padding-top: 2em;
   grid-row-gap: 1em;
 
-  @include respond-to('large') {
+  @include respond-to('almedium') {
     grid-template-columns: auto auto;
     justify-content: space-between;
     grid-column-gap: 2em;
