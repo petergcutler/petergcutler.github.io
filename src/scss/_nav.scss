@@ -7,10 +7,8 @@ $shift-nav-to-side: 'mediumer';
 }
 
 .about-content,
-.work-content,
-.work-frame,
-.writing-content {
-  padding: 2.5em 2em;
+.work-content {
+  padding: 0 2em;
   max-width: 56em;
   margin: 0 auto;
 
@@ -19,10 +17,16 @@ $shift-nav-to-side: 'mediumer';
   }
 }
 
+.work-frame {
+  max-width: 56em;
+  margin: 0 auto;
+  padding: 2.5em 2em;
+}
+
 .main-nav {
   display: block;
-  padding-top: 2em;
-  padding-left: 2em;
+  padding: 2em;
+
   // height: 8em;
 
   @include respond-to($shift-nav-to-side) {
@@ -33,6 +37,17 @@ $shift-nav-to-side: 'mediumer';
     height: 100%;
     width: 15em;
     padding: 2.5em;
+  }
+}
+
+.mobile-border {
+  display: block;
+  margin-left: 2em;
+  margin-right: 2em;
+  border-bottom: $border-thin solid $lightest-gray;
+
+  @include respond-to($shift-nav-to-side) {
+    display: none;
   }
 }
 
@@ -85,11 +100,21 @@ $shift-nav-to-side: 'mediumer';
   border-bottom: $border-medium solid $nav-link-hover;
 }
 
-// "Email" link only shows above medium
-.contact-links a {
+.nav-contact-links a {
   display: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-right: 1.2em;
 
   @include respond-to($shift-nav-to-side) {
     display: inline;
+  }
+
+  &::before {
+    color: $silver;
+  }
+
+  &:hover::before {
+    color: $youthful-salmon;
   }
 }
