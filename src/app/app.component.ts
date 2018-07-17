@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { PageScrollConfig } from 'ngx-page-scroll';
 
 
 @Component({
@@ -16,7 +17,20 @@ export class AppComponent {
     // 'writing'
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    PageScrollConfig.defaultScrollOffset = 50;
+    PageScrollConfig.defaultDuration = 800;
+
+    // Apply easeInOutQuint easing, via http://gizma.com/easing/
+    PageScrollConfig.defaultEasingLogic = {
+      ease: (t: number, b: number, c: number, d: number): number => {
+      	t /= d/2;
+      	if (t < 1) return c/2*t*t*t*t*t + b;
+      	t -= 2;
+      	return c/2*(t*t*t*t*t + 2) + b;
+      }
+    };
+  }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {

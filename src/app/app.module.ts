@@ -14,11 +14,14 @@ import { WorkService } from './work/work.service';
 import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
 
-// 'directives'
+// external
+import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+
+// directive-style components
 import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
-import { NgxGalleryModule } from 'ngx-gallery';
 import { WorkFrameComponent } from './work/work-frame/work-frame.component';
 import { WorkHeaderComponent } from './work/work-header/work-header.component';
 
@@ -68,7 +71,8 @@ import { WritingComponent } from './writing/writing.component';
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    NgxPageScrollModule
   ],
   providers: [
     WorkService
