@@ -45,9 +45,12 @@
 
   .gallery-info {
     display: none;
+    max-width: 10em;
+    top: -3em;
 
     @include respond-to('smallish') {
-      display: block;
+      display: inline-block;
+      max-width: 15em;
     }
   }
 
@@ -69,10 +72,16 @@
   }
 }
 
+.gallery-present {
+  margin-top: -2em;
+}
+
 .gallery-info {
+  display: inline-block;
   position: relative;
-  top: -3em;
+  top: -4em;
   right: -2em;
+  max-width: 20em;
   margin-top: -2em;
   color: $white;
   cursor: zoom-in;

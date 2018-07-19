@@ -14,9 +14,7 @@
     [alt]="description"
     (click)="open(gallery)"
     [ngClass]="{'border': borderOn}">
-  <figcaption class="work-body-image-caption">
-    {{description}}
-  </figcaption>
+
   <div
     class="gallery-info"
     *ngIf="galleryImages.length > 1"
@@ -33,4 +31,11 @@
       </span>
     </span>
   </div>
+
+  <figcaption
+    class="work-body-image-caption"
+    [ngClass]="{'gallery-present': galleryImages.length > 1}">
+    {{description}}
+  </figcaption>
+
 </figure>
