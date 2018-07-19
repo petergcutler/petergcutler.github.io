@@ -18,7 +18,7 @@ export class AppComponent {
   ];
 
   constructor(private router: Router) {
-    PageScrollConfig.defaultScrollOffset = 200;
+    PageScrollConfig.defaultScrollOffset = 125;
     PageScrollConfig.defaultDuration = 800;
     // Apply easeInOutQuint easing, via http://gizma.com/easing/
     PageScrollConfig.defaultEasingLogic = {
