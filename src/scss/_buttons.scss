@@ -2,11 +2,11 @@
   display: inline-block;
   padding: 1em;
   margin: 1em 0;
-  border: $border-thin solid $dark-gray;
+  border: $border-thin solid $main-text-gray;
   border-radius: .2em;
   cursor: pointer;
   text-decoration: none;
-  color: $dark-gray;
+  color: $main-text-gray;
 
   &:hover {
     color: $accent-red;
@@ -17,6 +17,7 @@
 .button-underline {
   display: inline-block;
   position: relative;
+  padding: 2em;
   font-size: .75em;
   font-weight: bold;
   text-transform: uppercase;
@@ -28,13 +29,13 @@
     position: absolute;
     height: 1.5px;
     background-color: $accent-red;
-    left: 0;
-    bottom: -0.8em;
-    width: 30%;
+    left: 2em;
+    bottom: 1em;
+    width: 20%;
     transition: width 0.3s ease-out;
   }
 
   &:hover::after {
-    width: 100%;
+    width: 62%;
   }
 }

@@ -36,7 +36,7 @@
   display: block;
   margin-left: 2em;
   margin-right: 2em;
-  border-bottom: $border-thin solid $lightest-gray;
+  border-bottom: $border-thin solid $header-hr-gray;
 
   @include respond-to($shift-nav-to-side) {
     display: none;

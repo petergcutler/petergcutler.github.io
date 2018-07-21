@@ -1,6 +1,6 @@
 .articles-intro {
   font-weight: bold;
-  color: $light-gray;
+  color: $support-gray;
   text-transform: capitalize;
   margin-bottom: 1em;
 }
@@ -15,7 +15,7 @@
 
 .article-link {
   text-decoration: none;
-  color: $dark-gray;
+  color: $main-text-gray;
   border-bottom: $border-thin solid $accent-red;
 
   &:hover {

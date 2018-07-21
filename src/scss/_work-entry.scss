@@ -1,11 +1,11 @@
 .work-section {
   font-family: $body-font;
   font-size: $normalarge;
-  color: $dark-gray;
+  color: $main-text-gray;
   line-height: 1.6em;
   padding-top: 4em;
   padding-bottom: 4em;
-  border-bottom: $border-thin solid $lightest-gray;
+  border-bottom: $border-thin solid $header-hr-gray;
 
   h2 {
     // No margin-top needed, h2 is never after other elements w/in a section
@@ -69,7 +69,7 @@
   font-family: $heading-font;
   font-size: $prettybig;
   font-weight: bold;
-  color: $darkest-gray;
+  color: $main-header-black;
 
   &::after {
     content: '';
@@ -88,7 +88,7 @@
   font-family: $heading-font;
   font-size: $large;
   font-weight: bold;
-  color: $darkest-gray;
+  color: $main-header-black;
   // Mobile underline via text-decoration
   text-decoration: underline;
   text-decoration-color: $accent-red;
@@ -100,7 +100,7 @@
 }
 
 .border {
-  border: 1px solid $light-gray;
+  border: 1px solid $support-gray;
 }
 
 .bold {

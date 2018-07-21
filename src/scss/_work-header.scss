@@ -1,5 +1,5 @@
 .work-header {
-  border-bottom: $border-thin solid $lightest-gray;
+  border-bottom: $border-thin solid $header-hr-gray;
   padding-bottom: 4em;
   padding-top: 1em;
 
@@ -63,7 +63,7 @@
   position: relative;
   align-self: center;
   font-family: $heading-font;
-  color: $dark-gray;
+  color: $main-text-gray;
   font-size: $larger;
   line-height: 1.6em;
   max-width: 26em;
@@ -75,7 +75,7 @@
 }
 
 .work-tag-header {
-  color: $mid-gray;
+  color: $mini-heading-gray;
   font-family: $mini-heading-font;
   font-size: $smaller;
   font-weight: 400;
@@ -90,7 +90,7 @@
 }
 
 .work-tags {
-  color: $light-gray;
+  color: $support-gray;
   font-family: $body-font;
   text-transform: capitalize;
   line-height: 1.4em;
@@ -105,7 +105,7 @@
   position: relative;
   font-family: $body-font;
   font-size: $large;
-  color: $dark-gray;
+  color: $main-text-gray;
   line-height: 1.6em;
 
   p {

@@ -2,16 +2,16 @@
   display: block;
   padding-top: 2.5em;
   padding-bottom: 1em;
-  border-bottom: $border-thin solid $lightest-gray;
+  border-bottom: $border-thin solid $header-hr-gray;
   line-height: 1.6em;
 
   .heading {
     font-weight: bold;
-    color: $dark-gray;
+    color: $main-text-gray;
   }
 
   .subheading {
-    color: $light-gray;
+    color: $support-gray;
   }
 }
 
@@ -28,20 +28,20 @@
 }
 
 .border-footer {
-  border-top: $border-thin solid $lightest-gray;
+  border-top: $border-thin solid $header-hr-gray;
   margin-top: 2em;
   padding-top: 1.5em;
   padding-bottom: 2.5em;
 
   .copyright-text {
     font-size: .9em;
-    color: $light-gray;
+    color: $support-gray;
   }
 }
 
 .image-attribution {
   font-size: .9em;
-  color: $light-gray;
+  color: $support-gray;
   margin-top: 1.4em;
 
   a {
@@ -54,8 +54,4 @@
   text-align: center;
   margin-top: 3em;
   margin-bottom: 4em;
-
-  .scroll-button {
-    display: inline-block;
-  }
 }
