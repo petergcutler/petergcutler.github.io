@@ -27,10 +27,12 @@
     "core-js": "^2.4.1",
     "hammerjs": "^2.0.8",
     "lodash": "^4.17.10",
+    "ng-scrollreveal": "^2.2.0",
     "ngx-gallery": "^5.5.1",
     "ngx-page-scroll": "^5.0.0",
     "rxjs": "^6.2.1",
     "rxjs-compat": "^6.0.0-rc.0",
+    "scrollreveal": "^3.4.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
@@ -42,6 +44,7 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "@types/scrollreveal": "0.0.3",
     "codelyzer": "^4.0.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",

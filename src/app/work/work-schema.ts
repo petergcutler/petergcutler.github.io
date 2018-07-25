@@ -7,5 +7,5 @@ export class Work {
   team?: Array<string>;
   tags?: Array<string>;
   imageCredit?: object;
-  data?: object;
+  data?: any;
 }

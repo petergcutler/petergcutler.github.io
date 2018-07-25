@@ -26,6 +26,7 @@
               "src/scss/styles.scss"
             ],
             "scripts": [
+              "./node_modules/scrollreveal/dist/scrollreveal.js",
               "./node_modules/lodash/lodash.js"
             ]
           },

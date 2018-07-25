@@ -10,15 +10,16 @@ import { AppRoutingModule } from './app-routing.module';
 // Services
 import { WorkService } from './work/work.service';
 
+// External
+import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgsRevealModule } from 'ng-scrollreveal';
+
 // Pages
 import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
 
-// external
-import { NgxGalleryModule } from 'ngx-gallery';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
-
-// directive-style components
+// Directive-like components
 import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
@@ -45,15 +46,15 @@ import { WritingComponent } from './writing/writing.component';
 @NgModule({
   declarations: [
     AppComponent,
+    // Pages
     AboutComponent,
     WorkListComponent,
-    WorkFrameComponent,
-    WorkHeaderComponent,
+    // Directive
     ArticleHeaderComponent,
     ArticleFooterComponent,
     ImageViewerComponent,
-    DashboardComponent,
-    WritingComponent,
+    WorkFrameComponent,
+    WorkHeaderComponent,
     // Work
     UwSecureStorageComponent,
     UwOculusOnboardingComponent,
@@ -65,14 +66,18 @@ import { WritingComponent } from './writing/writing.component';
     CrowdskoutSegmentingComponent,
     VoxGlobalAttCsrComponent,
     VoxGlobalBrandRedesignComponent,
-    VoxGlobalMotionDesignComponent
+    VoxGlobalMotionDesignComponent,
+    // Unused
+    DashboardComponent,
+    WritingComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     AppRoutingModule,
     NgxGalleryModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    NgsRevealModule.forRoot()
   ],
   providers: [
     WorkService

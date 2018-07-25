@@ -1,6 +1,6 @@
 <header class="work-header" id="scrollTop">
 
-  <section class="work-titling">
+  <section class="work-titling work-header-section" >
     <h1 class="work-title">
       {{work.display}}
     </h1>
@@ -10,24 +10,32 @@
     </div>
   </section>
 
-  <p class="work-tag-header">client</p>
-  <ul class="work-tags">
-    <li class="work-tag">{{work.client}}</li>
-  </ul>
+  <section class="work-header-section">
+    <p class="work-tag-header">client</p>
+    <ul class="work-tags">
+      <li class="work-tag">{{work.client}}</li>
+    </ul>
+  </section>
 
-  <p *ngIf="work.team" class="work-tag-header">team</p>
-  <div *ngIf="work.team" class="work-tags" >
-    <p *ngFor="let name of work.team">{{name}}</p>
-  </div>
+  <section class="work-header-section">
+    <p *ngIf="work.team" class="work-tag-header">team</p>
+    <div *ngIf="work.team" class="work-tags" >
+      <p *ngFor="let name of work.team">{{name}}</p>
+    </div>
+  </section>
 
-  <p class="work-tag-header">tags</p>
-  <ul class="work-tags">
-    <li class="work-tag" *ngFor="let tag of work.tags">{{tag}}</li>
-  </ul>
+  <section class="work-header-section">
+    <p class="work-tag-header">tags</p>
+    <ul class="work-tags">
+      <li class="work-tag" *ngFor="let tag of work.tags">{{tag}}</li>
+    </ul>
+  </section>
 
-  <p *ngIf="tldrProvided" class="work-tag-header">tl;dr</p>
-  <div #tldr class="work-description">
-    <ng-content></ng-content>
-  </div>
+  <section class="work-header-section">
+    <p *ngIf="tldrProvided" class="work-tag-header">tl;dr</p>
+    <div #tldr class="work-description">
+      <ng-content></ng-content>
+    </div>
+  </section>
 
 </header>

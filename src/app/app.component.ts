@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { PageScrollConfig } from 'ngx-page-scroll';
-
+import { NgsRevealConfig } from 'ng-scrollreveal';
 
 @Component({
   selector: 'app-root',
@@ -17,18 +17,45 @@ export class AppComponent {
     // 'writing'
   ];
 
-  constructor(private router: Router) {
-    PageScrollConfig.defaultScrollOffset = 125;
-    PageScrollConfig.defaultDuration = 800;
-    // Apply easeInOutQuint easing, via http://gizma.com/easing/
-    PageScrollConfig.defaultEasingLogic = {
-      ease: (t: number, b: number, c: number, d: number): number => {
-      	t /= d/2;
-      	if (t < 1) return c/2*t*t*t*t*t + b;
-      	t -= 2;
-      	return c/2*(t*t*t*t*t + 2) + b;
+  constructor(
+    private router: Router,
+    private config: NgsRevealConfig
+  ) {
+    // Customize ng-scroll-reveal
+    var scrollRevealOptions = {
+      origin: 'bottom',
+      distance: '8px',
+      duration: 700,
+      delay: 0,
+      rotate: {
+        x: 0,
+        y: 0,
+        z: 0
+      },
+      opacity: 0,
+      scale: 0,
+      easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+      reset: false,
+      useDelay: 'always',
+      viewFactor: 0,
+    };
+
+    // customize ng-page-scroll
+    var pageScrollOptions = {
+      defaultScrollOffset: 125,
+      defaultDuration: 800,
+      defaultEasingLogic: {
+        ease: (t: number, b: number, c: number, d: number): number => {
+          t /= d/2;
+          if (t < 1) return c/2*t*t*t*t*t + b;
+          t -= 2;
+          return c/2*(t*t*t*t*t + 2) + b;
+        }
       }
     };
+
+    _.assign(config, scrollRevealOptions);
+    _.assign(PageScrollConfig, pageScrollOptions);
   }
 
   ngOnInit() {
