@@ -45,3 +45,15 @@
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
 }
+
+/**
+ * @include transition(all,2s,ease-out);
+ * Courtesy of https://responsivedesign.is/articles/helpful-sass-mixins/
+ */
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}

@@ -53,7 +53,7 @@
 
 .logo {
   display: inline-block;
-  color: $logo;
+  color: $main-text-gray;
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
@@ -79,34 +79,40 @@
 
 .nav-link {
   display: inline;
-  color: $nav-link;
+  color: $main-text-gray;
   text-decoration: none;
   text-transform: capitalize;
 
   &:hover {
-    border-bottom: $border-medium solid $nav-link-hover;
+    border-bottom: $border-medium solid $main-text-gray;
   }
 }
 
 .nav-link-active {
-  border-bottom: $border-medium solid $nav-link-hover;
+  border-bottom: $border-medium solid $main-text-gray;
 }
 
 .nav-contact-links a {
   display: none;
   text-decoration: none;
-  font-size: 1.4rem;
-  padding-right: 1.2em;
+  font-size: 1.3rem;
 
   @include respond-to($shift-nav-to-side) {
     display: inline;
+    padding: .6em;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 
   &::before {
-    color: $silver;
+    color: $mini-heading-gray;
+
+    @include transition (all, 0.2s, ease-in-out)
   }
 
   &:hover::before {
-    color: $youthful-salmon;
+    color: $main-text-gray;
   }
 }

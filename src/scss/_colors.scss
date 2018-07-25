@@ -1,42 +1,39 @@
 // Colors
-$elder-salmon: hsl(6, 78%, 57%);
-$youthful-salmon: hsl(6, 78%, 66%);
+  $elder-salmon: hsl(6, 78%, 57%);
+  $youthful-salmon: hsl(6, 78%, 66%);
 
 // Monochrome
 
   // Low-contrast, fails WCAG 2.0
-$white: hsl(0, 0%, 100%);
-$white-smoke: hsl(0, 0%, 92%);
-$wild-sand: hsl(0, 0%, 85%);
-$silver: hsl(0, 0%, 78%);
-$chalice: hsl(0, 0%, 71%);
-$mercury: hsl(0, 0%, 64%);
+  $white: hsl(0, 0%, 100%);
+  $white-smoke: hsl(0, 0%, 92%);
+  $wild-sand: hsl(0, 0%, 85%);
+  $silver: hsl(0, 0%, 78%);
+  $chalice: hsl(0, 0%, 71%);
+  $mercury: hsl(0, 0%, 64%);
 
   // Partially pass WCAG 2.0
-$chalice: hsl(0, 0%, 57%);
-$dove-gray: hsl(0, 0%, 50%);
-$charcoal: hsl(0, 0%, 40%);
+  $chalice: hsl(0, 0%, 57%);
+  $dove-gray: hsl(0, 0%, 50%);
+  $charcoal: hsl(0, 0%, 40%);
 
   // Fully passes WCAG 2.0
-$mine-shaft: hsl(0, 0%, 30%);
-$cool-shirt: hsl(0, 0%, 25%);
-$nightrider: hsl(0, 0%, 22%);
-$obsidian: hsl(0, 0%, 18%);
-$nero: hsl(0, 0%, 15%);
-$black: hsl(0, 0%, 0%);
+  $mine-shaft: hsl(0, 0%, 30%);
+  $cool-shirt: hsl(0, 0%, 25%);
+  $nightrider: hsl(0, 0%, 22%);
+  $obsidian: hsl(0, 0%, 18%);
+  $nero: hsl(0, 0%, 15%);
+  $black: hsl(0, 0%, 0%);
 
 // In Use
 
 // Text
 $header-hr-gray: $white-smoke;
-$mini-heading-gray: $wild-sand;
-$support-gray: $dove-gray;
+$mini-heading-gray: $chalice;
+$support-gray: $mine-shaft;
 
 $main-text-gray: $obsidian;
 $main-header-black: $nero;
-$accent-red: $elder-salmon;
 
-// Nav
-$nav-link: $obsidian;
-$nav-link-hover: $obsidian;
-$logo: $obsidian;
+$accent-red: $elder-salmon;
+$accent-light-red: $youthful-salmon;
