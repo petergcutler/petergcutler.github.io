@@ -10,13 +10,6 @@ import { NgsRevealConfig } from 'ng-scrollreveal';
 })
 
 export class AppComponent {
-  // Define the site's sections for main-pages links
-  pages = [
-    'about',
-    'work'
-    // 'writing'
-  ];
-
   constructor(
     private router: Router,
     private config: NgsRevealConfig
@@ -59,6 +52,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    // Force route changes to scroll to top
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
             return;

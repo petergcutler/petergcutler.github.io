@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // App
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
 
 // Directive-like components
+import { NavComponent } from './nav/nav.component';
 import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
@@ -50,6 +52,7 @@ import { WritingComponent } from './writing/writing.component';
     AboutComponent,
     WorkListComponent,
     // Directive
+    NavComponent,
     ArticleHeaderComponent,
     ArticleFooterComponent,
     ImageViewerComponent,
@@ -73,6 +76,7 @@ import { WritingComponent } from './writing/writing.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule,
     AppRoutingModule,
     NgxGalleryModule,

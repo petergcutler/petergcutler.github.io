@@ -10,10 +10,10 @@ import {
   stagger
 } from '@angular/animations';
 
+
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  selector: 'app-nav',
+  templateUrl: './nav.component.html',
   animations: [
     // trigger('revealNavElements', [
     //     state('loading, void', style({
@@ -24,14 +24,14 @@ import {
     //     })),
     //     transition('loading => loaded', animate('200ms ease-in'))
     // ]),
-    trigger('revealAboutItems', [
+    trigger('revealNavItems', [
       transition('loading => loaded', [
-        query('.about-item', style({
+        query('.main-nav-item', style({
           opacity: 0,
           // transform: 'translateX(-40px)'
         })),
-        query('.about-item', stagger('100ms', [
-          animate('400ms cubic-bezier(0.6, 0.2, 0.1, 1)', style({
+        query('.main-nav-item', stagger('200ms', [
+          animate('800ms cubic-bezier(0.6, 0.2, 0.1, 1)', style({
             opacity: 1,
             // transform: 'translateX(0)'
           }))
@@ -41,16 +41,23 @@ import {
   ]
 })
 
-export class AboutComponent implements OnInit {
+export class NavComponent implements OnInit {
 
-  constructor(private cdRef: ChangeDetectorRef ) {}
+  constructor(private cdRef: ChangeDetectorRef) {}
 
-  revealAbout: string = 'loading';
+  // Define the site's sections for main-pages links
+  pages = [
+    'about',
+    'work'
+    // 'writing'
+  ];
+
+  revealNav: string = 'loading';
 
   ngOnInit() {}
 
   ngAfterViewInit() {
-    this.revealAbout = 'loaded';
+    this.revealNav = 'loaded';
     this.cdRef.detectChanges();
   }
 

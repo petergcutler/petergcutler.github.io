@@ -1,12 +1,14 @@
+<!-- [@revealWorkItems]="revealWork" -->
+
 <article class="work-content">
   <app-article-header
-    class="desktop-only"
+    class="desktop-only work-list-item"
     header="Work"
     subheader="Projects with clients, companies, and schools">
   </app-article-header>
 
   <div
-    class="work-main">
+    class="work-main" [@revealListItems]="revealList">
     <div
       class="work-item"
       [ngClass]="work.url"
@@ -20,5 +22,5 @@
     </div>
   </div>
 
-  <app-article-footer></app-article-footer>
+  <app-article-footer class="work-list-item"></app-article-footer>
 </article>
