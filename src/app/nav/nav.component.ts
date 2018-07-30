@@ -26,11 +26,11 @@ import {
     // ]),
     trigger('revealNavItems', [
       transition('loading => loaded', [
-        query('.main-nav-item', style({
+        query('.main-nav-section', style({
           opacity: 0,
           // transform: 'translateX(-40px)'
         })),
-        query('.main-nav-item', stagger('200ms', [
+        query('.main-nav-section', stagger('200ms', [
           animate('800ms cubic-bezier(0.6, 0.2, 0.1, 1)', style({
             opacity: 1,
             // transform: 'translateX(0)'

@@ -1,12 +1,3 @@
-.work-frame {
-  margin: 0 auto;
-
-  @include respond-to('large') {
-    max-width: 57em;
-    margin: 0 auto;
-  }
-}
-
 .subheading {
   margin-top: .4em;
 }
