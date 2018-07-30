@@ -43,13 +43,22 @@
   height: auto;
   }
 
-  .gallery-info {
+  .gallery-text {
     display: none;
+
+    @include respond-to('small') {
+      display: inline;
+    }
+
+  }
+
+  .gallery-info {
     max-width: 10em;
     top: -3em;
+    right: -1em;
 
     @include respond-to('smallish') {
-      display: inline-block;
+      right: -2em;
       max-width: 15em;
     }
   }
@@ -57,7 +66,7 @@
   .gallery-prompt {
     display: none;
 
-    @include respond-to('largal') {
+    @include respond-to('alarge') {
       display: inline;
     }
   }
@@ -65,7 +74,7 @@
   .spacer {
     display: none;
 
-    @include respond-to('largal') {
+    @include respond-to('alarge') {
       padding: 0 0.33em;
       display: inline;
     }
