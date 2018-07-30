@@ -51,7 +51,6 @@
 }
 
 .main-nav-page-link-active {
-
   &::after {
     content: '';
     position: absolute;
@@ -64,31 +63,3 @@
     transform: translateX(50%);
   }
 }
-
-
-
-//
-// .nav-contact-links a {
-//   display: none;
-//   text-decoration: none;
-//   font-size: 1.3rem;
-//
-//   @include respond-to($shift-nav-to-side) {
-//     display: inline;
-//     padding: .6em;
-//
-//     &:first-child {
-//       padding-left: 0;
-//     }
-//   }
-//
-//   &::before {
-//     color: $mini-heading-gray;
-//
-//     @include transition (all, 0.2s, ease-in-out)
-//   }
-//
-//   &:hover::before {
-//     color: $main-text-gray;
-//   }
-// }
