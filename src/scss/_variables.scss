@@ -1,22 +1,13 @@
 // Borders
 $border-thin: 1px;
-$border-medium: 2px;
 
 // Media Queries
 $breakpoints: (
-  'small': (min-width: 360px),
-  'smallish': (min-width: 420px),
-  'mediumal': (min-width: 500px),
-  'almedium': (min-width: 600px),
-  'medium': (min-width: 640px),
-  'mediumer': (min-width: 720px),
-  'alarge': (min-width: 840px),
-  'large': (min-width: 900px),
-  'larger': (min-width: 1000px),
-  'largal': (min-width: 1090px),
-  'largest': (min-width: 1137px),
-  'huge': (min-width: 1280px)
+  'tiny': (min-width: 360px),
+  'smaller': (min-width: 420px),
+  'small': (min-width: 500px),
+  'medium': (min-width: 600px),
+  'marge': (min-width: 640px),
+  'large': (min-width: 840px),
+  'huge': (min-width: 1000px)
 );
-
-// Primary responsive breakpoint
-$shift-nav-to-side: 'alarge';

@@ -3,7 +3,7 @@
   grid-gap: 2em;
   padding-top: 2em;
 
-  @include respond-to('mediumal') {
+  @include respond-to('small') {
     grid-template-columns: 2fr 3fr;
   }
 }
@@ -11,7 +11,7 @@
 .self-image {
   width: 100%;
 
-  @include respond-to('medium') {
+  @include respond-to('marge') {
     max-width: 300px;
   }
 }
@@ -23,7 +23,7 @@
   line-height: 1.6em;
   padding-bottom: 1em;
 
-  @include respond-to($shift-nav-to-side) {
+  @include respond-to('marge') {
     font-size: $large;
   }
 }

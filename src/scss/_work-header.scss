@@ -9,7 +9,7 @@
   justify-content: space-between;
   grid-template-rows: 3fr 1fr auto;
 
-  @include respond-to('larger') {
+  @include respond-to('huge') {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: unset;
   }
@@ -36,7 +36,7 @@
     background-color: $accent-red;
   }
 
-  @include respond-to('larger') {
+  @include respond-to('huge') {
     max-width: 1em;
     align-self: unset;
     justify-self: center;
@@ -64,7 +64,7 @@
   line-height: 1.6em;
   max-width: 26em;
 
-  @include respond-to('larger') {
+  @include respond-to('huge') {
     margin-top: 0;
     font-size: $largest;
   }
@@ -80,7 +80,7 @@
   letter-spacing: 0.2em;
   line-height: 1.6em;
 
-  @include respond-to('larger') {
+  @include respond-to('huge') {
     margin-top: 3em;
   }
 }
@@ -92,7 +92,7 @@
   line-height: 1.4em;
   margin-bottom: 2em;
 
-  @include respond-to('larger') {
+  @include respond-to('huge') {
     margin-bottom: 3em;
   }
 }

@@ -57,7 +57,7 @@
     padding-bottom: 2em;
   }
 
-  @include respond-to('medium') {
+  @include respond-to('marge') {
     max-width: 40em;
     font-size: $large;
   }
@@ -93,7 +93,7 @@
   text-decoration: underline;
   text-decoration-color: $accent-red;
 
-  @include respond-to('medium') {
+  @include respond-to('marge') {
     border-bottom: 1px solid $accent-red;
     text-decoration: none;
   }

@@ -2,9 +2,8 @@
   max-width: 30em;
   margin: 0 auto;
 
-  @include respond-to('almedium') {
+  @include respond-to('medium') {
     max-width: 54em;
-    margin: 0 auto;
   }
 }
 
@@ -14,7 +13,7 @@
   padding-top: 2em;
   grid-row-gap: 1em;
 
-  @include respond-to('almedium') {
+  @include respond-to('medium') {
     grid-template-columns: auto auto;
     justify-content: space-between;
     grid-column-gap: 2em;
@@ -63,11 +62,6 @@
 
   &:hover:before{
     opacity: 0.6;
-  }
-
-  @include respond-to('large') {
-    max-width: 24em;
-    max-height: 16em;
   }
 
   // IMPORTANT! Class name AND path name are sensitive
