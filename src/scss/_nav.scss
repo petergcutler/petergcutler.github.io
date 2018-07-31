@@ -48,15 +48,22 @@
   &:hover {
     color: $accent-light-red;
   }
+
+  @media (hover:none),(hover:on-demand) {
+    // suppress hover effect on devices that don't support hover fully
+    &:hover {
+      color: $main-text-gray;
+    }
+  }
 }
 
 .main-nav-page-link-active {
   &::after {
     content: '';
     position: absolute;
-    height: 0.3em;
-    width: 0.3em;
-    background: $accent-light-red;
+    height: 5px;
+    width: 5px;
+    background-color: $accent-light-red;
     border-radius: 100%;
     top: 2.4em;
     left: 50%;
