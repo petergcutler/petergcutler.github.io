@@ -8,6 +8,7 @@
   display: grid;
   justify-content: space-between;
   grid-template-rows: 3fr 1fr auto;
+  margin-bottom: 3em;
 
   @include respond-to('huge') {
     grid-template-columns: 1fr 1fr 2fr;
