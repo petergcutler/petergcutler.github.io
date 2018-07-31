@@ -1,6 +1,15 @@
+/*
+Currently imported:
+
+Open sans
+Source sans
+Nunito
+Rubik
+*/
+
 /* Set default font and text settings */
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Nunito', 'Arial', sans-serif;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -8,7 +17,7 @@ body {
 }
 
 /* Define custom fonts */
-$body-font: 'Source Sans Pro', 'Arial', sans-serif;
+$body-font: 'Nunito', 'Arial', sans-serif;
 $heading-font: 'Georgia', serif;
 $mini-heading-font: 'Rubik', 'Arial', sans-serif;
 

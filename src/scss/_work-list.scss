@@ -10,7 +10,7 @@
 .work-main {
   display: grid;
   position: relative;
-  padding-top: 2em;
+  padding-top: 3em;
   grid-row-gap: 1em;
 
   @include respond-to('medium') {
