@@ -58,7 +58,7 @@
   }
 
   @include respond-to('marge') {
-    max-width: 40em;
+    max-width: $full-width;
     font-size: $large;
   }
 }

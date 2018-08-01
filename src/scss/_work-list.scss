@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @include respond-to('medium') {
-    max-width: 54em;
+    max-width: $full-width;
   }
 }
 

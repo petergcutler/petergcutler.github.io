@@ -4,6 +4,22 @@
   padding-top: 3em;
 }
 
+.work-header-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+
+  .work-tag-header {
+    margin-top: 0;
+  }
+
+  @include respond-to('marge') {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+  }
+}
+
 .work-titling {
   display: grid;
   justify-content: space-between;
@@ -106,7 +122,7 @@
   line-height: 1.6em;
 
   p {
-    max-width: 40em;
+    max-width: $full-width;
   }
 
   p + p {
