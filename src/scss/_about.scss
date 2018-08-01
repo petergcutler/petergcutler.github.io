@@ -31,10 +31,6 @@
 }
 
 .bio p {
-  color: $main-text-gray;
-  font-family: $body-font;
-  font-size: $normal;
-  line-height: 1.6em;
   padding-bottom: 1em;
 
   @include respond-to('marge') {

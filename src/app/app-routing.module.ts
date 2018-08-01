@@ -5,7 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 // Pages
 import { AboutComponent }       from './about/about.component';
 import { WorkListComponent }    from './work/work-list/work-list.component';
-import { WorkFrameComponent } from './work/work-frame/work-frame.component';
 
 // Unused
 import { DashboardComponent }   from './dashboard/dashboard.component';
@@ -36,12 +35,8 @@ const routes: Routes = [
   },
   {
     path: 'work',
-    component: WorkListComponent
-  },
-  {
-    path: 'work/details',
-    component: WorkFrameComponent,
     children: [
+      { path: '',                          component: WorkListComponent },
       { path: 'uw-secure-storage',         component: UwSecureStorageComponent },
       { path: 'uw-oculus-onboarding',      component: UwOculusOnboardingComponent },
       { path: 'vox-global-motion-design',  component: VoxGlobalMotionDesignComponent },

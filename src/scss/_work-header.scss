@@ -1,44 +1,40 @@
+$br-titling: 'large';
+
 .work-header {
   border-bottom: $border-thin solid $header-hr-gray;
   padding-bottom: 4em;
   padding-top: 3em;
 }
 
-.work-header-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2em;
-  grid-row-gap: 1em;
-
-  .work-tag-header {
-    margin-top: 0;
-  }
-
-  @include respond-to('marge') {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2em;
-  }
-}
-
 .work-titling {
   display: grid;
-  justify-content: space-between;
-  grid-template-rows: 3fr 1fr auto;
-  margin-bottom: 3em;
+  grid-template-rows: auto 4em auto;
+  margin-top: 3em;
+  margin-bottom: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10%;
 
-  @include respond-to('huge') {
+  @include respond-to($br-titling) {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: unset;
+    padding: 0;
+    margin-top: 2em;
+    margin-bottom: 5em;
   }
 }
 
 .work-title {
-  position: relative;
-  width: 6.6em;
+  text-align: center;
   font-size: $hugest;
   font-family: $heading-font;
-  font-weight: bold;
+  font-weight: 'normal';
   line-height: 1.4em;
+
+  @include respond-to($br-titling) {
+    text-align: left;
+    width: 6.6em;
+  }
 }
 
 .work-title-border {
@@ -51,12 +47,16 @@
     width: 20%;
     height: 1px;
     background-color: $accent-red;
+    left: 33%;
+    transform: translateX(33%);
   }
 
-  @include respond-to('huge') {
+  @include respond-to($br-titling) {
     max-width: 1em;
     align-self: unset;
     justify-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
 
     &::before {
       content: none;
@@ -73,17 +73,32 @@
 }
 
 .work-subtitle {
-  position: relative;
   align-self: center;
   font-family: $heading-font;
-  color: $main-text-gray;
   font-size: $larger;
   line-height: 1.6em;
-  max-width: 26em;
+  text-align: center;
 
-  @include respond-to('huge') {
+  @include respond-to($br-titling) {
+    text-align: left;
     margin-top: 0;
     font-size: $largest;
+  }
+}
+
+// Used for tags grid
+.work-header-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+
+  // border-bottom: $border-thin solid $header-hr-gray;
+  // border-top: $border-thin solid $header-hr-gray;
+
+  @include respond-to('marge') {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
   }
 }
 
@@ -97,7 +112,7 @@
   letter-spacing: 0.2em;
   line-height: 1.6em;
 
-  @include respond-to('huge') {
+  @include respond-to($br-titling) {
     margin-top: 3em;
   }
 }
@@ -109,16 +124,13 @@
   line-height: 1.4em;
   margin-bottom: 2em;
 
-  @include respond-to('huge') {
+  @include respond-to($br-titling) {
     margin-bottom: 3em;
   }
 }
 
 .work-description {
-  position: relative;
-  font-family: $body-font;
   font-size: $large;
-  color: $main-text-gray;
   line-height: 1.6em;
 
   p {

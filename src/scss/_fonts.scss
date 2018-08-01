@@ -1,20 +1,10 @@
 /*
 Currently imported:
-
 Open sans
 Source sans
 Nunito
 Rubik
 */
-
-/* Set default font and text settings */
-body {
-  font-family: 'Nunito', 'Arial', sans-serif;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
 
 /* Define custom fonts */
 $body-font: 'Nunito', 'Arial', sans-serif;
@@ -33,3 +23,16 @@ $normalarge: 1.05rem;
 $normal: 1rem;
 $small: 0.875rem;
 $smaller: 0.75rem;
+
+
+/* Set default font and text settings */
+body {
+  font-family: 'Nunito', 'Arial', sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: $main-text-gray;
+  font-size: $normal;
+  line-height: 1.6em;
+}

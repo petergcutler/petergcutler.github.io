@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, Event, NavigationStart, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-article-footer',
@@ -8,12 +8,30 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class ArticleFooterComponent implements OnInit {
-  @Input() imageCredit: object;
-  public longPage: boolean;
 
-  constructor(
-    private route: ActivatedRoute
-  ) {}
+  public longPage: boolean;
+  public path: any;
+  // public imageCredit: object = _.get(this.work, 'imageCredit');
+
+  constructor(private router: Router) {
+    router.events.subscribe((event: Event) => {
+      // If navigation is beginning, reset
+      if (event instanceof NavigationStart) {
+        this.path = null;
+        this.longPage = false;
+      }
+
+      // If navigation is concluding, check for long page
+      if (event instanceof NavigationEnd ) {
+        this.path = _.get(event, 'url');
+
+        if (_.startsWith(this.path, '/work/')) {
+          this.longPage = true;
+        }
+      }
+
+    });
+  }
 
   scrollToTop(): void {
     window.scroll({
@@ -22,15 +40,6 @@ export class ArticleFooterComponent implements OnInit {
     });
   }
 
-  checkRoute(): void {
-    const url = this.route.snapshot.routeConfig.path;
+  ngOnInit() {}
 
-    if (url === 'work/details') {
-      this.longPage = true;
-    }
-  }
-
-  ngOnInit(): void {
-    this.checkRoute();
-  }
 }

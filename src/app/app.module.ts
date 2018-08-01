@@ -22,10 +22,8 @@ import { WorkListComponent } from './work/work-list/work-list.component';
 
 // Directive-like components
 import { NavComponent } from './nav/nav.component';
-import { ArticleHeaderComponent } from './article-header/article-header.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
-import { WorkFrameComponent } from './work/work-frame/work-frame.component';
 import { WorkHeaderComponent } from './work/work-header/work-header.component';
 
 // Work
@@ -53,10 +51,8 @@ import { WritingComponent } from './writing/writing.component';
     WorkListComponent,
     // Directive
     NavComponent,
-    ArticleHeaderComponent,
     ArticleFooterComponent,
     ImageViewerComponent,
-    WorkFrameComponent,
     WorkHeaderComponent,
     // Work
     UwSecureStorageComponent,

@@ -4,14 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// $fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
-// @import '~@fortawesome/fontawesome-free/scss/fontawesome';
-
 // Core, do not re-order
 @import './resets';
+@import './variables';
 @import './colors';
 @import './fonts';
-@import './variables';
 @import './includes';
 
 // Common elements
@@ -20,7 +17,7 @@
 // Site components
 @import './main';
 @import './nav';
-@import './header-footer';
+@import './article-footer';
 @import './image-viewer';
 @import './work-header';
 @import './work-entry';
@@ -29,5 +26,4 @@
 @import './dashboard';
 @import './about';
 @import './work-list';
-@import './work-frame';
 @import './writing';

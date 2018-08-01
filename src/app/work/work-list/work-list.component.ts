@@ -1,4 +1,6 @@
 import { Component, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 import { Work } from '../work-schema';
 import { WorkService } from '../work.service';
 
@@ -51,13 +53,13 @@ export class WorkListComponent implements OnInit {
   public works: Work[];
 
   constructor(
+    private route: ActivatedRoute,
     private workService: WorkService,
     private cdRef: ChangeDetectorRef
   ) {}
 
   revealList: string = 'loading';
   revealWork: string = 'loadingA';
-
 
   getWorks(): void {
     this.workService.getWorks().subscribe(works => this.works = works);

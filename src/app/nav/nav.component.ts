@@ -47,8 +47,8 @@ export class NavComponent implements OnInit {
 
   // Define the site's sections for main-pages links
   pages = [
-    'about',
-    'work'
+    'work',
+    'about'
     // 'writing'
   ];
 

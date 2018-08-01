@@ -1,12 +1,10 @@
 <article class="work-content">
-
-  <div
-    class="work-main" [@revealListItems]="revealList">
+  <div class="work-main" [@revealListItems]="revealList">
     <div
       class="work-item"
       [ngClass]="work.url"
       *ngFor="let work of works; index as i;"
-      routerLink="/work/details/{{work.url}}">
+      routerLink="/work/{{work.url}}">
       <span class="work-item-title">{{work.display}}</span>
       <img
         class="work-item-image"
@@ -14,6 +12,4 @@
         alt="{{work.display}}">
     </div>
   </div>
-
-  <app-article-footer class="work-list-item"></app-article-footer>
 </article>
