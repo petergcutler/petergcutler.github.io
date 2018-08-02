@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+
 import { PageScrollConfig } from 'ngx-page-scroll';
 import { NgsRevealConfig } from 'ng-scrollreveal';
 
@@ -10,6 +11,7 @@ import { NgsRevealConfig } from 'ng-scrollreveal';
 })
 
 export class AppComponent {
+
   constructor(
     private router: Router,
     private config: NgsRevealConfig
@@ -17,9 +19,9 @@ export class AppComponent {
     // Customize ng-scroll-reveal
     var scrollRevealOptions = {
       origin: 'bottom',
-      distance: '8px',
-      duration: 700,
-      delay: 0,
+      distance: '10px',
+      duration: 800,
+      delay: 100,
       rotate: {
         x: 0,
         y: 0,
@@ -30,7 +32,7 @@ export class AppComponent {
       easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
       reset: false,
       useDelay: 'always',
-      viewFactor: 0,
+      viewFactor: .2,
     };
 
     // customize ng-page-scroll
@@ -59,5 +61,6 @@ export class AppComponent {
         }
         window.scrollTo(0, 0)
     });
+
   }
 }
