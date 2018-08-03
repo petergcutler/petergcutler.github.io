@@ -6,9 +6,10 @@
 
   <ul class="main-nav-section">
     <li *ngFor="let page of pages">
-      <a class="main-nav-page-link main-nav-item" routerLink="/{{page}}" routerLinkActive="main-nav-page-link-active">
-        {{page}}
+      <a class="main-nav-page-link main-nav-item" routerLink="{{page.path}}">
+        {{page.display}}
       </a>
+      <div [@bounceBall]="page.state" class="selection-indicator"></div>
     </li>
   </ul>
 

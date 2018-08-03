@@ -56,16 +56,13 @@
   }
 }
 
-.main-nav-page-link-active {
-  &::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 4px;
-    background-color: $accent-light-red;
-    border-radius: 100%;
-    top: 2.7em;
-    left: 55%;
-    transform: translateX(55%);
-  }
+.selection-indicator {
+  position: relative;
+  height: 4px;
+  width: 4px;
+  background-color: $accent-light-red;
+  border-radius: 100%;
+  top: 0.3em;
+  left: 50%;
+  transform: translateX(50%);
 }

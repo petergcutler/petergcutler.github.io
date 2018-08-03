@@ -19,7 +19,7 @@ export class AppComponent {
     // Customize ng-scroll-reveal
     var scrollRevealOptions = {
       origin: 'bottom',
-      distance: '10px',
+      distance: '0',
       duration: 800,
       delay: 100,
       rotate: {

@@ -20,7 +20,7 @@ export const WORKS: Work[] = [
   {
     id: 1,
     url: 'uw-secure-storage',
-    display: 'Secure Storage for Tent Cities',
+    display: 'Open Source Storage Design for Shelters',
     description: 'Designing a user-centered solution to help homeless Seattle residents store their possessions securely and sustainably',
     client: 'University of Washington',
     team: [
