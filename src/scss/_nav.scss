@@ -63,6 +63,14 @@
   background-color: $accent-light-red;
   border-radius: 100%;
   top: 0.3em;
-  left: 50%;
-  transform: translateX(50%);
+
+  &.selection-about {
+    left: 65%;
+    transform: translateX(65%);
+  }
+
+  &.selection-work {
+    left: 48%;
+    transform: translateX(48%);
+  }
 }

@@ -9,7 +9,7 @@
       <a class="main-nav-page-link main-nav-item" routerLink="{{page.path}}">
         {{page.display}}
       </a>
-      <div [@bounceBall]="page.state" class="selection-indicator"></div>
+      <div [@bounceBall]="page.state" class="selection-{{page.display}} selection-indicator"></div>
     </li>
   </ul>
 
