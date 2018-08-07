@@ -1,31 +1,34 @@
-<header class="work-header" id="scrollTop" ngsReveal>
+<header
+  class="work-header"
+  id="scrollTop"
+  [@revealWorkHeaderItems]="revealWork">
 
-  <section class="work-titling work-header-section" >
-    <h1 class="work-title">
+  <section class="work-titling">
+    <h1 class="work-title work-titling-reveal">
       {{work.display}}
     </h1>
     <div class="work-title-border"></div>
-    <div class="work-subtitle">
+    <div class="work-subtitle work-titling-reveal">
       {{work.description}}
     </div>
   </section>
 
-  <section class="work-header-row">
-    <section class="work-header-section">
+  <section class="work-header-row work-header-reveal">
+    <section>
       <p class="work-tag-header">tags</p>
       <ul class="work-tags">
         <li class="work-tag" *ngFor="let tag of work.tags">{{tag}}</li>
       </ul>
     </section>
 
-    <section class="work-header-section">
+    <section>
       <p *ngIf="work.team" class="work-tag-header">team</p>
       <div *ngIf="work.team" class="work-tags" >
         <p *ngFor="let name of work.team">{{name}}</p>
       </div>
     </section>
 
-    <section class="work-header-section">
+    <section>
       <p class="work-tag-header">client</p>
       <ul class="work-tags">
         <li class="work-tag">{{work.client}}</li>
@@ -33,7 +36,7 @@
     </section>
   </section>
 
-  <section class="work-header-section">
+  <section class="work-header-reveal">
     <p *ngIf="tldrProvided" class="work-tag-header">tl;dr</p>
     <div #tldr class="work-description">
       <ng-content></ng-content>

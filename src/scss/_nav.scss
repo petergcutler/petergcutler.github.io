@@ -1,21 +1,19 @@
-.main-nav {
+.main-nav-section {
   display: flex;
   align-items: center;
   height: 5em;
-
-  // main-nav bottom border
-  &::after {
-    content: '';
-    position: absolute;
-    top: 5em;
-    left: 0em;
-    width: 100%;
-    height: 1px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
-  }
 }
 
-.main-nav > ul {
+.main-nav-border {
+  position: absolute;
+  top: 5em;
+  left: 0em;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.main-nav-section > ul {
   display: flex;
   margin-left: auto;
 
@@ -26,7 +24,7 @@
   }
 }
 
-.main-nav-item {
+.main-nav-section a {
   padding: 1em;
 }
 

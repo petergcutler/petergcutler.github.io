@@ -1,4 +1,5 @@
-$br-titling: 'large';
+$br-titling-mid: 'smaller';
+$br-titling-full: 'large';
 
 .work-header {
   border-bottom: $border-thin solid $header-hr-gray;
@@ -9,13 +10,16 @@ $br-titling: 'large';
 .work-titling {
   display: grid;
   grid-template-rows: auto 4em auto;
-  margin-top: 3em;
-  margin-bottom: 8em;
+  margin-top: 2em; // 3
+  margin-bottom: 5em;  // 8
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10%;
 
-  @include respond-to($br-titling) {
+  @include respond-to($br-titling-mid) {
+    padding: 0 10%;
+  }
+
+  @include respond-to($br-titling-full) {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: unset;
     padding: 0;
@@ -31,7 +35,7 @@ $br-titling: 'large';
   font-weight: 'normal';
   line-height: 1.4em;
 
-  @include respond-to($br-titling) {
+  @include respond-to($br-titling-full) {
     text-align: left;
     width: 6.6em;
   }
@@ -40,35 +44,24 @@ $br-titling: 'large';
 .work-title-border {
   position: relative;
   align-self: center;
+  width: 20%;
+  height: 1px;
+  background-color: $accent-red;
+  left: 33%;
+  transform: translateX(33%);
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 20%;
-    height: 1px;
-    background-color: $accent-red;
-    left: 33%;
-    transform: translateX(33%);
-  }
+  // @include transition (all, 0.4s, ease-in-out);
 
-  @include respond-to($br-titling) {
+  @include respond-to($br-titling-full) {
     max-width: 1em;
     align-self: unset;
     justify-self: center;
     margin-top: 0;
     margin-bottom: 0;
-
-    &::before {
-      content: none;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      background-color: $accent-red;
-    }
+    width: 1px;
+    height: 100%;
+    left: unset;
+    transform: unset;
   }
 }
 
@@ -79,7 +72,7 @@ $br-titling: 'large';
   line-height: 1.6em;
   text-align: center;
 
-  @include respond-to($br-titling) {
+  @include respond-to($br-titling-full) {
     text-align: left;
     margin-top: 0;
     font-size: $largest;
@@ -112,7 +105,7 @@ $br-titling: 'large';
   letter-spacing: 0.2em;
   line-height: 1.6em;
 
-  @include respond-to($br-titling) {
+  @include respond-to($br-titling-full) {
     margin-top: 3em;
   }
 }
@@ -124,7 +117,7 @@ $br-titling: 'large';
   line-height: 1.4em;
   margin-bottom: 2em;
 
-  @include respond-to($br-titling) {
+  @include respond-to($br-titling-full) {
     margin-bottom: 3em;
   }
 }

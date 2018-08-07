@@ -23,7 +23,7 @@ import {
           transform: 'translateY(4px)'
         })),
         query('.main-nav-section', stagger('200ms', [
-          animate('800ms cubic-bezier(0.6, 0.2, 0.1, 1)', style({
+          animate('600ms cubic-bezier(0.6, 0.2, 0.1, 1)', style({
             opacity: 1,
             transform: 'translateY(0)'
           }))
@@ -95,8 +95,6 @@ export class NavComponent implements OnInit {
       // If navigation is concluding, update the path
       if (event instanceof NavigationEnd ) {
         this.path = _.get(event, 'url');
-
-        console.log(this.path);
 
         this.updateAnimationStates(this.path);
       }

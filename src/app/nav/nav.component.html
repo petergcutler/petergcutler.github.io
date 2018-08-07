@@ -1,16 +1,18 @@
 <nav class="main-nav" role="navigation" [@revealNavItems]="revealNav">
+  <section class="main-nav-section">
+    <a class="main-nav-logo" routerLink="/about" role="banner">
+      Peter Cutler
+    </a>
 
-  <a class="main-nav-section main-nav-item main-nav-logo" routerLink="/about" role="banner">
-    Peter Cutler
-  </a>
+    <ul>
+      <li *ngFor="let page of pages">
+        <a class="main-nav-page-link" routerLink="{{page.path}}">
+          {{page.display}}
+        </a>
+        <div [@bounceBall]="page.state" class="selection-{{page.display}} selection-indicator"></div>
+      </li>
+    </ul>
+  </section>
 
-  <ul class="main-nav-section">
-    <li *ngFor="let page of pages">
-      <a class="main-nav-page-link main-nav-item" routerLink="{{page.path}}">
-        {{page.display}}
-      </a>
-      <div [@bounceBall]="page.state" class="selection-{{page.display}} selection-indicator"></div>
-    </li>
-  </ul>
-
+  <div class="main-nav-border main-nav-section"></div>
 </nav>

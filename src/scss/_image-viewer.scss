@@ -1,3 +1,9 @@
+app-image-viewer {
+  @include respond-to('marge') {
+    max-width: 30em;
+  }
+}
+
 .work-body-image {
   max-width: 100%;
   height: auto;
