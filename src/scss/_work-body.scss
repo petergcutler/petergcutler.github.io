@@ -1,10 +1,8 @@
 @keyframes fadeInAndUp {
     0% {
-        transform: translatey(4px);
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -28,11 +26,9 @@
   @include respond-to('large') {
     @keyframes shiftInAndUp {
         0% {
-            transform: translatey(4px);
             opacity: 0;
         }
         100% {
-            transform: translateY(0);
             opacity: 1;
         }
     }
