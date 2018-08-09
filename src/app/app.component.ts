@@ -20,8 +20,8 @@ export class AppComponent {
     var scrollRevealOptions = {
       origin: 'bottom',
       distance: '0',
-      duration: 800,
-      delay: 100,
+      duration: 1200,
+      delay: 900,
       rotate: {
         x: 0,
         y: 0,
@@ -31,8 +31,8 @@ export class AppComponent {
       scale: 0,
       easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
       reset: false,
-      useDelay: 'always',
-      viewFactor: .2,
+      useDelay: 'onload',
+      viewFactor: 0,
     };
 
     // customize ng-page-scroll

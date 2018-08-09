@@ -1,4 +1,46 @@
+@keyframes fadeInAndUp {
+    0% {
+        transform: translatey(4px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .work-section {
+  opacity: 0;
+
+  -webkit-animation: fadeInAndUp 800ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
+  animation: fadeInAndUp 800ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
+
+  /* verbose animation details follow
+  animation-duration: 800ms; // the duration of the animation
+  animation-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1); // how the animation will behave
+  animation-delay: 800ms; // how long to delay the animation from starting
+  animation-iteration-count: 1; // how many times the animation will play
+  animation-name: fadeInAndUp; // the name of the animation
+  animation-fill-mode: forwards; // Pause the animation at 100%
+  */
+
+  // This will force the animation to re-run with the header
+  @include respond-to('large') {
+    @keyframes shiftInAndUp {
+        0% {
+            transform: translatey(4px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    opacity: 0;
+    animation: shiftInAndUp 800ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
+  }
+
   font-family: $body-font;
   font-size: $normalarge;
   color: $main-text-gray;
@@ -22,7 +64,6 @@
       margin-top: 0em;
     }
   }
-
 
   p, .work-video-embed, ul {
     margin-bottom: 1.2em;
