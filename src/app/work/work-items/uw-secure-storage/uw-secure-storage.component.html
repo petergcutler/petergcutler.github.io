@@ -191,16 +191,81 @@
 
   <section class="work-section">
     <h2 class="work-body-h2">
-      Iterating on a Single Design
+      Elaborating on a Single Design
     </h2>
     <p>
-      As we met as a team and discussed our sketches, we decided to pursue the modular, component-based solution described above. We liked the idea of a library that users could browse to find different structures they could build with any range of available materials. It aligned with our findings regarding the changing needs of scale, features, and cost that our users wanted. It also had a clear basis in the lived experience we learned about from our field visit.
+      We decided to develop the idea of creating an open source library of storage schematics, supporting commonly available materials. Why did we pick this design solution?
+    </p>
+    <ul class="work-body-list">
+      <li>
+        <span class="bold">It aligns with Housing First.</span> This is an open-source product that crowd-sources volunteer expertise. A product like this creates value for homeless residents without burdening the city with investment cost.
+      </li>
+      <li>
+        <span class="bold">It's supported by our field visit and user interviews.</span> Structure and storage fabrication comes from volunteers donating hardware or their time. A product that organizes schematics and materials could aid both processes.
+      </li>
+      <li>
+        <span class="bold">It creates value for a diverse range of shelters.</span> Whether a permanent shelter or a transitional environment, this product could offer a range of storage options that could benefit the user. A single storage design would only be able to benefit one shelter type. This product addresses a range of contexts.
+      </li>
+      <li>
+        <span class="bold">It paves a way to iteratively improve upon the process of establishing a new tent city.</span> Seattle and many other cities are creating transitional housing in the form of sanctioned tent cities with increasing frequency. The open source and version control tools within a system like this can help ensure that each new tent city improves upon the one before it.
+      </li>
+    </ul>
+  </section>
+
+  <section class="work-section">
+    <h3 class="work-body-h3">
+      Competitive Analysis, Pt. 2
+    </h3>
+    <p>
+      For our design exploration, we considered existing tools that offered the features we wanted to provide:
+    </p>
+    <ul class="work-body-list">
+      <li>
+        <span class="bold">Instructables, Make: Magazine, eHow:</span> Community driven organization of DIY process, schematics, instructions
+      </li>
+      <li>
+        <span class="bold">GitHub, Bitbucket:</span> Open source and version control organization, particularly forking projects and creating pull requests
+      </li>
+      <li>
+        <span class="bold">McMaster-Carr:</span> Information architecture for components and tools
+      </li>
+      <li>
+        <span class="bold">Ikea:</span> Clear presentation of components, tools, and fabrication steps
+      </li>
+    </ul>
+    <p>
+      As I worked on a separate list of jobs-to-be-done, and the kinds of user stories that would be involved in this product, I saw the list of complex features rapidly grow. We would need to distill this down to a few important elements and features at the outset.
+    </p>
+    <h3 class="work-body-h3">
+      What's the MVP?
+    </h3>
+    <p>
+      To create value for our users, we needed to achieve something simple. Present clear instructions for how to build a storage device using commonly available materials; describe what components and tools are required; explain the steps involved in putting them together to create a functional product.
     </p>
     <p>
-      With a solution in mind, we had a lot of work to do to iterate and expand on the design. Over the next two weeks, we explored implementation, prototypes, and a representative information architecture for how such a system would work. We presented our design in a comprehensive brief.
+      While it's exciting to think ahead to the digital feature-set and high fidelity design, a functional MVP of this product would work as a printed booklet full of multi-page schematics. The booklet could be downloadable from anywhere, printed, and distributed to shelters, donors, and volunteer contractors.
     </p>
+    <div class="work-body-image-grid">
+      <app-image-viewer
+        path="../assets/images/work/uw-secure-storage/shed-mockup-1.jpg"
+        description="Schematics function well on paper for an MVP">
+      </app-image-viewer>
+      <app-image-viewer
+        path="../assets/images/work/uw-secure-storage/shed-mockup-2.jpg"
+        description="Compiling many schematics as a single toolkit">
+      </app-image-viewer>
+    </div>
     <p>
-      Click below to view or download the brief via Dropbox.
+      By hosting the schematics on GitHub using a standard markup language and asset directories, we can also open the documents up for forks and pull requests.
+    </p>
+  </section>
+
+  <section class="work-section">
+    <h2 class="work-body-h2">
+      Design Brief
+    </h2>
+    <p>
+      Beyond the MVP, we developed wireframes to illustrate some of the product's feautures that could progress into digital versions of the application. Click below to view or download the brief via Dropbox.
     </p>
     <figure class="work-body-figure">
       <a target="_blank" href="https://www.dropbox.com/s/oygbtc5ecu7goxi/Design%20Specifications.pdf?dl=0">

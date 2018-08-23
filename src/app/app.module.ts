@@ -15,6 +15,8 @@ import { WorkService } from './work/work.service';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { NgsRevealModule } from 'ng-scrollreveal';
+import { RunKitEmbedComponent } from 'angular-runkit'
+
 
 // Pages
 import { AboutComponent } from './about/about.component';
@@ -54,6 +56,8 @@ import { WritingComponent } from './writing/writing.component';
     ArticleFooterComponent,
     ImageViewerComponent,
     WorkHeaderComponent,
+    // External
+    RunKitEmbedComponent,
     // Work
     UwSecureStorageComponent,
     UwOculusOnboardingComponent,
