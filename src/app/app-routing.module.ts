@@ -5,6 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 // Pages
 import { AboutComponent }       from './about/about.component';
 import { WorkListComponent }    from './work/work-list/work-list.component';
+import { MosaicCreateComponent } from './mosaic/mosaic-create/mosaic-create.component';
+import { MosaicDisplayComponent } from './mosaic/mosaic-display/mosaic-display.component';
+
 
 // Unused
 import { DashboardComponent }   from './dashboard/dashboard.component';
@@ -26,36 +29,44 @@ import { VoxGlobalMotionDesignComponent }   from './work/work-items/vox-global-m
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'about',
-    pathMatch: 'full'
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'work',
+    component: DashboardComponent,
     children: [
-      { path: '',                          component: WorkListComponent },
-      { path: 'uw-secure-storage',         component: UwSecureStorageComponent },
-      { path: 'uw-oculus-onboarding',      component: UwOculusOnboardingComponent },
-      { path: 'vox-global-motion-design',  component: VoxGlobalMotionDesignComponent },
-      { path: 'uw-complex-systems',        component: UwComplexSystemsComponent },
-      { path: 'uw-yarn',                   component: UwYarnComponent },
-      { path: 'crowdskout-data-viz',       component: CrowdskoutDataVizComponent },
-      { path: 'crowdskout-datetime',       component: CrowdskoutDatetimeComponent },
-      { path: 'crowdskout-form-editor',    component: CrowdskoutFormEditorComponent },
-      { path: 'crowdskout-segmenting',     component: CrowdskoutSegmentingComponent },
-      { path: 'vox-global-brand-redesign', component: VoxGlobalBrandRedesignComponent },
-      { path: 'vox-global-att-csr',        component: VoxGlobalAttCsrComponent }
+      {
+        path: '',
+        redirectTo: 'about',
+        pathMatch: 'full'
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'work',
+        children: [
+          { path: '',                          component: WorkListComponent },
+          { path: 'uw-secure-storage',         component: UwSecureStorageComponent },
+          { path: 'uw-oculus-onboarding',      component: UwOculusOnboardingComponent },
+          { path: 'vox-global-motion-design',  component: VoxGlobalMotionDesignComponent },
+          { path: 'uw-complex-systems',        component: UwComplexSystemsComponent },
+          { path: 'uw-yarn',                   component: UwYarnComponent },
+          { path: 'crowdskout-data-viz',       component: CrowdskoutDataVizComponent },
+          { path: 'crowdskout-datetime',       component: CrowdskoutDatetimeComponent },
+          { path: 'crowdskout-form-editor',    component: CrowdskoutFormEditorComponent },
+          { path: 'crowdskout-segmenting',     component: CrowdskoutSegmentingComponent },
+          { path: 'vox-global-brand-redesign', component: VoxGlobalBrandRedesignComponent },
+          { path: 'vox-global-att-csr',        component: VoxGlobalAttCsrComponent }
+        ]
+      }
     ]
+  },
+  {
+    path: 'mosaic-create',
+    component: MosaicCreateComponent
+  },
+  {
+    path: 'mosaic-display',
+    component: MosaicDisplayComponent
   }
-  // Available if you want to create an independent homepage "dashboard"
-  // {
-  //   path: '',
-  //   component: DashboardComponent
-  // },
-  //
   // Available if you want to add a writing portfolio
   // {
   //   path: 'writing',

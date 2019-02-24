@@ -1,8 +1,10 @@
 // Angular
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule }    from '@angular/common/http';
 
 // App
 import { AppComponent } from './app.component';
@@ -21,6 +23,9 @@ import { NgsRevealModule } from 'ng-scrollreveal';
 // Pages
 import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
+import { MosaicCreateComponent } from './mosaic/mosaic-create/mosaic-create.component';
+import { MosaicDisplayComponent } from './mosaic/mosaic-display/mosaic-display.component';
+
 
 // Directive-like components
 import { NavComponent } from './nav/nav.component';
@@ -51,6 +56,8 @@ import { WritingComponent } from './writing/writing.component';
     // Pages
     AboutComponent,
     WorkListComponent,
+    MosaicCreateComponent,
+    MosaicDisplayComponent,
     // Directive
     NavComponent,
     ArticleFooterComponent,
@@ -77,7 +84,9 @@ import { WritingComponent } from './writing/writing.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpModule,
+    HttpClientModule,
     AppRoutingModule,
     NgxGalleryModule,
     NgxPageScrollModule,

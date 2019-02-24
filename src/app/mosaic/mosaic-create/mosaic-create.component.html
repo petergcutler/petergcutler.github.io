@@ -1,0 +1,34 @@
+<div class="mosaic-create-content">
+  <p class="welcome">
+    and to forge in the smithy
+  </p>
+</div>
+
+<form (ngSubmit)="onSubmit()" #messageForm="ngForm">
+
+  <div class="form-group">
+    <label for="Message Type">Style</label>
+    <select class="form-control"  id="messageType"
+            required
+            [(ngModel)]="model.messageType" name="messageType">
+      <option *ngFor="let lens of lenses" [value]="lens">{{lens}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Message">Message</label>
+    <input type="text" class="form-control" id="messageContent"
+           [(ngModel)]="model.messageContent" name="message"
+           #messageContent="ngModel">
+    <!-- <div [hidden]="name.valid || name.pristine"
+         class="alert alert-danger">
+      Name is required
+    </div> -->
+  </div>
+
+
+
+
+  <button type="submit" class="btn btn-success">Submit</button>
+
+</form>
