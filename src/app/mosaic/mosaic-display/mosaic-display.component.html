@@ -1,20 +1,21 @@
 <div class="mosaic-display-content">
-  <p class="welcome">
-    I go to encounter for the millionth time
-  </p>
-</div>
 
-<div class="mosaic-messages">
-  <div
-    class="mosaic-message"
-    *ngFor="let message of messages; index as i;">
+  <div class="mosaic-messages">
+    <div
+      class="mosaic-message"
+      *ngFor="let message of messagesDisplay; index as i;">
 
-    <span class="mosaic-message-type">
-      {{message.messageType}} :
-    </span>
+      <div class="mosaic-text">
+        <div class="mosaic-icon" [ngClass]="message.messageType"></div>
+        <span class="mosaic-message-type">
+          I'm{{message.messageType === 'other' ? '' : ' ' + message.messageType}}...
+        </span>
+        <span class="mosaic-message-content">
+          {{message.messageContent}}
+        </span>
+      </div>
 
-    <span class="mosaic-message-content">
-      {{message.messageContent}}
-    </span>
+    </div>
   </div>
+
 </div>

@@ -1,0 +1,65 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.mosaic-display-content {
+  width: 100%;
+}
+
+.mosaic-messages {
+  display: grid;
+  position: relative;
+  padding-top: 3em;
+  grid-row-gap: 1em;
+}
+
+.mosaic-message {
+  margin: 0 auto;
+  padding-bottom: 4em;
+  opacity: 0;
+
+  -webkit-animation: fadeIn 400ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
+  animation: fadeIn 400ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
+}
+
+.mosaic-icon {
+  // display: inline-block;
+  display: none;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+}
+
+.mosaic-text {
+  padding-top: 1em;
+}
+
+.mosaic-message-type {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+
+.thinking {
+  background: url('/assets/icons/mosaic/thinking.svg');
+}
+
+.feeling {
+  background: url('/assets/icons/mosaic/feeling.svg');
+}
+
+.seeing {
+  background: url('/assets/icons/mosaic/seeing.svg');
+}
+
+.other {
+  background: url('/assets/icons/mosaic/other.svg');
+}
