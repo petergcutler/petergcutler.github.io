@@ -7,22 +7,54 @@ import { EnvService } from '../../env.service';
 import { interval } from "rxjs/internal/observable/interval";
 import { startWith, switchMap } from "rxjs/operators";
 
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  keyframes,
+  transition,
+  query,
+  stagger
+} from '@angular/animations';
+
 @Component({
   selector: 'app-mosaic-display',
   templateUrl: './mosaic-display.component.html',
-  styleUrls: ['./mosaic-display.component.scss']
+  styleUrls: ['./mosaic-display.component.scss'],
+  animations: [
+    trigger('listAnimation', [
+      transition('* <=> *', [
+
+        query(':enter', style({
+          opacity: 0,
+          transform: 'translateY(7px)'
+        }), {optional: true}),
+
+        query(':enter', stagger('300ms', [
+          animate('800ms cubic-bezier(0.6, 0.2, 0.1, 1)', style({
+            opacity: 1,
+            transform: 'translateY(0)'
+            // transform: 'translateX(0)'
+          }))
+        ]), { delay: 200 })
+      ])
+    ])
+  ]
 })
 
 export class MosaicDisplayComponent implements OnInit {
   public messages: any = [];
   public messagesDisplay: any = [];
+  public mosaicAnimate: any = true;
 
   change(this) {
     let that = this;
+    // that.mosaicAnimate = !that.mosaicAnimate;
 
     setInterval(function() {
       that.messages.push(0);
-    }, 30000);
+    }, 20000);
   };
 
   buildMessages(data) {
@@ -68,6 +100,8 @@ export class MosaicDisplayComponent implements OnInit {
       .subscribe(data => {
         this.buildMessages(data);
         console.log('built');
+        this.mosaicAnimate = !this.mosaicAnimate;
       });
+
   }
 }

@@ -23,18 +23,23 @@
 }
 
 .your-message {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .mosaic-textarea {
   font-size: 2em;
+  width: 16em;
   font-family: 'Share Tech Mono', monospace;
   color: #F3E393;
   background: transparent;
   border: 0;
-  border-bottom: 2px solid
+  border-bottom: 2px solid;
+
+  @media (max-width: 48em) {
+      width: auto;
+  }
 }
 
 .mosaic-form {
@@ -154,21 +159,21 @@ input[type="radio"]:checked:after {
 
 
 
-.thinking {
-  background: url('/assets/icons/mosaic/thinking.svg');
-}
-
-.feeling {
-  background: url('/assets/icons/mosaic/feeling.svg');
-}
-
-.seeing {
-  background: url('/assets/icons/mosaic/seeing.svg');
-}
-
-.other {
-  background: url('/assets/icons/mosaic/other.svg');
-}
+// .thinking {
+//   background: url('/assets/icons/mosaic/thinking.svg');
+// }
+//
+// .feeling {
+//   background: url('/assets/icons/mosaic/feeling.svg');
+// }
+//
+// .seeing {
+//   background: url('/assets/icons/mosaic/seeing.svg');
+// }
+//
+// .other {
+//   background: url('/assets/icons/mosaic/other.svg');
+// }
 
 
 

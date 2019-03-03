@@ -1,14 +1,14 @@
 <div class="mosaic-display-content">
 
-  <div class="mosaic-messages">
+  <div class="mosaic-messages" [@listAnimation]="mosaicAnimate">
     <div
       class="mosaic-message"
-      *ngFor="let message of messagesDisplay; index as i;">
+      *ngFor="let message of messagesDisplay; index as i">
 
       <div class="mosaic-text">
         <div class="mosaic-icon" [ngClass]="message.messageType"></div>
         <div class="mosaic-message-type-display">
-          I'm{{message.messageType === 'other' ? '' : ' ' + message.messageType}}...
+          I'm <span class="experience {{message.messageType}}">{{message.messageType === 'other' ? '' : ' ' + message.messageType}}</span>...
         </div>
         <div class="mosaic-message-content">
           {{message.messageContent}}

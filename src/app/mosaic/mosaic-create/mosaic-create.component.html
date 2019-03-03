@@ -20,6 +20,7 @@
           <span class="inner-label">{{entry.description}}</span>
         </label>
       </div>
+
       <!-- <div class="mosaic-radio-group" *ngFor="let entry of entries; let idx = index">
         <span class="mosaic-radio-label" >{{entry.description}}</span>
         <input
@@ -62,14 +63,13 @@
     <div class="form-group">
       <!-- <label for="Message">Message</label> -->
       <div class="your-message">
-        <input
-          type="textarea"
+        <textarea
           required
           class="mosaic-textarea form-control"
           id="messageContent"
           [(ngModel)]="model.messageContent"
           name="message"
-          #messageContent="ngModel">
+          #messageContent="ngModel"></textarea>
           your message
         <!-- <div [hidden]="messageContent.valid || messageContent.pristine"
              class="alert alert-danger">
