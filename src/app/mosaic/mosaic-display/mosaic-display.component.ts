@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 
-import {interval} from "rxjs/internal/observable/interval";
-import {startWith, switchMap} from "rxjs/operators";
+import { EnvService } from '../../env.service';
+
+import { interval } from "rxjs/internal/observable/interval";
+import { startWith, switchMap } from "rxjs/operators";
 
 @Component({
   selector: 'app-mosaic-display',
@@ -11,9 +14,6 @@ import {startWith, switchMap} from "rxjs/operators";
 })
 
 export class MosaicDisplayComponent implements OnInit {
-
-  private sheetsReadUrl = 'https://spreadsheets.google.com/feeds/cells/1xGp8gww59dEO7SDvr8Ww6nRcvxFmx28A-_jPSxsdmNc/od6/public/basic?alt=json';
-
   public messages: any = [];
   public messagesDisplay: any = [];
 
@@ -26,34 +26,16 @@ export class MosaicDisplayComponent implements OnInit {
   };
 
   buildMessages(data) {
-
     let that = this;
-    let message = {
-      'id': null,
-      'messageType': null,
-      'messageContent': null
-    };
     let messages = [];
 
-    _.each(data.feed.entry, function(i, n) {
-      if (
-        i.content["$t"] === 'thinking' ||
-        i.content["$t"] === 'feeling' ||
-        i.content["$t"] === 'seeing' ||
-        i.content["$t"] === 'other'
-      ) {
-        message.messageType = i.content["$t"];
-      } else {
-        var order: number = +n + 1;
-        message.messageContent = i.content["$t"]
-        message.id =  order / 2;
-        messages.push(message);
-        message = {
-          'id': null,
-          'messageType': null,
-          'messageContent': null
-        }
+    _.each(data.records, function(i, n) {
+      let message = {
+        'id': n,
+        'messageType': i.fields.type,
+        'messageContent': i.fields.content
       }
+      messages.push(message);
     });
 
     if (!_.isEqual(messages, that.messages)) {
@@ -63,16 +45,25 @@ export class MosaicDisplayComponent implements OnInit {
     }
   }
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(
+    private http: HttpClient,
+    private env: EnvService
+  ) {}
 
   ngOnInit() {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Authorization': this.env.AT,
+        'Content-Type':  'application/json'
+      })
+    };
+
     this.change();
 
     interval(5000)
       .pipe(
         startWith(0),
-        switchMap(() => this.http.get(this.sheetsReadUrl))
+        switchMap(() => this.http.get(this.env.ATU, httpOptions))
       )
       .subscribe(data => {
         this.buildMessages(data);

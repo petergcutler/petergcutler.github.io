@@ -2,15 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 
+import { EnvService } from '../../env.service';
+
 import { FormsModule } from '@angular/forms';
 
 import { Message } from '../message';
 
-// const httpOptions = {
-//   headers: new HttpHeaders({
-//     'Content-Type':  'application/json'
-//   })
-// };
+import { catchError, map, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-mosaic-create',
@@ -20,48 +18,82 @@ import { Message } from '../message';
 
 export class MosaicCreateComponent implements OnInit {
 
-  lenses = [
-    'thinking',
-    'feeling',
-    'seeing',
-    'other'
-  ];
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Authorization': this.env.AT,
+      'Content-Type':  'application/json'
+    })
+  };
+
+  entries = [];
+  selectedEntry: { [key: string]: any } = {
+    value: null,
+    description: null
+  };
 
   model = new Message('thinking', '');
 
   submitted = false;
 
   onSubmit() {
-    // this.http.post(this.sheetsuCreateUrl, {
-    //   'messageType': this.model.messageType,
-    //   'messageContent': this.model.messageContent
-    // }, httpOptions)
-    //   .subscribe(
-    //     res => {
-    //       console.log(res);
-    //     },
-    //     err => {
-    //       console.log('Error occured');
-    //     }
-    //   );
+    let body = {
+      "fields": {
+        "type": this.selectedEntry.description,
+        "content": this.model.messageContent
+      }
+    };
+
+    this.http.post(this.env.ATU, body, this.httpOptions)
+    .subscribe(
+      res => {
+        console.log(res);
+      },
+      err => {
+        console.log('Error occured');
+      }
+    );
 
     this.submitted = true;
+  }
+
+  onSelectionChange(entry) {
+    // clone the object for immutability
+    this.selectedEntry = Object.assign({}, this.selectedEntry, entry);
   }
 
   newMessage() {
     this.model = new Message('', '');
   }
 
-
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private env: EnvService
+  ) {}
 
   ngOnInit(): void {
-    // adding the lifecycle hook ngOnInit
-    // this.http.get(this.sheetsUrl).subscribe(data => {
-    //   console.log(data); // using the HttpClient instance, http to call the API then subscribe to the data and display to console
-    // });
+    this.entries = [
+      {
+        description: 'thinking',
+        id: 1
+      },
+      {
+        description: 'seeing',
+        id: 2
+      },
+      {
+        description: 'feeling',
+        id: 3
+      },
+      {
+        description: 'other',
+        id: 4
+      }
+    ];
 
-
+    // select the first one
+    if(this.entries) {
+      this.onSelectionChange(this.entries[0]);
+    }
   }
 
 }

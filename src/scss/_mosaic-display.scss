@@ -7,21 +7,28 @@
     }
 }
 
-
 .mosaic-display-content {
   width: 100%;
+  font-size: 1em;
+  background-color: #222;
+  font-family: 'Share Tech Mono', monospace;
+  color: #F3E393;
 }
 
 .mosaic-messages {
   display: grid;
-  position: relative;
+  grid-template-columns: auto auto;
+  grid-column-gap: 12em;
+  // position: relative;
   padding-top: 3em;
-  grid-row-gap: 1em;
+  grid-row-gap: .4em;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 .mosaic-message {
-  margin: 0 auto;
-  padding-bottom: 4em;
+  // margin: 0 auto;
+  padding-bottom: 2em;
   opacity: 0;
 
   -webkit-animation: fadeIn 400ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
@@ -33,7 +40,7 @@
   display: none;
   position: relative;
   top: 20px;
-  margin: 0 auto;
+  // margin: 0 auto;
   width: 60px;
   height: 60px;
 }
@@ -42,10 +49,15 @@
   padding-top: 1em;
 }
 
-.mosaic-message-type {
-  font-size: 2em;
-  font-weight: 300;
+.mosaic-message-type-display {
+  font-size: 1em;
+  text-transform: uppercase;
 }
+
+.mosaic-message-content {
+  font-size: 2em;
+}
+
 
 
 .thinking {

@@ -17,9 +17,10 @@
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
             "assets": [
+              "src/env.js",
               "src/assets",
               "src/favicon.ico",
-              "src/CNAME"
+              "src/CNAME"              
             ],
             "styles": [
               "./node_modules/@fortawesome/fontawesome-free/css/all.css",

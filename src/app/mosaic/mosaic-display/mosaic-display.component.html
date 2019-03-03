@@ -7,12 +7,12 @@
 
       <div class="mosaic-text">
         <div class="mosaic-icon" [ngClass]="message.messageType"></div>
-        <span class="mosaic-message-type">
+        <div class="mosaic-message-type-display">
           I'm{{message.messageType === 'other' ? '' : ' ' + message.messageType}}...
-        </span>
-        <span class="mosaic-message-content">
+        </div>
+        <div class="mosaic-message-content">
           {{message.messageContent}}
-        </span>
+        </div>
       </div>
 
     </div>

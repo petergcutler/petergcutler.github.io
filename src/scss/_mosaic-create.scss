@@ -1,0 +1,266 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.mosaic-create-content {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #222;
+  color: #F3E393;
+}
+
+.create-header {
+  font-size: 2.4em;
+  margin-bottom: 4em;
+  line-height: 1.6em;
+}
+
+.your-message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.mosaic-textarea {
+  font-size: 2em;
+  font-family: 'Share Tech Mono', monospace;
+  color: #F3E393;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid
+}
+
+.mosaic-form {
+  display: grid;
+  position: relative;
+  padding-top: 3em;
+  grid-row-gap: 1em;
+}
+
+.form-group {
+  margin: 0 auto;
+  padding-bottom: 4em;
+  opacity: 0;
+
+  -webkit-animation: fadeIn 400ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
+  animation: fadeIn 400ms cubic-bezier(0.6, 0.2, 0.1, 1) 800ms forwards;
+}
+
+.mosaic-icon {
+  // display: inline-block;
+  display: none;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+}
+
+
+
+
+
+
+input[type="radio"] {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%),
+                      -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+
+    margin-right: 15px;
+    position: relative;
+
+    -webkit-appearance: none;
+}
+
+
+input[type="radio"]:after {
+    width: 36px;
+    height: 36px;
+    background-color: #444;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+
+    left: 2px;
+    position: relative;
+    top: 2px;
+
+}
+
+
+input[type="radio"]:checked:after {
+    background-color: #F3E393;
+    // box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+    //             inset 0 2px 2px hsla(0,0%,100%,.4),
+    //             0 1px 1px hsla(0,0%,100%,.8),
+    //             0 0 2px 2px hsla(0,70%,70%,.4);
+}
+
+
+
+
+.mosaic-text {
+  padding-top: 1em;
+}
+
+// .mosaic-message-type {
+//   font-size: 2em;
+//   font-weight: 300;
+// }
+
+
+
+.btn {
+  font-size: 2em;
+  font-family: 'Share Tech Mono', monospace;
+  width: 8em;
+  height: 3em;
+  border-radius: 0;
+  background-color: #F3E393;
+  color: #222;
+}
+
+.btn:hover {
+  border: 1px solid #0099cc;
+  background-color: #00aacc;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.btn:disabled,
+.btn[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+
+
+
+
+
+.thinking {
+  background: url('/assets/icons/mosaic/thinking.svg');
+}
+
+.feeling {
+  background: url('/assets/icons/mosaic/feeling.svg');
+}
+
+.seeing {
+  background: url('/assets/icons/mosaic/seeing.svg');
+}
+
+.other {
+  background: url('/assets/icons/mosaic/other.svg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$border-bottom-input: 1px dashed rgba(255, 255, 255, 0.25);
+$border-bottom-input-focus: 1px solid rgba(255, 255, 255, 0.75);
+$border-bottom-transition: border-bottom 0.5s ease;
+
+body {
+  // background: #111;
+  // color: #fff;
+  // font-family: 'Courier New', monospace;
+  // font-size: 15px;
+  // min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  min-height: 100vh;
+}
+
+.radio-group {
+    margin: auto;
+    display: flex;
+    padding-top: 2em;
+
+    @media (max-width: 48em) {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+.radio-group-label {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.radio-label {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+
+    @media (max-width: 48em) {
+        display: block;
+        margin: 10px 0;
+    }
+
+    input {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .inner-label {
+        position: relative;
+        display: inline-block;
+        padding-left: 40px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-bottom: $border-bottom-input;
+            width: 30px;
+            transition: $border-bottom-transition;
+        }
+    }
+
+    input:focus ~ .inner-label {
+        &:before {
+            border-bottom: $border-bottom-input-focus;
+        }
+    }
+
+    input:checked ~ .inner-label {
+        &:after {
+            content: '\2713';
+            color: #fff;
+            position: absolute;
+            font-size: 12px;
+            left: 12px;
+            top: 1px;
+        }
+    }
+}
