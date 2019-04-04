@@ -7,6 +7,7 @@ import { AboutComponent }       from './about/about.component';
 import { WorkListComponent }    from './work/work-list/work-list.component';
 import { MosaicCreateComponent } from './mosaic/mosaic-create/mosaic-create.component';
 import { MosaicDisplayComponent } from './mosaic/mosaic-display/mosaic-display.component';
+import { DigitalFabricationComponent } from './digital-fabrication/digital-fabrication.component';
 
 
 // Unused
@@ -66,6 +67,10 @@ const routes: Routes = [
   {
     path: 'mosaic-display',
     component: MosaicDisplayComponent
+  },
+  {
+    path: 'digital-fabrication',
+    component: DigitalFabricationComponent
   }
   // Available if you want to add a writing portfolio
   // {

@@ -27,7 +27,7 @@ import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
 import { MosaicCreateComponent } from './mosaic/mosaic-create/mosaic-create.component';
 import { MosaicDisplayComponent } from './mosaic/mosaic-display/mosaic-display.component';
-
+import { DigitalFabricationComponent } from './digital-fabrication/digital-fabrication.component';
 
 // Directive-like components
 import { NavComponent } from './nav/nav.component';
@@ -60,6 +60,7 @@ import { WritingComponent } from './writing/writing.component';
     WorkListComponent,
     MosaicCreateComponent,
     MosaicDisplayComponent,
+    DigitalFabricationComponent,
     // Directive
     NavComponent,
     ArticleFooterComponent,
