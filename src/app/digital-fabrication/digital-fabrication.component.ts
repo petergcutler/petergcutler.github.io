@@ -36,6 +36,15 @@ import {
 
 export class DigitalFabricationComponent implements OnInit {
 
+  // Define the site's main-pages links
+  assignments = [
+    {
+      display: 'laser-cutting',
+      path: '/laser-cutting'
+    }
+  ];
+
+
   constructor(private cdRef: ChangeDetectorRef ) {}
 
   revealAbout: string = 'loading';
