@@ -1,7 +1,6 @@
 <article class="digital-fabrication-content" [@revealAboutItems]="revealAbout">
 
   <section class="about-main">
-
     <div class="secondary-content about-item">
       <img class="self-image" src="../assets/images/about/self-image.jpg" alt="peter-cutler">
     </div>
@@ -20,64 +19,169 @@
         </p>
       </div>
     </div>
-
   </section>
 
-  <div class="assignments">
+  <section class="assignments">
+
     <div class="assignments-header">
       Assignments
     </div>
-    <div class="assignment">
-      A1: Laser Cut
+
+    <ul class="assignments-list">
+      <li *ngFor="let assignment of assignments"
+        [class.selected]="assignment === selectedAssignment"
+        (click)="onSelect(assignment)">
+        {{assignment.name}}
+      </li>
+    </ul>
+
+    <div *ngIf="selectedAssignment">
+      <div class="assignment">{{selectedAssignment.name | uppercase}}</div>
+
+      <!-- Assignment 1 -->
+      <div class="assignment-body" *ngIf="selectedAssignment.id === 1">
+        <p>Over the last six days, I was out of town for a family vacation in Los Angeles. This prevented me from getting a lot of this assignment done (for now), but I was able to gather inspiration and do some sketching! We took trips to The Getty, LACMA, and The Broad museums, where I got to check out a lot of Bauhaus works from the early 20th century.</p>
+
+        <div class="assignment-h2">Kandinsky</div>
+
+        <p>I focused on some of Kandinsky's paintings, which are exploring the repetition of grids and lines. I wanted these to inform my repeating item, so that my 3d structure would look like a Kandinsky work in sculpture form.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a1/kandinsky-circles-in-a-circle.jpg"
+          description="Kandinsky - Circles in a Circle"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a1/kandinsky-wave.jpg"
+          description="Kandinsky - Wave"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a1/kandinsky-yellow-border.png"
+          description="Kandinsky - Yellow Border"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Sketching and Vector</div>
+
+        <p>I explored some of the different shapes from Kandinsky's paintings within Illustrator. I didn't have time to get too far into this phase, but I was able to play with some interlocking circles, based on "Circles within Circles". Ideally I'd also include a series of lines/poles to flesh this out even further.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a1/three-slot-circle.png"
+          description="Multiple small slots - probably a bad idea"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>I predicted I wouldn't maintain stability in my model while including multiple slots along the X/Y axis of the circle, so shifted to a model with two, longer slots in a cross shape. This might let the circles interlock more effectively.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a1/cross-circle.png"
+          description="Longer slots across the diameter - probably better"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>You can download an illustrator file here: <a href="../assets/images/digital-fabrication/a1/circles-in-circles.ai">AI File</a></p>
+      </div>
+
+      <!-- Assignment 2 -->
+      <div class="assignment-body" *ngIf="selectedAssignment.id === 2">
+        <p>I continued where I left off with assignment 1, taking Kandinsky's "Circles in a Circle" as a model, and using it as a basis for a 3d/sculptural version.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a1/kandinsky-circles-in-a-circle.jpg"
+          description="Kandinsky - Circles in a Circle"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Sketching in Figma</div>
+
+        <p>I first explored what it would mean to make this in 3d in Figma. Through the embedded link, you can see what I found and look at my process.</p>
+
+        <iframe
+          style="border: none;"
+          width="800"
+          height="450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFWmoCwhZusDS1e49EWUC2KpS%2Fcircles-in-a-circle%3Fnode-id%3D0%253A1"
+          allowfullscreen>
+        </iframe>
+
+        <p>It's pretty cool to conceptualize what this painting could be in 3d. You could end up with different results if you approach it from different perspectives.</p>
+
+        <p>It's also interesting to recognize that the entire sculpture can be parametrically controlled, relative to the size of the base. Through Grasshopper, you could create a file that could produce a sculpture of this of any size, and with materials of any thickness.</p>
+
+        <div class="assignment-h2">Building the Grasshopper File</div>
+
+        <p>I began by wiring up the base circle and a creating a single slot for the one of vertical circles that would be placed within.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a2/1-grasshopper.png"
+          description="The main, base circle"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>Next, I added a single region difference to create a unified circle-with-slot shape.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a2/2-grasshopper-region-difference.png"
+          description="The circle with region difference"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>
+          Next, I added an additional two slots to represent more of the vertical circles. I decided to skip adding every single slot, because I was beginning to recognize the messiness of this level of nesting. I'd do the remaining ones programatically via a script if I had more time.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a2/3-grasshopper-slots.png"
+          description="The circle with THREE region differences"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>
+          Finally, I added the inner circles that would go within the slots -- these were computed from the original diameter, adding yet another layer of recursive messiness to my Rhino file.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a2/4-grasshopper-inner-circles.png"
+          description="...with inner circles alongside"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>
+          Here's a zoomed out link at the whole file. You can download it via the link here: <a href="../assets/images/digital-fabrication/a2/Kandinsky.3dm">rhino file</a> ... <a href="../assets/images/digital-fabrication/a2/Kandinsky.gh">grasshopper file</a>
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a2/5-grasshopper-final-file.png"
+          description="The whole file"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Lasercutting</div>
+
+        <p>
+          With the Rhino file in hand, I converted to AI and laser cut the selection from two cardboard box types.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a2/6-printed-circles.jpg"
+          description="The printed Kandinsky sculptures"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Peer Attribution</div>
+
+        <p>
+          Thanks to Nadya for the great, quick video!
+        </p>
+
+
+      </div>
+
+
+
     </div>
-
-    <div class="assignment-body">
-      <p>Over the last six days, I was out of town for a family vacation in Los Angeles. This prevented me from getting a lot of this assignment done (for now), but I was able to gather inspiration and do some sketching! We took trips to The Getty, LACMA, and The Broad museums, where I got to check out a lot of Bauhaus works from the early 20th century.</p>
-
-      <div class="assignment-h2">Kandinsky</div>
-
-      <p>I focused on some of Kandinsky's paintings, which are exploring the repetition of grids and lines. I wanted these to inform my repeating item, so that my 3d structure would look like a Kandinsky work in sculpture form.</p>
-
-      <app-image-viewer
-        path="../assets/images/digital-fabrication/a1/kandinsky-circles-in-a-circle.jpg"
-        description="Kandinsky - Circles in a Circle"
-        class="assignment-image">
-      </app-image-viewer>
-
-      <app-image-viewer
-        path="../assets/images/digital-fabrication/a1/kandinsky-wave.jpg"
-        description="Kandinsky - Wave"
-        class="assignment-image">
-      </app-image-viewer>
-
-      <app-image-viewer
-        path="../assets/images/digital-fabrication/a1/kandinsky-yellow-border.png"
-        description="Kandinsky - Yellow Border"
-        class="assignment-image">
-      </app-image-viewer>
-
-      <div class="assignment-h2">Sketching and Vector</div>
-
-      <p>I explored some of the different shapes from Kandinsky's paintings within Illustrator. I didn't have time to get too far into this phase, but I was able to play with some interlocking circles, based on "Circles within Circles". Ideally I'd also include a series of lines/poles to flesh this out even further.</p>
-
-      <app-image-viewer
-        path="../assets/images/digital-fabrication/a1/three-slot-circle.png"
-        description="Multiple small slots - probably a bad idea"
-        class="assignment-image">
-      </app-image-viewer>
-
-      <p>I predicted I wouldn't maintain stability in my model while including multiple slots along the X/Y axis of the circle, so shifted to a model with two, longer slots in a cross shape. This might let the circles interlock more effectively.</p>
-
-      <app-image-viewer
-        path="../assets/images/digital-fabrication/a1/cross-circle.png"
-        description="Longer slots across the diameter - probably better"
-        class="assignment-image">
-      </app-image-viewer>
-
-      <p>You can download an illustrator file here: <a href="../assets/images/digital-fabrication/a1/circles-in-circles.ai">AI File</a></p>
-
-
-    </div>
-  </div>
-
+  </section>
 </article>

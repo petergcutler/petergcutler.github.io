@@ -1,5 +1,9 @@
 import { Component, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 
+import { Assignment } from './assignment';
+import { ASSIGNMENTS } from './assignments';
+
+
 import {
   trigger,
   state,
@@ -37,19 +41,18 @@ import {
 export class DigitalFabricationComponent implements OnInit {
 
   // Define the site's main-pages links
-  assignments = [
-    {
-      display: 'laser-cutting',
-      path: '/laser-cutting'
-    }
-  ];
-
+  assignments = ASSIGNMENTS;
+  selectedAssignment: Assignment;
 
   constructor(private cdRef: ChangeDetectorRef ) {}
 
   revealAbout: string = 'loading';
 
   ngOnInit() {}
+
+  onSelect(assignment: Assignment): void {
+    this.selectedAssignment = assignment;
+  }
 
   ngAfterViewInit() {
     this.revealAbout = 'loaded';
