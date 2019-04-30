@@ -53,7 +53,17 @@
 .assignments-header {
   font-size: $hugest;
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.assignments-list li {
+  cursor: pointer;
+  color: #4263eb;
+
+  &:hover {
+    color: #364fc7;
+    text-decoration: underline;
+  }
 }
 
 .assignment {

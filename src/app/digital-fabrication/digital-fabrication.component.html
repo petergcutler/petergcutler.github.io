@@ -8,14 +8,10 @@
     <div class="primary-content about-item">
       <div class="bio">
         <p>
-          Hey, I'm Peter Cutler, and I'm a UX designer and developer living in Seattle.
-          I'm taking Digital Fabrication to learn some cool design methods.
-          I'll probably use what we learn to make things for my home, but maybe for work too.
+          Hey, I'm Peter Cutler, and I'm a UX designer and developer living in Seattle. I'm taking Digital Fabrication to learn some cool design methods. I'll probably use what we learn to make things for my home, but maybe for work too.
         </p>
         <p>
-          Right now I'm looking forward to learning Grasshopper. Some of my friends have been using
-          it on interesting projects. I'm happy to teach my peers about design, coding,
-          or whatever else! Ask me anything in the Mill. Once we have to use our website for something, I'll probably update this page.
+          Right now I'm looking forward to learning Grasshopper. Some of my friends have been using it on interesting projects. I'm happy to teach my peers about design, coding, or whatever else! Ask me anything in the Mill. Once we have to use our website for something, I'll probably update this page.
         </p>
       </div>
     </div>
@@ -185,6 +181,148 @@
           Thanks to Nadya for the great, quick video!
         </p>
 
+
+      </div>
+
+      <!-- Assignment 3 -->
+      <div class="assignment-body" *ngIf="selectedAssignment.id === 3">
+
+        <div class="assignment-h2">Conceptualizing</div>
+
+        <p>
+          I had a busy schedule this week and wanted to conceptualize the deliverable in a way that I could get it done in fewer than 8 hours. This required me to first think about what a simple form would be that could work with the CADE lamps that I picked up from the course materials.
+        </p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a3/ideation-1.png"
+            description="CADE Lamps"
+            borderOn="true">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a3/ideation-2.png"
+            description="Cylindrical, paper lamps"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p>
+          Extending the cylindrical design of the lamp itself, I began imagining concepts like these cylindrical table lamps. Since I knew that 3d-printing for the first time would provide challenges, I accepted that the laser cutting might be a stretch goal - where I could laser cut a pattern into some paper, or into a cap that could go on top of the cylindrical lamp.
+        </p>
+
+        <div class="assignment-h2">Designing on paper</div>
+
+        <p>First, I wanted to measure the lamp and assure the sizings provided enough tolerance to fit around the lamp, and that none of the walls were too thin for the printer.</p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a3/caliper-1.jpg"
+            description="Simple measurement"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a3/caliper-2.jpg"
+            description="Wiggle testing the measurement"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p>Here are some of the measurements.</p>
+
+        <ul>
+          <li>69.96mm: diameter of CADE Lamp</li>
+          <li>72mm: Inner circumference of cylinder</li>
+          <li>2.4mm: Thickness for the interior walls creating the groove</li>
+          <li>2.4mm: Groove width</li>
+          <li>7.2mm: total thickness of tube between internal / external diameter</li>
+          <li>79.2mm: External circumference</li>
+          <li>16mm: insertable portion of paper</li>
+          <li>6mm: Supporting base height</li>
+          <li>22mm: total height of cylinder enclosure</li>
+        </ul>
+
+        <div class="assignment-h2">Designing in Rhino</div>
+
+        <p>I determined that I could design the cylindrical lamp enclosure using strictly cylinder shapes and boolean difference operations.</p>
+
+        <p>You can see the cylinder extrusion/difference process below.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/cylinder-1.png"
+          description="Start with one cylinder"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/cylinder-2.png"
+          description="Subtract from cylinder to make a tube"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/cylinder-3.png"
+          description="Use another cylinder to create a groove"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/cylinder-4.png"
+          description="Final, grooved tube enclosure"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Configuring Dremel DigiLab</div>
+
+        <p>Once I had the shape created to my specifications, I brought it into Dremel DigiLab. I only made a few modifications from the defaults, which you can see below.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/digilab-1.png"
+          description="The shape imported"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/digilab-2.png"
+          description="The shape, and a look at the critical raft settings"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/digilab-3.png"
+          description="The settings panel, also configured at high quality"
+          class="assignment-image">
+        </app-image-viewer>
+
+
+        <div class="assignment-h2">Printing - Failure</div>
+
+        <p>As expected, printing was a real process... My first prints failed, seemingly due to adhesive issues. Even though I asked staff about using raft printing twice, both times they told me to use a skirt method instead. The first time I caught the failure immediately. But the second time, it failed after I left it running and went to class. This cost me a lot of time to then re-run.</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a3/failure-1.jpg"
+          description="A failed print due to adhesive and the skirt"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>I think the print failed due to the hollow circular base. This shape doesn't anchor well to the glue placed on the printing bed, and it looks like there's a fair bit of tension between the PLA from the nozzle and that's being dragged by the printer head. This is why I think the raft solved the problem.</p>
+
+        <div class="assignment-h2">Printing - Success</div>
+
+        <p>Finally, with a raft, the print succeeded.</p>
+
+        <div class="assignment-h2">Peer Attribution</div>
+
+        <p>
+          Thanks to ___ for the tip about printing with a raft.
+        </p>
+
+        <div class="assignment-h2">Files</div>
+
+        <p>Rhino: </p>
+
+        <p>STL: </p>
+
+        <p>DigiLab: </p>
 
       </div>
 
