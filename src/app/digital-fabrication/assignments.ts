@@ -4,7 +4,7 @@ export const ASSIGNMENTS: Assignment[] = [
   { id: 1, name: 'A1: Laser Cut' },
   { id: 2, name: 'A2: Grasshopper Laser Cut'},
   { id: 3, name: 'A3: 3d Printed Lamp' },
-  // { id: 4, name: 'Celeritas' },
+  { id: 4, name: 'A4: Moving Parts' },
   // { id: 5, name: 'Magneta' },
   // { id: 6, name: 'RubberMan' },
   // { id: 7, name: 'Dynama' },

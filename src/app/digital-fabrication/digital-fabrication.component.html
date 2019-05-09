@@ -367,6 +367,131 @@
       </div>
 
 
+      <!-- Assignment 4 -->
+      <div class="assignment-body" *ngIf="selectedAssignment.id === 4">
+
+        <div class="assignment-h2">Conceptualizing Movement</div>
+
+        <p>
+          At the outset of the project, I had no idea what kind of movement to design. With very little experience with Onshape, I wanted to do a simple project to learn the software. That said, I loved the concept of the website <a target="_blank" href="http://507movements.com">507 Movements</a>, so I decided to start looking for inspiration there.
+        </p>
+
+        <p>
+          Deep within 507 Movements, I found the project I was looking for:
+          <a target="_blank" href="http://507movements.com/mm_325.html">movement #325</a>. So simple, and yet so elegant... But mostly so simple.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a4/mm325.gif"
+          description="Simple and clear"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Preparing Pre-Fab Assets</div>
+
+        <p>
+          Next, I knew I would want to use Josh's rivets and the pre-fabricated Onshape file he made of them. Reviewing that file would help me a) learn the software better, and b) find the dimensions I'd need for the holes in my design. I booted up the file he shared on Slack, and made a copy in my account.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a4/onshape-rivet-1.png"
+          description="Finding Dimensions within the Sketch object"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>
+          Rewatching the class recording, and re-learning about Suppress, I moved through the Feature List to review the dimensions of the rivet. I found that the hole I would need in my own design would have to be 6.35mm to match the rivet. Now that I had the rivet in my account, I'd be ready to use it in the assembly once I got to that stage. But first, I'd have to create my articulating rectangles
+        </p>
+
+        <div class="assignment-h2">Designing in Onshape</div>
+
+        <p>Over at the Mill, I began designing the rectangles I'd use in Onshape. Knowing the rough relationships from Movement #325, and the hole diamater of 6.35mm, I chose appropriate rectangle sizes that wouldn't make me waste too much Delrin plastic.</p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a4/rectangle-long.png"
+            description="The interior, narrower rectangles"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a4/rectangle-wide.png"
+            description="The exterior, wider rectangles"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="assignment-h2">Designing the Assembly version</div>
+
+        <p>Now that I'd created my 2 rectangles as separate parts in Onshape, I could bring them and Josh's rivet into an Assembly and try adding articulation.</p>
+
+        <p>Adding revolute and fastened movement was simple, but it was actually the software that threw me off the most. Once I setup my movement, the lag on my dragging parts around was so great that I thought it failed... Annoying, but once I learned that, I had no problems!</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a4/assembly-1.png"
+          description="The fastened assembly"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Preparing for laser-cutting</div>
+
+        <p>I had originally planned on just using cardboard, but the delrin plastic was still floating around the Mill when I wanted to cut, so I took advantage.</p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a4/illustrator-1.png"
+            description="The illustrator layout"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a4/laser-cutting-1.jpg"
+            description="The laser cutting in action"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+
+        <div class="assignment-h2">Assembling</div>
+
+        <p>Delrin is an amazing material. Assembling was a breeze, and the play of the joints is smooth, just like the material itself. All of this was done with just 2x2 custom rectangles, and the 4 pre-fabricated rivets.</p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a4/assembling-1.jpg"
+            description="The parts coming together"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a4/assembled-1.jpg"
+            description="The assembled demo of Movement #325"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p><a target="_blank" href="https://drive.google.com/open?id=1oQ8YKszjIxtOiW6D_pUa91xU8ibtC2Xi">You can see it in movement here.</a></p>
+
+        <div class="assignment-h2">Peer Attribution</div>
+
+        <p>
+          Thanks to Julie for sharing tips and a rivet with me. Thanks to Lukas for some pointers about movement.
+        </p>
+
+        <div class="assignment-h2">Files</div>
+
+        <p> <a target="_blank" href="https://cad.onshape.com/documents/3168167813e0e2c1cdc734a4/w/04c46254efd5ce3509ddb88d/e/5d169d831a3ce077debfc261">Onshape Rectangle 1</a>
+        </p>
+
+        <p> <a target="_blank" href="https://cad.onshape.com/documents/56eed461055c5d35b290a0b2/w/c758b872d9cb989e8c7781d6/e/f54113318292abf98e0beaee">Onshape Rectangle 2</a>
+        </p>
+
+        <p><a target="_blank" href="https://cad.onshape.com/documents/02aa12409421f8a0d7bfa93b/w/557645b62f766a23e7a444d5/e/b4d21133a3e6497560ce4f1d">Onshape Assembly</a>
+        </p>
+
+        <p><a href="../assets/images/digital-fabrication/a4/rectangle-assembly.ai">AI File</a>
+        </p>
+
+      </div>
+
+
 
     </div>
   </section>
