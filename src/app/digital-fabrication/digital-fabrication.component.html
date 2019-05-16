@@ -493,6 +493,169 @@
 
 
 
+            <!-- Assignment 5 -->
+            <div class="assignment-body" *ngIf="selectedAssignment.id === 5">
+
+              <div class="assignment-h2">Conceptualizing the Box</div>
+
+              <p>
+                Similar to prior projects, I wanted to design a simple box that would let me practice the OnShape to KiCad to Bantam workflow. I also wanted a simple design, in which each facet of the box could fit on half of a 7x10cm board of FR1. This would let me screw up without much cost.
+              </p>
+
+              <p>I planned a box that would work similarly to Josh's provided in class, using slots for the side facets to be inserted. I took some measurements to start.</p>
+
+              <div class="work-body-image-grid">
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/caliper-1.jpg"
+                  description="The height"
+                  borderOn="false">
+                </app-image-viewer>
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/caliper-2.jpg"
+                  description="The width"
+                  borderOn="false">
+                </app-image-viewer>
+              </div>
+
+              <p>More importantly, I'd have to ensure that the depth worked perfectly so that it would fit my slots. I took a few measurements and left a few mm of tolerance.</p>
+
+              <app-image-viewer
+                path="../assets/images/digital-fabrication/a5/caliper-3.jpg"
+                description="The depth"
+                class="assignment-image">
+              </app-image-viewer>
+
+              <p>
+                I documented the measurements in a note, <a target="_blank" href="https://www.evernote.com/l/ADcXNf8Ued1Dsr-Ao4etybUXezmFG4FGO0A">here</a>.
+              </p>
+
+              <div class="assignment-h2">Designing the top and bottom</div>
+
+              <p>
+                With accurate measurements in hand, I began designing the slotted box that I'd mill. I began with the base/top.
+              </p>
+
+              <div class="work-body-image-grid">
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/onshape-1.png"
+                  description="The slotted base/top for my sketch"
+                  borderOn="false">
+                </app-image-viewer>
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/onshape-1a.png"
+                  description="Rendered component"
+                  borderOn="false">
+                </app-image-viewer>
+              </div>
+
+              <p>
+                Next, I knew I would want to use Josh's rivets and the pre-fabricated Onshape file he made of them. Reviewing that file would help me a) learn the software better, and b) find the dimensions I'd need for the holes in my design. I booted up the file he shared on Slack, and made a copy in my account.
+              </p>
+
+              <div class="assignment-h2">Designing the walls</div>
+
+              <p>
+                Next, I took the measurements I'd established and created the first set of side walls. Since these extended from the base perfectly, this project would be a great candidate for a single, parametric design.
+              </p>
+
+              <div class="work-body-image-grid">
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/onshape-3.png"
+                  description="The first wall design"
+                  borderOn="false">
+                </app-image-viewer>
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/onshape-3a.png"
+                  description="Rendered component"
+                  borderOn="false">
+                </app-image-viewer>
+              </div>
+
+              <p>
+                Finally, I repeated the process for the other set of walls. Since my box is not square, it has 3 different symmetrical parts.
+              </p>
+
+              <div class="work-body-image-grid">
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/onshape-6.png"
+                  description="The second wall design"
+                  borderOn="false">
+                </app-image-viewer>
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/onshape-6a.png"
+                  description="Rendered component"
+                  borderOn="false">
+                </app-image-viewer>
+              </div>
+
+              <p>
+                With these parts all complete, I was ready to export DXFs for KiCad.
+              </p>
+
+              <div class="assignment-h2">KiCad</div>
+
+              <p>
+                I brought my Onshape DXFs into KiCad, and found that rotating my files was pretty difficult to do. I stacked them on top of each other, and prayed that I would be able to more easily rotate within Bantam tools. This would be necessary for my parts to fit on a single (stacked) set of FR1.
+              </p>
+
+              <app-image-viewer
+                path="../assets/images/digital-fabrication/a5/kicad-1.png"
+                description="Laying out my base/top on a single board"
+                class="assignment-image">
+              </app-image-viewer>
+
+              <div class="assignment-h2">Bantam Tools</div>
+
+              <p>
+                After saving the files and exporting a Gerber file, I was able to bring that into Bantam.
+              </p>
+
+              <app-image-viewer
+                path="../assets/images/digital-fabrication/a5/bantam-1.png"
+                description="Laying out my base/top within Bantam, and configuring the milling"
+                class="assignment-image">
+              </app-image-viewer>
+
+              <p>Bantam was a pleasure to work with. After configuring the file, the offset for the extra, safety board of FR1, and the drill bits I would use, I began to setup and drill. This is where things took a turn for the worse.</p>
+
+              <div class="work-body-image-grid">
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/printing-1.jpg"
+                  description="The top/bottom being printed"
+                  borderOn="false">
+                </app-image-viewer>
+                <app-image-viewer
+                  path="../assets/images/digital-fabrication/a5/bad-print-1.jpg"
+                  description="The final, broken product"
+                  borderOn="false">
+                </app-image-viewer>
+              </div>
+
+
+              <div class="assignment-h2">Peer Attribution</div>
+
+              <p>
+                Thanks to José for some quick tips!
+              </p>
+
+              <div class="assignment-h2">Files</div>
+
+              <p> <a target="_blank" href="https://cad.onshape.com/documents/3168167813e0e2c1cdc734a4/w/04c46254efd5ce3509ddb88d/e/5d169d831a3ce077debfc261">Onshape Rectangle 1</a>
+              </p>
+
+              <p> <a target="_blank" href="https://cad.onshape.com/documents/56eed461055c5d35b290a0b2/w/c758b872d9cb989e8c7781d6/e/f54113318292abf98e0beaee">Onshape Rectangle 2</a>
+              </p>
+
+              <p><a target="_blank" href="https://cad.onshape.com/documents/02aa12409421f8a0d7bfa93b/w/557645b62f766a23e7a444d5/e/b4d21133a3e6497560ce4f1d">Onshape Assembly</a>
+              </p>
+
+              <p><a href="../assets/images/digital-fabrication/a4/rectangle-assembly.ai">AI File</a>
+              </p>
+
+            </div>
+
+
+
     </div>
   </section>
 </article>
