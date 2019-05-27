@@ -493,175 +493,351 @@
 
 
 
-            <!-- Assignment 5 -->
-            <div class="assignment-body" *ngIf="selectedAssignment.id === 5">
+      <!-- Assignment 5 -->
+      <div class="assignment-body" *ngIf="selectedAssignment.id === 5">
 
-              <div class="assignment-h2">Conceptualizing the Box</div>
+        <div class="assignment-h2">Conceptualizing the Box</div>
 
-              <p>
-                Similar to prior projects, I wanted to design a simple box that would let me practice the OnShape to KiCad to Bantam workflow. I also wanted a simple design, in which each facet of the box could fit on half of a 7x10cm board of FR1. This would let me screw up without much cost.
-              </p>
+        <p>
+          Similar to prior projects, I wanted to design a simple box that would let me practice the OnShape to KiCad to Bantam workflow. I also wanted a simple design, in which each facet of the box could fit on half of a 7x10cm board of FR1. This would let me screw up without much cost.
+        </p>
 
-              <p>I planned a box that would work similarly to Josh's provided in class, using slots for the side facets to be inserted. I took some measurements to start.</p>
+        <p>I planned a box that would work similarly to Josh's provided in class, using slots for the side facets to be inserted. I took some measurements to start.</p>
 
-              <div class="work-body-image-grid">
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/caliper-1.png"
-                  description="The height"
-                  borderOn="false">
-                </app-image-viewer>
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/caliper-2.png"
-                  description="The width"
-                  borderOn="false">
-                </app-image-viewer>
-              </div>
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/caliper-1.png"
+            description="The height"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/caliper-2.png"
+            description="The width"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
 
-              <p>More importantly, I'd have to ensure that the depth worked perfectly so that it would fit my slots. I took a few measurements and left a few mm of tolerance.</p>
+        <p>More importantly, I'd have to ensure that the depth worked perfectly so that it would fit my slots. I took a few measurements and left a few mm of tolerance.</p>
 
-              <app-image-viewer
-                path="../assets/images/digital-fabrication/a5/caliper-3.png"
-                description="The depth"
-                class="assignment-image">
-              </app-image-viewer>
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a5/caliper-3.png"
+          description="The depth"
+          class="assignment-image">
+        </app-image-viewer>
 
-              <p>
-                I documented the measurements in a note, <a target="_blank" href="https://www.evernote.com/l/ADcXNf8Ued1Dsr-Ao4etybUXezmFG4FGO0A">here</a>.
-              </p>
+        <p>
+          I documented the measurements in a note, <a target="_blank" href="https://www.evernote.com/l/ADcXNf8Ued1Dsr-Ao4etybUXezmFG4FGO0A">here</a>.
+        </p>
 
-              <div class="assignment-h2">Designing the top and bottom</div>
+        <div class="assignment-h2">Designing the top and bottom</div>
 
-              <p>
-                With accurate measurements in hand, I began designing the slotted box that I'd mill. I began with the base/top.
-              </p>
+        <p>
+          With accurate measurements in hand, I began designing the slotted box that I'd mill. I began with the base/top.
+        </p>
 
-              <div class="work-body-image-grid">
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/onshape-1.png"
-                  description="The slotted base/top for my sketch"
-                  borderOn="false">
-                </app-image-viewer>
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/onshape-1a.png"
-                  description="Rendered component"
-                  borderOn="false">
-                </app-image-viewer>
-              </div>
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/onshape-1.png"
+            description="The slotted base/top for my sketch"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/onshape-1a.png"
+            description="Rendered component"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
 
-              <p>
-                Next, I knew I would want to use Josh's rivets and the pre-fabricated Onshape file he made of them. Reviewing that file would help me a) learn the software better, and b) find the dimensions I'd need for the holes in my design. I booted up the file he shared on Slack, and made a copy in my account.
-              </p>
+        <p>
+          Next, I knew I would want to use Josh's rivets and the pre-fabricated Onshape file he made of them. Reviewing that file would help me a) learn the software better, and b) find the dimensions I'd need for the holes in my design. I booted up the file he shared on Slack, and made a copy in my account.
+        </p>
 
-              <div class="assignment-h2">Designing the walls</div>
+        <div class="assignment-h2">Designing the walls</div>
 
-              <p>
-                Next, I took the measurements I'd established and created the first set of side walls. Since these extended from the base perfectly, this project would be a great candidate for a single, parametric design.
-              </p>
+        <p>
+          Next, I took the measurements I'd established and created the first set of side walls. Since these extended from the base perfectly, this project would be a great candidate for a single, parametric design.
+        </p>
 
-              <div class="work-body-image-grid">
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/onshape-3.png"
-                  description="The first wall design"
-                  borderOn="false">
-                </app-image-viewer>
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/onshape-3a.png"
-                  description="Rendered component"
-                  borderOn="false">
-                </app-image-viewer>
-              </div>
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/onshape-3.png"
+            description="The first wall design"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/onshape-3a.png"
+            description="Rendered component"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
 
-              <p>
-                Finally, I repeated the process for the other set of walls. Since my box is not square, it has 3 different symmetrical parts.
-              </p>
+        <p>
+          Finally, I repeated the process for the other set of walls. Since my box is not square, it has 3 different symmetrical parts.
+        </p>
 
-              <div class="work-body-image-grid">
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/onshape-6.png"
-                  description="The second wall design"
-                  borderOn="false">
-                </app-image-viewer>
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/onshape-6a.png"
-                  description="Rendered component"
-                  borderOn="false">
-                </app-image-viewer>
-              </div>
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/onshape-6.png"
+            description="The second wall design"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/onshape-6a.png"
+            description="Rendered component"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
 
-              <p>
-                With these parts all complete, I was ready to export DXFs for KiCad.
-              </p>
+        <p>
+          With these parts all complete, I was ready to export DXFs for KiCad.
+        </p>
 
-              <div class="assignment-h2">KiCad</div>
+        <div class="assignment-h2">KiCad</div>
 
-              <p>
-                I brought my Onshape DXFs into KiCad, and found that rotating my files was pretty difficult to do. I stacked them on top of each other, and prayed that I would be able to more easily rotate within Bantam tools. This would be necessary for my parts to fit on a single (stacked) set of FR1.
-              </p>
+        <p>
+          I brought my Onshape DXFs into KiCad, and found that rotating my files was pretty difficult to do. I stacked them on top of each other, and prayed that I would be able to more easily rotate within Bantam tools. This would be necessary for my parts to fit on a single (stacked) set of FR1.
+        </p>
 
-              <app-image-viewer
-                path="../assets/images/digital-fabrication/a5/kicad-1.png"
-                description="Laying out my base/top on a single board"
-                class="assignment-image">
-              </app-image-viewer>
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a5/kicad-1.png"
+          description="Laying out my base/top on a single board"
+          class="assignment-image">
+        </app-image-viewer>
 
-              <div class="assignment-h2">Bantam Tools</div>
+        <div class="assignment-h2">Bantam Tools</div>
 
-              <p>
-                After saving the files and exporting a Gerber file, I was able to bring that into Bantam.
-              </p>
+        <p>
+          After saving the files and exporting a Gerber file, I was able to bring that into Bantam.
+        </p>
 
-              <app-image-viewer
-                path="../assets/images/digital-fabrication/a5/bantam-1.png"
-                description="Laying out my base/top within Bantam, and configuring the milling"
-                class="assignment-image">
-              </app-image-viewer>
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a5/bantam-1.png"
+          description="Laying out my base/top within Bantam, and configuring the milling"
+          class="assignment-image">
+        </app-image-viewer>
 
-              <p>Bantam was a pleasure to work with. After configuring the file, the offset for the extra, safety board of FR1, and the drill bits I would use, I began to setup and drill. This is where things took a turn for the worse.</p>
+        <p>Bantam was a pleasure to work with. After configuring the file, the offset for the extra, safety board of FR1, and the drill bits I would use, I began to setup and drill. This is where things took a turn for the worse.</p>
 
-              <p>The FR1 was well secured to the bed, and the Bantam file showed everything fitting neatly on the bed, however, after the first 20 minutes of drilling, I noticed the drill eventually moved off the bed when working on the rear groove - something was misaligned.</p>
+        <p>The FR1 was well secured to the bed, and the Bantam file showed everything fitting neatly on the bed, however, after the first 20 minutes of drilling, I noticed the drill eventually moved off the bed when working on the rear groove - something was misaligned.</p>
 
-              <div class="work-body-image-grid">
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/printing-1.jpg"
-                  description="The top/bottom being printed"
-                  borderOn="false">
-                </app-image-viewer>
-                <app-image-viewer
-                  path="../assets/images/digital-fabrication/a5/bad-print-1.jpg"
-                  description="The final, broken product"
-                  borderOn="false">
-                </app-image-viewer>
-              </div>
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/printing-1.jpg"
+            description="The top/bottom being printed"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a5/bad-print-1.jpg"
+            description="The final, broken product"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
 
-              <p>Looking at the broken piece, I could see that the problems were beyond just the mill going off the FR1. What was drilled was also somewhat mangled -- some of the grooves were lost or bled into the cutout line for the actual base.</p>
+        <p>Looking at the broken piece, I could see that the problems were beyond just the mill going off the FR1. What was drilled was also somewhat mangled -- some of the grooves were lost or bled into the cutout line for the actual base.</p>
 
-              <p>Unfortunately, this happened at the Mill's closing on Saturday night, and I knew I wouldn't have time to return for another go. That said, I can at least use my lessons learned here to inform my work on the next project and on the final!</p>
+        <p>Unfortunately, this happened at the Mill's closing on Saturday night, and I knew I wouldn't have time to return for another go. That said, I can at least use my lessons learned here to inform my work on the next project and on the final!</p>
 
-              <div class="assignment-h2">Peer Attribution</div>
+        <div class="assignment-h2">Peer Attribution</div>
 
-              <p>
-                Thanks to José for some quick tips!
-              </p>
+        <p>
+          Thanks to José for some quick tips!
+        </p>
 
-              <div class="assignment-h2">Files</div>
+        <div class="assignment-h2">Files</div>
 
-              <p> <a target="_blank" href="https://cad.onshape.com/documents/0171f3745f8c4b626d0d923f/w/38e4c559878738867c3f92e1/e/6f53e4b6b4faf3d3235baeab">Onshape Top/Bottom 1</a>
-              </p>
+        <p> <a target="_blank" href="https://cad.onshape.com/documents/0171f3745f8c4b626d0d923f/w/38e4c559878738867c3f92e1/e/6f53e4b6b4faf3d3235baeab">Onshape Top/Bottom 1</a>
+        </p>
 
-              <p> <a target="_blank" href="https://cad.onshape.com/documents/22469418efa2f40e6df8a80b/w/b3d234fafcebbeb0082104f4/e/c312a73d7709aa124f9b2d86">Onshape Side 1</a>
-              </p>
+        <p> <a target="_blank" href="https://cad.onshape.com/documents/22469418efa2f40e6df8a80b/w/b3d234fafcebbeb0082104f4/e/c312a73d7709aa124f9b2d86">Onshape Side 1</a>
+        </p>
 
-              <p><a target="_blank" href="https://cad.onshape.com/documents/b4139af7aca93960b604764c/w/0eb78af33adad74bee2af16f/e/20a7242bc5c45b9d08aaca52">Onshape Side 2</a>
-              </p>
+        <p><a target="_blank" href="https://cad.onshape.com/documents/b4139af7aca93960b604764c/w/0eb78af33adad74bee2af16f/e/20a7242bc5c45b9d08aaca52">Onshape Side 2</a>
+        </p>
 
-              <p><a href="../assets/images/digital-fabrication/a5/kicad-bottom-top-1.zip">KiCad files</a>
+        <p><a href="../assets/images/digital-fabrication/a5/kicad-bottom-top-1.zip">KiCad files</a>
 
-              <p><a href="../assets/images/digital-fabrication/a5/bottom-top-Edge_Cuts.gbr">Gerber file</a>
+        <p><a href="../assets/images/digital-fabrication/a5/bottom-top-Edge_Cuts.gbr">Gerber file</a>
 
-              <p><a href="../assets/images/digital-fabrication/a5/bantam-recreation.btm">Bantam recreation (crashed right after initial milling)</a>
-              </p>
+        <p><a href="../assets/images/digital-fabrication/a5/bantam-recreation.btm">Bantam recreation (crashed right after initial milling)</a>
+        </p>
 
-            </div>
+      </div>
+
+
+
+      <!-- Assignment 6 -->
+      <div class="assignment-body" *ngIf="selectedAssignment.id === 6">
+
+        <div class="assignment-h2">What to mold?</div>
+
+        <p>
+          At the beginning of the project, I was feeling pretty daunted by the work that we'd have to do to fabricate the various molds, so I browsed thingoverse for some molds that looked interesting to me. I play a lot of piano, so I decided to look up some favorite composers. Most of them weren't on thingiverse, so I just went with Beethoven. Good ol' Beethoven.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a6/beethoven-1.png"
+          description="Beethoven bust on thingiverse: thing #1178 by dino-girl"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>
+          The model was described as "low-poly," but still looked pretty detailed, which was concerning. The mold would have to be quite high fidelity to make this work.
+        </p>
+
+        <div class="assignment-h2">Modeling the Mold</div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/beethoven-2.png"
+            description="View of the model, 1"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/beethoven-3.png"
+            description="View of the model, 2"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p>
+          The thingiverse file provided the STL of the bust itself, but I'd have to model the rest of the mold. What would be involved?
+        </p>
+
+        <ul>
+          <li>Model the container for both sides of the mold</li>
+          <li>Add registration points / keys to the two containers, so that they would interlock once placed together</li>
+          <li>Model a hole to pour into, which also allows enough space for air to vent out</li>
+        </ul>
+
+        <p>
+          With the box, registration points, and pour hole all in place, I aligned my Beethoven model and exported a complete STL file for milling. I actually created tool paths in Fusion 360 too, but those didn't end up being necessary. They're provided below along with the other files.
+        </p>
+
+        <div class="assignment-h2">Pivoting to Kirby</div>
+
+        <p>
+          I brought my files to mill on the shopbot at UW, but ultimately had to grapple with the fact that Beethoven would just be too detailed to realize properly with a 1/8 inch flat end mill. While waiting to use the shopbot, I jumped back to thingiverse, grabbed a model of the esteemed Nintendo hero, Kirby, and subbed out my Beethoven model.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a6/kirby-1.png"
+          description="My kirby in Rhino. Original by Leondro. Thing #3419340"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>
+          With all of their friendly, anatomical circles, Kirby would prove a much better fit for the shopbot. Realigning the model, I was able to preserve my registration points and pour hole; I just had to scale and transform Kirby appropriately.
+        </p>
+
+        <div class="assignment-h2">Milling Kirby on the Shopbot</div>
+
+        <p>
+          To use the shopbot, we shared our STL files with our instructor, who initiated the actual milling.
+        </p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/shopbot-1.png"
+            description="The shopbot's interface"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/shopbot-2.png"
+            description="The shopbot doing its thing"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p>
+          We hot glued our machinable wax bricks to the work area, and about 30 minutes later, detached our milled, wax molds.
+        </p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a6/wax-mold.png"
+          description="The cut wax mold"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Oomooing the Mold</div>
+
+        <p>
+          To use the machined wax as a mold, we would actually use Oomoo as a softer casting media. This would result in a more reusable mold for our hydrostone plaster.
+        </p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/oomoo-1.jpg"
+            description="Mixing the Oomoo and pouring outside"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/oomoo-2.jpg"
+            description="The completed Oomoo molds"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p>
+          The Oomoo was easy to work with, and with a mold this size, I'm left with a lot more for later projects.
+        </p>
+
+        <div class="assignment-h2">Plastering the Oomoo</div>
+
+        <p>
+          To use the Oomoo molds, I'd just have to seal them together, mix in some hydrostone, and voila!
+        </p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/molding-1.jpg"
+            description="Mixing the hydrostone (careful, it's toxic stuff)"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/molding-2.jpg"
+            description="Sealing the Oomoo mold with rubberbands"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/molding-3.jpg"
+            description="Pouring hydrostone into the sealed mold"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a6/molding-4.jpg"
+            description="Unveiling!"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p>Our assignment was to repeat this process 4 times, to demonstrate the reusability of the molds, and here we are!</p>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a6/kirbies.jpg"
+          description="A parliament of Kirbies"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <div class="assignment-h2">Peer Attribution</div>
+
+        <p>
+          Thanks to Hanna, D'Marcus, and Lukas! We all worked on two-part molds together at the Mill, before we learned that one part molds could be done. It was a lot of effort, but I'm really happy to know how to make fully 3d figures via molds now.
+        </p>
+
+        <div class="assignment-h2">Files</div>
+
+        <p><a href="../assets/images/digital-fabrication/a6/kirby-union.stl">Kirby STL file</a>
+
+        <p><a href="../assets/images/digital-fabrication/a6/beethoven-union.stl">Beethoven STL file</a>
+
+        <p><a href="../assets/images/digital-fabrication/a6/cutler-beethoven-1001.gcode">Beethoven toolpaths (gcode)</a>
+        </p>
+
+      </div>
+
 
     </div>
   </section>
