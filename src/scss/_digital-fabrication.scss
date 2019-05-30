@@ -2,6 +2,20 @@
   padding: 0 2em;
   max-width: 54em;
   margin: 0 auto;
+
+  ol {
+    list-style: decimal;
+    padding-left: 3em;
+
+    li {
+      padding-bottom: 1em;
+    }
+  }
+
+  ul {
+    padding-left: 3em;
+    line-height: 2em;
+  }
 }
 
 .about-main {
@@ -75,10 +89,12 @@
 .assignment-h2 {
   margin-top: 1em;
   font-size: $larger;
+  font-weight: 600;
 }
 
 .assignment-body {
   margin-top: 1em;
+  padding-bottom: 4em;
 }
 
 .assignment-image {
