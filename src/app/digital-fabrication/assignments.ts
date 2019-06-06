@@ -8,7 +8,7 @@ export const ASSIGNMENTS: Assignment[] = [
   { id: 5, name: 'A5: Subtractive Fabrication' },
   { id: 6, name: 'A6: Molding and Casting' },
   { id: 7, name: 'A7: Final Project Proposal' },
-  // { id: 8, name: 'Dr IQ' },
+  { id: 8, name: 'A8: Final Project' },
   // { id: 9, name: 'Magma' },
   // { id: 10, name: 'Tornado' }
 ];
