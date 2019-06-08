@@ -939,7 +939,30 @@
       <!-- Assignment 8 -->
       <div class="assignment-body" *ngIf="selectedAssignment.id === 8">
 
+        <p>Following my project proposal from class last week, I began my project the next day, taking the files from <a target="_blank" href="https://www.thingiverse.com/thing:1739676">A26</a> and <a target="_blank" href="https://www.thingiverse.com/thing:2819565/comments">drcameron</a> and reviewing them to think about how to begin.</p>
+
+        <!-- <div class="assignment-h2">Thinking about how to begin</div> -->
+
+        <!-- <app-image-viewer
+          path="../assets/images/digital-fabrication/a8/owl-1.png"
+          description="Looking at the STL files for the clock like..."
+          borderOn="true"
+          class="assignment-image">
+        </app-image-viewer> -->
+
+        <p>
+          The files aren't the most descriptive on their own, but I could trust that they would come together, somehow. I also began this project by looking at some other <a target="_blank" href="http://www.woodentimes.com/">wooden clocks</a>, and this at least seemed more straightforward than those. If I could figure this one out, I'd be better prepared to go another level deep in the future.
+        </p>
+
+        <p>
+          With my "growth mindset" in hand, I decided to jump in and start fabricating the files.
+        </p>
+
         <div class="assignment-h2">3d Printing</div>
+
+        <p>
+          That was a mistake. At least, it was a mistake to just try and print all the files at once.
+        </p>
 
         <div class="work-body-image-grid">
           <app-image-viewer
@@ -954,7 +977,23 @@
           </app-image-viewer>
         </div>
 
+        <p>
+          All of my first prints (each estimate to take about 6-10 hours) failed after about 75% completion. I would find the layers shifted at this point, as you can see in the pictures. At first, I chalked this up to bad luck and hubris, so naturally I restarted my print just like before, without making any changes.
+        </p>
+
+        <p>
+          After the second failure, however, I saw that a snag was waiting for me in my PLA. I realized that the shift in the layers/positions when the failure occurred probably came from the PLA hitting that snag, and pulling on the head, which let the printer continue printing, albeit misaligned.
+        </p>
+
+        <p>
+          I decided to try and fix both problems at once. I simplified what I was printing on a plate at one time, and I painstakingly went through my PLA to remove any snags / overlaps in the coiling.
+        </p>
+
         <div class="assignment-h2">3d Printing Better</div>
+
+        <p>
+          At this point, I shifted from Dremel to Simplify3d, and the prints started working perfectly. I did learn some important lessons about printing multiple, complex / delicate parts on a single bed. Primary among these was that, while you need adhesive across the plate to secure the prints, don't use so much that removing a delicate gear becomes a nerve-wracking experience. Just use a grid of very thin lines of glue.
+        </p>
 
         <div class="work-body-image-grid">
           <app-image-viewer
@@ -969,10 +1008,134 @@
           </app-image-viewer>
         </div>
 
+        <p>
+          Finally, overnight on Monday, I finished printing the main parts. There were no instructions, so I had to infer the assembly as best as I could.
+        </p>
+
+        <div class="assignment-h2">Assembly Process</div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-1.jpg"
+            description="Step 1"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-2.jpg"
+            description="Step 2"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-3.jpg"
+            description="Step 3"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-4.jpg"
+            description="Step 4"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-5.jpg"
+            description="Step 5"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-6.jpg"
+            description="Step 6"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-7.jpg"
+            description="Step 7"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-8.jpg"
+            description="Step 8"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-9.jpg"
+            description="Step 9"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-10.jpg"
+            description="Step 10"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-11.jpg"
+            description="Step 11"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-12.jpg"
+            description="Step 12"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-13.jpg"
+            description="Step 13"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-14.jpg"
+            description="Step 14"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <p>
+          That completes the basic assembly of the clock, but assembled as it is, it won't run. To make it run, you'd have to add the pendulum, escapement, and ensure that the escapement connects properly with the first gear in the gear train. The basic pendulum/escapement is shown below!
+        </p>
+
+        <div class="work-body-image-grid">
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-15.jpg"
+            description="Step 15"
+            borderOn="false">
+          </app-image-viewer>
+          <app-image-viewer
+            path="../assets/images/digital-fabrication/a8/assembly-16.jpg"
+            description="Step 16"
+            borderOn="false">
+          </app-image-viewer>
+        </div>
+
+        <app-image-viewer
+          path="../assets/images/digital-fabrication/a8/assembly-17.jpg"
+          description="Assembled!"
+          class="assignment-image">
+        </app-image-viewer>
+
+        <p>
+          This may not be the most advanced escapement and pendulum, BUT it is an excellent demonstration of how a simple pendulum/escapement can work. By merely teetering this seesaw, or counter-balanced pendulum, you can run your clock.
+        </p>
+
         <div class="assignment-h2">CAD/Laser Cutting</div>
 
         <p>
-          A face for a clock that tells "a time."
+          To meet the requirements for the assignment, I couldn't just use existing files -- I'd have to do some CAD and laser cutting as well. At this point, I had spent a lot of time parsing out how the clock works and printing the pieces, and I still didn't have a clock that would tell dependable time, so I decided to lean into my 'timeless' clock, and make an appropriate face.
         </p>
 
         <div class="work-body-image-grid">
@@ -988,17 +1151,22 @@
           </app-image-viewer>
         </div>
 
-        <div class="assignment-h2">Some parts moving... aka "running"</div>
-
-        <app-image-viewer
-          path="../assets/images/digital-fabrication/a8/assembly-1.jpg"
-          description="Assembled"
-          class="assignment-image">
-        </app-image-viewer>
-
-        <p>It sort of runs! When I spin it!
-          <a target="_blank" href="https://drive.google.com/file/d/1-jzwPkot4jq1AEsaOBj1QKdlvpesQnoF/view?usp=sharing">The clock "running"</a>
+        <p>
+          The face was designed in Rhino, using a simple polar array of my hourly "ticks."
         </p>
+
+        <div class="assignment-h2">My clock "running"</div>
+
+        <div class="work-body-youtube-video work-video-embed">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/FQOxibzaefc"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
 
         <div class="assignment-h2">Credit!</div>
 
