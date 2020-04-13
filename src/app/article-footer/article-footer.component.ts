@@ -13,6 +13,7 @@ export class ArticleFooterComponent implements OnInit {
 
   public longPage: boolean;
   public path: any;
+  public currentYear: any = new Date().getFullYear();
   // public imageCredit: object = get(this.work, 'imageCredit');
 
   constructor(private router: Router) {
