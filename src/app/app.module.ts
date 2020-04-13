@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { EnvServiceProvider } from './env.service.provider';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -86,6 +86,7 @@ import { WritingComponent } from './writing/writing.component';
   ],
   imports: [
     BrowserModule,
+    HammerModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,

@@ -1,3 +1,4 @@
+// Touch support with Hammer
 import 'hammerjs';
 
 import { enableProdMode } from '@angular/core';
