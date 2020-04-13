@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { EnvServiceProvider } from './env.service.provider';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -16,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { WorkService } from './work/work.service';
 
 // External
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { NgsRevealModule } from 'ng-scrollreveal';
 // import { RunKitEmbedComponent } from 'angular-runkit'
@@ -88,10 +88,23 @@ import { WritingComponent } from './writing/writing.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
     HttpClientModule,
     AppRoutingModule,
     NgxGalleryModule,
+    NgxPageScrollCoreModule.forRoot(
+      // { /* custom settings here */ }
+      {
+        scrollOffset: 125,
+        duration: 800,
+        easingLogic:
+          (t: number, b: number, c: number, d: number): number => {
+            t /= d/2;
+            if (t < 1) return c/2*t*t*t*t*t + b;
+            t -= 2;
+            return c/2*(t*t*t*t*t + 2) + b;
+          }
+      }
+    ),
     NgxPageScrollModule,
     NgsRevealModule.forRoot()
   ],

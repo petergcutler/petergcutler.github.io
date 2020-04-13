@@ -7,6 +7,8 @@ import { EnvService } from '../../env.service';
 import { interval } from "rxjs/internal/observable/interval";
 import { startWith, switchMap } from "rxjs/operators";
 
+import { each, isEqual, shuffle, clone, pull } from 'lodash-es';
+
 import {
   trigger,
   state,
@@ -61,7 +63,7 @@ export class MosaicDisplayComponent implements OnInit {
     let that = this;
     let messages = [];
 
-    _.each(data.records, function(i, n) {
+    each(data.records, function(i, n) {
       let message = {
         'id': n,
         'messageType': i.fields.type,
@@ -70,10 +72,10 @@ export class MosaicDisplayComponent implements OnInit {
       messages.push(message);
     });
 
-    if (!_.isEqual(messages, that.messages)) {
+    if (!isEqual(messages, that.messages)) {
       that.messages = messages;
-      that.messagesDisplay = _.shuffle( _.clone(messages) );
-      _.pull(that.messages, 0);
+      that.messagesDisplay = shuffle( clone(messages) );
+      pull(that.messages, 0);
     }
   }
 

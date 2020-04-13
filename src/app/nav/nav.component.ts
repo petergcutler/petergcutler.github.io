@@ -12,6 +12,8 @@ import {
   stagger
 } from '@angular/animations';
 
+import { each, startsWith, get } from 'lodash-es';
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -71,8 +73,8 @@ export class NavComponent implements OnInit {
   revealNav: string = 'loading';
 
   updateAnimationStates(loadedPath): void {
-    _.each(this.pages, function(i) {
-      if (_.startsWith(loadedPath, i.path)) {
+    each(this.pages, function(i) {
+      if (startsWith(loadedPath, i.path)) {
         i.state = 'active';
       } else if (loadedPath === '/' && i.path === '/about') {
         i.state = 'active';
@@ -94,7 +96,7 @@ export class NavComponent implements OnInit {
 
       // If navigation is concluding, update the path
       if (event instanceof NavigationEnd ) {
-        this.path = _.get(event, 'url');
+        this.path = get(event, 'url');
 
         this.updateAnimationStates(this.path);
       }

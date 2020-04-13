@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, Event, NavigationStart, NavigationEnd } from '@angular/router';
 
+import { get, startsWith } from 'lodash-es';
+
 @Component({
   selector: 'app-article-footer',
   templateUrl: './article-footer.component.html',
@@ -11,7 +13,7 @@ export class ArticleFooterComponent implements OnInit {
 
   public longPage: boolean;
   public path: any;
-  // public imageCredit: object = _.get(this.work, 'imageCredit');
+  // public imageCredit: object = get(this.work, 'imageCredit');
 
   constructor(private router: Router) {
     router.events.subscribe((event: Event) => {
@@ -23,9 +25,9 @@ export class ArticleFooterComponent implements OnInit {
 
       // If navigation is concluding, check for long page
       if (event instanceof NavigationEnd ) {
-        this.path = _.get(event, 'url');
+        this.path = get(event, 'url');
 
-        if (_.startsWith(this.path, '/work/')) {
+        if (startsWith(this.path, '/work/')) {
           this.longPage = true;
         }
       }

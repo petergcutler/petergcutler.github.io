@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd, UrlSegment } from '@angular/router';
 
-import { PageScrollConfig } from 'ngx-page-scroll';
+// import { PageScrollConfig } from 'ngx-page-scroll';
 import { NgsRevealConfig } from 'ng-scrollreveal';
+
+import { assign } from 'lodash-es';
 
 @Component({
   selector: 'app-dashboard',
@@ -36,21 +38,21 @@ export class DashboardComponent {
     };
 
     // customize ng-page-scroll
-    var pageScrollOptions = {
-      defaultScrollOffset: 125,
-      defaultDuration: 800,
-      defaultEasingLogic: {
-        ease: (t: number, b: number, c: number, d: number): number => {
-          t /= d/2;
-          if (t < 1) return c/2*t*t*t*t*t + b;
-          t -= 2;
-          return c/2*(t*t*t*t*t + 2) + b;
-        }
-      }
-    };
+    // var pageScrollOptions = {
+    //   defaultScrollOffset: 125,
+    //   defaultDuration: 800,
+    //   defaultEasingLogic: {
+    //     ease: (t: number, b: number, c: number, d: number): number => {
+    //       t /= d/2;
+    //       if (t < 1) return c/2*t*t*t*t*t + b;
+    //       t -= 2;
+    //       return c/2*(t*t*t*t*t + 2) + b;
+    //     }
+    //   }
+    // };
 
-    _.assign(config, scrollRevealOptions);
-    _.assign(PageScrollConfig, pageScrollOptions);
+    assign(config, scrollRevealOptions);
+    // assign(PageScrollConfig, pageScrollOptions);
   }
 
 

@@ -21,7 +21,7 @@
               "src/env.js",
               "src/assets",
               "src/favicon.ico",
-              "src/CNAME"              
+              "src/CNAME"
             ],
             "styles": [
               "./node_modules/@fortawesome/fontawesome-free/css/all.css",
@@ -29,7 +29,6 @@
             ],
             "scripts": [
               "./node_modules/scrollreveal/dist/scrollreveal.js",
-              "./node_modules/lodash/lodash.js",
               "./node_modules/angular-runkit/dist/index.js"
             ]
           },

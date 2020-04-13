@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage } from '@kolkov/ngx-gallery';
+
+import { set, each } from 'lodash-es';
 
 @Component({
   selector: 'app-image-viewer',
@@ -29,15 +31,15 @@ export class ImageViewerComponent implements OnInit {
   addImage(array, object): void {
     let image = {};
 
-    _.set(image, 'big', object.path);
-    _.set(image, 'description', object.description);
+    set(image, 'big', object.path);
+    set(image, 'description', object.description);
 
     array.push(image);
   }
 
   buildGalleryImages(array, addImage): void {
     if (this.images) {
-      _.each(this.images, function(i) {
+      each(this.images, function(i) {
         addImage(array, i);
       });
     } else {
@@ -47,8 +49,8 @@ export class ImageViewerComponent implements OnInit {
 
   buildCustomOptions(optionsObject, imageArray): void {
     if (imageArray.length === 1) {
-      _.set(optionsObject, 'arrowNextIcon', 'arrow-off');
-      _.set(optionsObject, 'arrowPrevIcon', 'arrow-off');
+      set(optionsObject, 'arrowNextIcon', 'arrow-off');
+      set(optionsObject, 'arrowPrevIcon', 'arrow-off');
     }
   }
 
