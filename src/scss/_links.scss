@@ -1,6 +1,6 @@
 .basic-link {
   text-decoration: underline;
-  @include transition (color, 0.3s, ease)
+  @include transition (color, 0.3s, ease);
 
   &:link {
     color: $accent-red;
@@ -11,7 +11,7 @@
   }
 
   &:active {
-    border: 1px solid desaturate($accent-red, 50% );;
+    border: 1px solid desaturate($accent-red, 50% );
   }
 
   &:visited {

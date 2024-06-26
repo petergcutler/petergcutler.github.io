@@ -40,7 +40,7 @@
 
     &::before {
       color: $mini-heading-gray;
-      @include transition (all, 0.2s, ease-in-out)
+      @include transition (all, 0.2s, ease-in-out);
     }
 
     &:hover::before {
