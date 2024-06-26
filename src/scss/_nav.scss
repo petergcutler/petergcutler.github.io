@@ -40,7 +40,7 @@
   text-decoration: none;
   text-transform: capitalize;
   position: relative;
-  @include transition (all, 0.2s, ease-in-out)
+  @include transition (all, 0.2s, ease-in-out);
 
   &:hover {
     color: $accent-light-red;
