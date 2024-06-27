@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import GLightbox from 'glightbox';
 
 @Component({
   selector: 'app-uw-complex-systems',
