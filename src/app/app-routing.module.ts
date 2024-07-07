@@ -5,14 +5,16 @@ import { RouterModule, Routes } from '@angular/router';
 // Pages
 import { AboutComponent }       from './about/about.component';
 import { WorkListComponent }    from './work/work-list/work-list.component';
-import { MosaicCreateComponent } from './mosaic/mosaic-create/mosaic-create.component';
-import { MosaicDisplayComponent } from './mosaic/mosaic-display/mosaic-display.component';
-import { DigitalFabricationComponent } from './digital-fabrication/digital-fabrication.component';
-
 
 // Unused
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { WritingComponent }     from './writing/writing.component';
+
+// Era
+import { CrowdskoutComponent }              from './work/era-items/crowdskout/crowdskout.component';
+import { FleishmanComponent }               from './work/era-items/fleishman/fleishman.component';
+import { TrakstarComponent }                from './work/era-items/trakstar/trakstar.component';
+import { UwComponent }                      from './work/era-items/uw/uw.component';
 
 // Work
 import { UwSecureStorageComponent }         from './work/work-items/uw-secure-storage/uw-secure-storage.component';
@@ -44,6 +46,12 @@ const routes: Routes = [
       {
         path: 'work',
         children: [
+          // Era
+          { path: 'crowdskout',                component: CrowdskoutComponent },
+          { path: 'fleishman',                 component: FleishmanComponent },
+          { path: 'trakstar',                  component: TrakstarComponent },
+          { path: 'uw',                        component: UwComponent },
+          // Work
           { path: '',                          component: WorkListComponent },
           { path: 'uw-secure-storage',         component: UwSecureStorageComponent },
           { path: 'uw-oculus-onboarding',      component: UwOculusOnboardingComponent },
@@ -60,18 +68,6 @@ const routes: Routes = [
       }
     ]
   },
-  {
-    path: 'mosaic-create',
-    component: MosaicCreateComponent
-  },
-  {
-    path: 'mosaic-display',
-    component: MosaicDisplayComponent
-  },
-  {
-    path: 'digital-fabrication',
-    component: DigitalFabricationComponent
-  }
   // Available if you want to add a writing portfolio
   // {
   //   path: 'writing',

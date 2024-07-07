@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 
+// External libraries
+@import 'node_modules/lightgallery/scss/lightgallery';
+
 // Core, do not re-order
 @import './resets';
 @import './variables';

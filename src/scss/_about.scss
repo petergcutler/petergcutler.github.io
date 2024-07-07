@@ -30,11 +30,18 @@
   }
 }
 
-.bio p {
-  padding-bottom: 1em;
-
-  @include respond-to('marge') {
-    font-size: $normalarge;
-    line-height: 1.75em;
+.bio {
+  p:first-child {
+    font-size: $hugeish;
+    font-family: $mini-heading-font;
   }
+  p {
+    padding-bottom: 1em;
+
+    @include respond-to('marge') {
+      font-size: $normalarge;
+      line-height: 1.75em;
+    }
+  }
+  
 }

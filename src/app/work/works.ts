@@ -1,4 +1,21 @@
 import { Work } from './work-schema';
+import { Era } from './era-schema';
+
+/**
+ * Reference object for Era
+ *
+ * @property  {number} id - the work id
+ * @property  {string} url - the url, describes:
+ *   the route and url for the browser
+ *   the thumbnail's image url in assets (.png)
+ * @property  {string} display - the title
+ * @property {strong} description - the description
+ * @property {array} tags - the tags for type of work
+ * @property {object} imageCredit - properties to attribute the thumbnail image.
+ *   @property {string} imageCredit.artist - the artist's name
+ *   @property {string} imageCredit.artistSite - the artist's site
+ *   @property {string} imageCredit.source - the site of discovery
+ */
 
 /**
  * Reference object for Work
@@ -15,6 +32,93 @@ import { Work } from './work-schema';
  *   @property {string} imageCredit.artistSite - the artist's site
  *   @property {string} imageCredit.source - the site of discovery
  */
+
+export const ERAS: Era[] = [
+  {
+    id: 1,
+    url: 'trakstar',
+    display: 'Open Source Storage Design for Shelters',
+    description: 'Designing a user-centered solution to help homeless Seattle residents store their possessions securely and sustainably',
+    client: 'University of Washington',
+    team: [
+      'Galen Lieberworth',
+      'Omari Stringer',
+      'Anthony Ruh'
+    ],
+    tags: [
+      'UX Research',
+      'Information Architecture',
+      'Semi-Structured Interviews',
+      'UX Design',
+      'Personas',
+      'Wireframing',
+      'Prototyping'
+    ],
+    imageCredit: {
+      artist: 'Kristian Hagelin',
+      artistSite: 'https://www.flickr.com/photos/64346264@N08/',
+      source: 'https://www.flickr.com/'
+    }
+  },
+  {
+    id: 2,
+    url: 'uw',
+    display: 'On-boarding with the Oculus Platform',
+    description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
+    client: 'University of Washington',
+    team: [
+      'Kartika Rathee',
+      'Joel Sytsma',
+      'Tanya Wang'
+    ],
+    tags: [
+      'UX Research',
+      'Usability Testing',
+      'Qualitative Research',
+      'Quantitative Research'
+    ]
+    // self-generated image
+  },
+    {
+    id: 3,
+    url: 'crowdskout',
+    display: 'On-boarding with the Oculus Platform',
+    description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
+    client: 'University of Washington',
+    team: [
+      'Kartika Rathee',
+      'Joel Sytsma',
+      'Tanya Wang'
+    ],
+    tags: [
+      'UX Research',
+      'Usability Testing',
+      'Qualitative Research',
+      'Quantitative Research'
+    ]
+    // self-generated image
+  },
+    {
+    id: 4,
+    url: 'fleishman',
+    display: 'On-boarding with the Oculus Platform',
+    description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
+    client: 'University of Washington',
+    team: [
+      'Kartika Rathee',
+      'Joel Sytsma',
+      'Tanya Wang'
+    ],
+    tags: [
+      'UX Research',
+      'Usability Testing',
+      'Qualitative Research',
+      'Quantitative Research'
+    ]
+    // self-generated image
+  }
+];
+
 
 export const WORKS: Work[] = [
   {

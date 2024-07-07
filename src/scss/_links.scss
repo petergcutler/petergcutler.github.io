@@ -1,20 +1,20 @@
 .basic-link {
-  text-decoration: underline;
   @include transition (color, 0.3s, ease);
+  text-decoration: none;
 
   &:link {
     color: $accent-red;
   }
 
   &:hover {
-    color: desaturate($accent-red, 80% );
+    text-decoration: underline;
   }
 
   &:active {
-    border: 1px solid desaturate($accent-red, 50% );
+    border: desaturate($accent-red, 80% );
   }
 
   &:visited {
-    color: desaturate($accent-red, 40% );
+    color: $accent-red;
   }
 }

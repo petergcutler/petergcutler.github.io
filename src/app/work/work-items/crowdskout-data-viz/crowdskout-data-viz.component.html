@@ -16,13 +16,25 @@
     <p>
       Using a multi-step editor, a user could select an audience segment, criteria, and a graph type, and create a graph that could be customized or exported in a variety of ways.
     </p>
-    <app-image-viewer
+
+  <div class="gallery">
+    <a
+      *ngFor="let gallery of csDataVizImages; index as i"
+      class="glightbox"
+      [href]="gallery.path"
+      [attr.data-gallery]="'gallery' + (i + 1)"
+    >
+      <img class="image" [src]="gallery.path" alt="">
+    </a>
+  </div>
+
+<!--     <app-image-viewer
       [images]="csDataVizImages"
       path="../assets/images/work/crowdskout-data-viz/viz-4a.png"
       description="A gallery of Crowdskout's analytics feature"
       textColor="salmon"
       [borderOn]="true">
-    </app-image-viewer>
+    </app-image-viewer> -->
     <p>
       Crowdskout's data visualization component is a complex, interactive module of the application. If you have any questions, I'm happy to walk through the design and code involved. Thanks for reading.
     </p>

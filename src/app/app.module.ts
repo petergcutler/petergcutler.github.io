@@ -10,12 +10,11 @@ import { HttpClientModule }    from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-
 // Services
 import { WorkService } from './work/work.service';
 
 // External
-import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { LightgalleryModule } from 'lightgallery/angular';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { NgsRevealModule } from 'ng-scrollreveal';
@@ -25,15 +24,17 @@ import { NgsRevealModule } from 'ng-scrollreveal';
 // Pages
 import { AboutComponent } from './about/about.component';
 import { WorkListComponent } from './work/work-list/work-list.component';
-import { MosaicCreateComponent } from './mosaic/mosaic-create/mosaic-create.component';
-import { MosaicDisplayComponent } from './mosaic/mosaic-display/mosaic-display.component';
-import { DigitalFabricationComponent } from './digital-fabrication/digital-fabrication.component';
 
 // Directive-like components
 import { NavComponent } from './nav/nav.component';
 import { ArticleFooterComponent } from './article-footer/article-footer.component';
-import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { WorkHeaderComponent } from './work/work-header/work-header.component';
+
+// Era
+import { CrowdskoutComponent }              from './work/era-items/crowdskout/crowdskout.component';
+import { FleishmanComponent }               from './work/era-items/fleishman/fleishman.component';
+import { TrakstarComponent }                from './work/era-items/trakstar/trakstar.component';
+import { UwComponent }                      from './work/era-items/uw/uw.component';
 
 // Work
 import { UwSecureStorageComponent }         from './work/work-items/uw-secure-storage/uw-secure-storage.component';
@@ -58,16 +59,16 @@ import { WritingComponent } from './writing/writing.component';
     // Pages
     AboutComponent,
     WorkListComponent,
-    MosaicCreateComponent,
-    MosaicDisplayComponent,
-    DigitalFabricationComponent,
     // Directive
     NavComponent,
     ArticleFooterComponent,
-    ImageViewerComponent,
     WorkHeaderComponent,
     // External
-    // RunKitEmbedComponent,
+    // Era
+    CrowdskoutComponent,
+    FleishmanComponent,
+    TrakstarComponent,
+    UwComponent,
     // Work
     UwSecureStorageComponent,
     UwOculusOnboardingComponent,
@@ -91,7 +92,7 @@ import { WritingComponent } from './writing/writing.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    NgxGalleryModule,
+    LightgalleryModule,
     NgxPageScrollCoreModule.forRoot(
       // { /* custom settings here */ }
       {
@@ -107,7 +108,7 @@ import { WritingComponent } from './writing/writing.component';
       }
     ),
     NgxPageScrollModule,
-    NgsRevealModule.forRoot()
+    NgsRevealModule.forRoot(),
   ],
   providers: [
     EnvServiceProvider,
