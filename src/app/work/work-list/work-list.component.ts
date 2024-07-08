@@ -22,11 +22,11 @@ import {
   animations: [
     trigger('revealListItems', [
       transition('loading => loaded', [
-        query('.era-item-new', style({
+        query('.era-item', style({
           opacity: 0,
           transform: 'translateY(7px)'
         })),
-        query('.era-item-new', stagger('100ms', [
+        query('.era-item', stagger('100ms', [
           animate('800ms cubic-bezier(0.6, 0.2, 0.1, 1)', style({
             opacity: 1,
             transform: 'translateY(0)'

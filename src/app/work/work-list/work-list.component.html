@@ -1,47 +1,15 @@
-<article class="era-content-new">
-  <div class="era-main-new" [@revealListItems]="revealList">
-    <div class="era-item-new"
+<article class="era-content">
+  <div class="era-main" [@revealListItems]="revealList">
+    <div class="era-item"
          *ngFor="let era of eras; index as i;"
          routerLink="/work/{{era.url}}">
-      <img class="era-item-image-new"
+      <div class="era-item-image-wrapper">
+        <img class="era-item-image"
            src="../assets/images/work/thumbnails/{{era.url}}.png"
            alt="{{era.display}}">
-      <div class="era-item-title-new">{{era.display}}</div>
-      <div class="era-item-subtitle-new">{{era.description}}</div>
-    </div>
-  </div>
-</article>
-
-<!-- <article class="era-content">
-  <div class="era-main" [@revealListItems]="revealList">
-    <div
-      class="era-item"
-      [ngClass]="era.url"
-      *ngFor="let era of eras; index as i;"
-      routerLink="/work/{{era.url}}">
-      <img
-        class="work-item-image era-item-image"
-        src="../assets/images/work/thumbnails/{{era.url}}.png"
-        alt="{{era.display}}">
+      </div>
       <div class="era-item-title">{{era.display}}</div>
       <div class="era-item-subtitle">{{era.description}}</div>
     </div>
   </div>
-</article> -->
-
-
-<!-- <article class="work-content">
-  <div class="work-main" [@revealListItems]="revealList">
-    <div
-      class="work-item"
-      [ngClass]="work.url"
-      *ngFor="let work of works; index as i;"
-      routerLink="/work/{{work.url}}">
-      <span class="work-item-title">{{work.display}}</span>
-      <img
-        class="work-item-image"
-        src="../assets/images/work/thumbnails/{{work.url}}.png"
-        alt="{{work.display}}">
-    </div>
-  </div>
-</article> -->
+</article>

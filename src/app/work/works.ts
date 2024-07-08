@@ -36,7 +36,7 @@ import { Era } from './era-schema';
 export const ERAS: Era[] = [
   {
     id: 1,
-    url: 'trakstar-2',
+    url: 'trakstar',
     display: 'Trakstar',
     description: 'Product Management',
     tags: [
@@ -47,7 +47,7 @@ export const ERAS: Era[] = [
   },
   {
     id: 2,
-    url: 'uw-2',
+    url: 'uw',
     display: 'University of Washington',
     description: 'Human-Computer Interaction',
     tags: [
@@ -61,7 +61,7 @@ export const ERAS: Era[] = [
   },
     {
     id: 3,
-    url: 'crowdskout-4',
+    url: 'crowdskout',
     display: 'Crowdskout',
     description: 'Software Engineering',
     tags: [
