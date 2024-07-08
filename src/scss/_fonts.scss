@@ -7,9 +7,10 @@ Rubik
 */
 
 /* Define custom fonts */
-$body-font: 'Nunito', 'Arial', sans-serif;
+$body-font: 'Inter', 'Arial', sans-serif;
 $heading-font: 'Georgia', serif;
-$mini-heading-font: 'Rubik', 'Arial', sans-serif;
+$mini-heading-font: 'Inter', 'Arial', sans-serif;
+$fancy-heading-font: 'Instrument Serif', 'Georgia', serif;
 
 // Font size
 $hugest: 2.375rem;
@@ -27,7 +28,7 @@ $smaller: 0.75rem;
 
 /* Set default font and text settings */
 body {
-  font-family: 'Nunito', 'Arial', sans-serif;
+  font-family: 'Inter', 'Arial', sans-serif;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

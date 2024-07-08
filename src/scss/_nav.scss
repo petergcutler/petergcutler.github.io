@@ -1,3 +1,9 @@
+.main-nav {
+  padding: 0 2em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .main-nav-section {
   display: flex;
   align-items: center;
@@ -32,6 +38,9 @@
   color: $main-text-gray;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+.main-nav-section .main-nav-logo {
   padding-left: 0;
 }
 

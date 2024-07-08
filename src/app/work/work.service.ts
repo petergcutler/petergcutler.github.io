@@ -6,6 +6,10 @@ import { of } from 'rxjs/observable/of';
 import { Work } from './work-schema';
 import { WORKS } from './works';
 
+import { Era } from './era-schema';
+import { ERAS } from './works';
+
+
 @Injectable()
 export class WorkService {
 
@@ -18,4 +22,13 @@ export class WorkService {
   getWorks(): Observable<Work[]> {
     return of(WORKS);
   }
+
+  getEra(url: string): Observable<Era> {
+    return of(ERAS.find(era => era.url === url));
+  }
+
+  getEras(): Observable<Era[]> {
+    return of(ERAS);
+  }
+
 }

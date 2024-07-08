@@ -1,4 +1,36 @@
-<article class="work-content">
+<article class="era-content-new">
+  <div class="era-main-new" [@revealListItems]="revealList">
+    <div class="era-item-new"
+         *ngFor="let era of eras; index as i;"
+         routerLink="/work/{{era.url}}">
+      <img class="era-item-image-new"
+           src="../assets/images/work/thumbnails/{{era.url}}.png"
+           alt="{{era.display}}">
+      <div class="era-item-title-new">{{era.display}}</div>
+      <div class="era-item-subtitle-new">{{era.description}}</div>
+    </div>
+  </div>
+</article>
+
+<!-- <article class="era-content">
+  <div class="era-main" [@revealListItems]="revealList">
+    <div
+      class="era-item"
+      [ngClass]="era.url"
+      *ngFor="let era of eras; index as i;"
+      routerLink="/work/{{era.url}}">
+      <img
+        class="work-item-image era-item-image"
+        src="../assets/images/work/thumbnails/{{era.url}}.png"
+        alt="{{era.display}}">
+      <div class="era-item-title">{{era.display}}</div>
+      <div class="era-item-subtitle">{{era.description}}</div>
+    </div>
+  </div>
+</article> -->
+
+
+<!-- <article class="work-content">
   <div class="work-main" [@revealListItems]="revealList">
     <div
       class="work-item"
@@ -12,4 +44,4 @@
         alt="{{work.display}}">
     </div>
   </div>
-</article>
+</article> -->

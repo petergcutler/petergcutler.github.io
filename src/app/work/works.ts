@@ -37,63 +37,36 @@ export const ERAS: Era[] = [
   {
     id: 1,
     url: 'trakstar',
-    display: 'Open Source Storage Design for Shelters',
-    description: 'Designing a user-centered solution to help homeless Seattle residents store their possessions securely and sustainably',
-    client: 'University of Washington',
-    team: [
-      'Galen Lieberworth',
-      'Omari Stringer',
-      'Anthony Ruh'
-    ],
+    display: 'Trakstar',
+    description: 'Product Management',
     tags: [
-      'UX Research',
-      'Information Architecture',
-      'Semi-Structured Interviews',
-      'UX Design',
-      'Personas',
-      'Wireframing',
-      'Prototyping'
-    ],
-    imageCredit: {
-      artist: 'Kristian Hagelin',
-      artistSite: 'https://www.flickr.com/photos/64346264@N08/',
-      source: 'https://www.flickr.com/'
-    }
+      'Product Management',
+      'UX'
+    ]
+    // self-generated image
   },
   {
     id: 2,
     url: 'uw',
-    display: 'On-boarding with the Oculus Platform',
-    description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
-    client: 'University of Washington',
-    team: [
-      'Kartika Rathee',
-      'Joel Sytsma',
-      'Tanya Wang'
-    ],
+    display: 'University of Washington',
+    description: 'Human-Computer Interaction',
     tags: [
-      'UX Research',
-      'Usability Testing',
+      'Human-Computer Interaction',
+      'Human-Centered Design',
       'Qualitative Research',
-      'Quantitative Research'
+      'Quantitative Research',
+      'UX'
     ]
     // self-generated image
   },
     {
     id: 3,
     url: 'crowdskout',
-    display: 'On-boarding with the Oculus Platform',
-    description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
-    client: 'University of Washington',
-    team: [
-      'Kartika Rathee',
-      'Joel Sytsma',
-      'Tanya Wang'
-    ],
+    display: 'Crowdskout',
+    description: 'Software Engineering',
     tags: [
-      'UX Research',
-      'Usability Testing',
-      'Qualitative Research',
+      'Software Engineering',
+      'UX',
       'Quantitative Research'
     ]
     // self-generated image
@@ -101,19 +74,12 @@ export const ERAS: Era[] = [
     {
     id: 4,
     url: 'fleishman',
-    display: 'On-boarding with the Oculus Platform',
-    description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
-    client: 'University of Washington',
-    team: [
-      'Kartika Rathee',
-      'Joel Sytsma',
-      'Tanya Wang'
-    ],
+    display: 'FleishmanHillard',
+    description: 'Creative Direction',
     tags: [
-      'UX Research',
-      'Usability Testing',
-      'Qualitative Research',
-      'Quantitative Research'
+      'Creative Direction',
+      'Strategy',
+      'Visual Design'
     ]
     // self-generated image
   }

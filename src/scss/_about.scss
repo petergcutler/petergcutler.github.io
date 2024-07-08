@@ -2,46 +2,75 @@
   display: grid;
   grid-gap: 3em;
   padding-top: 3em;
-  max-width: 26em;
+  max-width: 80%;
   margin: 0 auto;
 
-  @include respond-to('marge') {
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 4em;
-    margin: 0;
-    max-width: $full-width;
+  @include respond-to('large') {
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10%;
+    margin: 0 auto;
+    max-width: 90%;
   }
 }
 
 .secondary-content {
   margin: 0 auto;
 
-  @include respond-to('marge') {
+  @include respond-to('large') {
     margin: 0;
   }
 }
 
 .self-image {
-  border-radius: 100%;
-  max-width: 150px;
+  border-radius: 50%;
+  max-width: 240px;
 
   @include respond-to('marge') {
-    max-width: 210px;
+    max-width: 264px;
+  }
+
+  @include respond-to('large') {
+    max-width: 280px;
+  }
+
+  @include respond-to('hugest') {
+    max-width: 320px;
   }
 }
 
 .bio {
-  p:first-child {
-    font-size: $hugeish;
-    font-family: $mini-heading-font;
-  }
+  color: rgb(64,68,93);
+
   p {
-    padding-bottom: 1em;
+    max-width: 42em;
+  }
+
+  p:first-child {
+    font-size: $large;
+    font-weight: 700;
+
+    @include respond-to('marge') {
+      font-size: $larger;
+    }
+
+    @include respond-to('humongous') {
+      font-size: $hugeish;
+    }
+  } 
+
+  p {
+    padding-bottom: 1.4em;
 
     @include respond-to('marge') {
       font-size: $normalarge;
-      line-height: 1.75em;
+      line-height: 1.6em;
+      max-width: 44em;
+    }
+
+    @include respond-to('humongous') {
+      font-size: $larger;
+      line-height: 1.6em;
+      max-width: 48em;
     }
   }
-  
 }

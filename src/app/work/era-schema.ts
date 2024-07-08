@@ -3,8 +3,6 @@ export class Era {
   url: string;
   display: string;
   description?: string;
-  client?: string;
-  team?: Array<string>;
   tags?: Array<string>;
   imageCredit?: object;
   data?: any;

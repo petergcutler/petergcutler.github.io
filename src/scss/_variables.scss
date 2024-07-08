@@ -13,5 +13,7 @@ $breakpoints: (
   'medium': (min-width: 600px),
   'marge': (min-width: 640px),
   'large': (min-width: 840px),
-  'huge': (min-width: 1000px)
+  'huge': (min-width: 1000px),
+  'hugest': (min-width: 1280px),
+  'humongous': (min-width: 1600px)
 );
