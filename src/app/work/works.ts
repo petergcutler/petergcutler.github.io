@@ -91,6 +91,7 @@ export const WORKS: Work[] = [
     id: 1,
     url: 'uw-secure-storage',
     display: 'Open Source Storage Design for Shelters',
+    subtitle: 'UX Research & Prototyping',
     description: 'Designing a user-centered solution to help homeless Seattle residents store their possessions securely and sustainably',
     client: 'University of Washington',
     team: [
@@ -117,6 +118,7 @@ export const WORKS: Work[] = [
     id: 2,
     url: 'uw-oculus-onboarding',
     display: 'On-boarding with the Oculus Platform',
+    subtitle: 'UX Research',
     description: 'Usability testing to evaluate first-time user experiences with Oculus Touch and motion-controlled software',
     client: 'University of Washington',
     team: [
@@ -136,6 +138,7 @@ export const WORKS: Work[] = [
     id: 3,
     url: 'vox-global-motion-design',
     display: 'Motion Design and Animation',
+    subtitle: 'Creative Strategy & Design',
     description: 'Running a video and animation practice for VOX Global',
     client: 'VOX Global',
     tags: [
@@ -150,6 +153,7 @@ export const WORKS: Work[] = [
     id: 4,
     url: 'uw-complex-systems',
     display: 'Collaborative Research with the IFRC',
+    subtitle: 'UX Research',
     description: 'Researching a complex humanitarian system and planning a human-centered intervention to improve vulnerability assessments',
     client: 'International Federation of Red Cross and Red Crescent Societies',
     team: [
@@ -172,6 +176,7 @@ export const WORKS: Work[] = [
     id: 5,
     url: 'uw-yarn',
     display: 'Structured Supports for Storytelling',
+    subtitle: 'UX Research',
     description: 'Researching how narrative can enhance data-driven stories of accomplishment to improve social feedback',
     client: 'University of Washington',
     tags: [
@@ -190,6 +195,7 @@ export const WORKS: Work[] = [
     id: 6,
     url: 'crowdskout-segmenting',
     display: 'Segmenting Audiences Effectively',
+    subtitle: 'Data Segmentation',
     description: 'Overhauling the interface for audience segmentation in Crowdskout',
     client: 'Crowdskout',
     tags: [
@@ -208,6 +214,7 @@ export const WORKS: Work[] = [
     id: 7,
     url: 'crowdskout-data-viz',
     display: 'Simplifying Data Visualization',
+    subtitle: 'Data Visualization',
     description: 'Developing an intuitive system for data visualization in Crowdskout',
     client: 'Crowdskout',
     tags: [
@@ -227,6 +234,7 @@ export const WORKS: Work[] = [
     id: 8,
     url: 'crowdskout-datetime',
     display: 'Revamping Date & Time Selections',
+    subtitle: 'Design & Front-End Engineering',
     description: 'Developing a modular way to manipulate date & datetime selections in Crowdskout',
     client: 'Crowdskout',
     tags: [
@@ -246,6 +254,7 @@ export const WORKS: Work[] = [
     id: 9,
     url: 'crowdskout-form-editor',
     display: 'A System for Interactive Forms',
+    subtitle: 'Design & Front-End Engineering',
     description: 'Enabling users to create, manage, and interpret data from surveys & forms using a variety of designs and conditions',
     client: 'Crowdskout',
     tags: [
@@ -264,6 +273,7 @@ export const WORKS: Work[] = [
     id: 10,
     url: 'vox-global-brand-redesign',
     display: 'Internal Rebrand for an Ad Agency',
+    subtitle: 'Creative Strategy & Design',
     description: 'Working with internal stakeholders to research and redesign VOX Global\'s brand and web presence',
     client: 'VOX Global',
     tags: [
@@ -278,6 +288,7 @@ export const WORKS: Work[] = [
     id: 11,
     url: 'vox-global-att-csr',
     display: 'Redesigning AT&T CSR\'s Brand & Website',
+    subtitle: 'Creative Strategy & Design',
     description: 'Revamping the way AT&T presents their brand and uses storytelling to share their corporate & social responsibility campaigns',
     client: 'VOX Global',
     tags: [

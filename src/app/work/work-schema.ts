@@ -3,6 +3,7 @@ export class Work {
   url: string;
   display: string;
   description?: string;
+  subtitle?: string;
   client?: string;
   team?: Array<string>;
   tags?: Array<string>;
