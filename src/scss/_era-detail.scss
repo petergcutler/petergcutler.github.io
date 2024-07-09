@@ -1,10 +1,10 @@
-.era-content {
+.era-detail-content {
   width: 90%;
   margin: 0 auto;
   padding: 0 2em;
 }
 
-.era-main {
+.era-detail-main {
   margin-top: 2em;
 }
 
@@ -17,7 +17,7 @@
   max-width: 56em;
 }
 
-.era-item.header {
+.era-detail-item.header {
   font-family: $fancy-heading-font;
   color: $obsidian;
   font-size: $prettybig;
@@ -55,7 +55,7 @@
   }
 }
 
-.era-item .era-item-title::after {
+.era-detail-item .era-detail-item-title::after {
   opacity: 0;
   transform: translateX(0px) scale(.64);
   transition: opacity 400ms cubic-bezier(0.6, 0.2, 0.1, 1), transform 400ms cubic-bezier(0.6, 0.2, 0.1, 1);
@@ -65,32 +65,32 @@
   cursor: pointer;
 }
 
-.era-item:hover .era-item-title::after {
+.era-detail-item:hover .era-detail-item-title::after {
   opacity: 1;
   transform: translateX(6px) scale(.64);
   transition: opacity 400ms cubic-bezier(0.6, 0.2, 0.1, 1), transform 400ms cubic-bezier(0.6, 0.2, 0.1, 1);
 }
 
-.era-item:hover .era-item-image {
+.era-detail-item:hover .era-detail-item-image {
   transform: scale(1.06);
   transition: transform 400ms cubic-bezier(0.6, 0.2, 0.1, 1);
 }
 
-.era-item .era-item-image {
+.era-detail-item .era-detail-item-image {
   transform: scale(1);
   transition: transform 400ms cubic-bezier(0.6, 0.2, 0.1, 1);
 }
 
-.era-item-image-wrapper {
+.era-detail-item-image-wrapper {
   overflow: hidden;
 }
 
-.era-item-image {
+.era-detail-item-image {
   max-width: 100%;
 }
 
 
-.era-item-title {
+.era-detail-item-title {
   color: $nightrider;
   font-size: $prettybig;
   font-family: $fancy-heading-font;
@@ -107,7 +107,7 @@
   }
 }
 
-.era-item-subtitle {
+.era-detail-item-subtitle {
   color: $riverwater;
   font-family: $mini-heading-font;
   padding-top: .48em;

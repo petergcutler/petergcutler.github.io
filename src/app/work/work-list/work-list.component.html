@@ -1,15 +1,25 @@
 <article class="era-content">
   <div class="era-main" [@revealListItems]="revealList">
-    <div class="era-item"
+
+    <div class="grid-header">
+      <div class="era-item header">
+        I'm a Senior Product Manager at <a class="basic-link" target="_blank" href="https://trakstar.com">Trakstar</a>, recently acquired by Mitratech. I lead a team of engineers and designers with a mission to define and elevate user journeys across Mitratech's HR tools.
+      </div>
+    </div>
+
+    <div class="grid-main">
+      <div class="era-item"
          *ngFor="let era of eras; index as i;"
          routerLink="/work/{{era.url}}">
-      <div class="era-item-image-wrapper">
-        <img class="era-item-image"
-           src="../assets/images/work/thumbnails/{{era.url}}.png"
-           alt="{{era.display}}">
+        <div class="era-item-image-wrapper">
+          <img class="era-item-image"
+             src="../assets/images/work/thumbnails/{{era.url}}.png"
+             alt="{{era.display}}">
+        </div>
+        <div class="era-item-title">{{era.display}}</div>
+        <div class="era-item-subtitle">{{era.description}}</div>
       </div>
-      <div class="era-item-title">{{era.display}}</div>
-      <div class="era-item-subtitle">{{era.description}}</div>
     </div>
+
   </div>
 </article>

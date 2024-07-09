@@ -49,7 +49,7 @@ export const ERAS: Era[] = [
     id: 2,
     url: 'uw',
     display: 'University of Washington',
-    description: 'Human-Computer Interaction',
+    description: 'M.S., Human-Computer Interaction',
     tags: [
       'Human-Computer Interaction',
       'Human-Centered Design',

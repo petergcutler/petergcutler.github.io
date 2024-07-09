@@ -23,6 +23,10 @@ export class WorkService {
     return of(WORKS);
   }
 
+  filterWorks(client: string): Observable<Work[]> {
+    return of(WORKS.filter(work => work.client === client));
+  }
+
   getEra(url: string): Observable<Era> {
     return of(ERAS.find(era => era.url === url));
   }

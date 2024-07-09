@@ -1,39 +1,25 @@
-<article class="work-entry" role="article">
+<article class="era-detail-content">
+  <div class="era-detail-main" [@revealListItems]="revealList">
 
-  <app-work-header>
-    <p>
-      I ran the video and animation practice for VOX Global. I managed clients and produced live action and motion-designed videos for a range of applications.
-    </p>
-  </app-work-header>
-
-  <section class="work-section">
-    <h3 class="work-body-h3">
-      AT&T People Planet Possibilities
-    </h3>
-    <div class="work-video-embed" style="padding:56.25% 0 0 0;position:relative;">
-      <iframe src="https://player.vimeo.com/video/118919919?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="grid-header">
+      <div class="era-detail-item header">
+        From 2011-2015, I worked for FleishmanHillard creative teams, ultimately leading VOX Global's video & motion design group. During my time with FH companies, I focused on brand strategy, design, and UX. 
+      </div>
     </div>
-    <h3 class="work-body-h3">
-      Lumina Foundation Financial Aid
-    </h3>
-    <div class="work-video-embed" style="padding:56.25% 0 0 0;position:relative;">
-      <iframe src="https://player.vimeo.com/video/112713629?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <h3 class="work-body-h3">
-      Lumina Foundation Stronger Nation
-    </h3>
-    <div class="work-video-embed" style="padding:56.25% 0 0 0;position:relative;">
-      <iframe src="https://player.vimeo.com/video/132273214?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </section>
 
-  <section class="work-section">
-    <h3 class="work-body-h3">
-      Motion Design Practices
-    </h3>
-    <p>
-      I communicated with clients using storyboards made with Adobe Photoshop, Illustrator, and Sketch. All the videos were made first into animatics, then into final animations, using a mix of After Effects and Maxon Cinema 4d Studio. You can find more work from my video portfolio online at <a class="basic-link" target="_blank" href="https://vimeo.com/petergcutler">vimeo.com/petergcutler</a>.
-    </p>
-  </section>
+    <div class="grid-main">
+      <div class="era-detail-item"
+         *ngFor="let work of filteredWorks; index as i;"
+         routerLink="/work/{{work.url}}">
+        <div class="era-detail-item-image-wrapper">
+          <img class="era-detail-item-image"
+             src="../assets/images/work/thumbnails/{{work.url}}.png"
+             alt="{{work.display}}">
+        </div>
+        <div class="era-detail-item-title">{{work.display}}</div>
+        <div class="era-detail-item-subtitle">{{work.description}}</div>
+      </div>
+    </div>
 
+  </div>
 </article>
