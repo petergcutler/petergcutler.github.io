@@ -17,7 +17,6 @@ import { WorkService } from './work/work.service';
 import { LightgalleryModule } from 'lightgallery/angular';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
-import { NgsRevealModule } from 'ng-scrollreveal';
 // import { RunKitEmbedComponent } from 'angular-runkit'
 
 
@@ -108,7 +107,6 @@ import { WritingComponent } from './writing/writing.component';
       }
     ),
     NgxPageScrollModule,
-    NgsRevealModule.forRoot(),
   ],
   providers: [
     EnvServiceProvider,

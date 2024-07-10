@@ -19,9 +19,13 @@ export class ArticleFooterComponent implements OnInit {
   constructor(private router: Router) {
     router.events.subscribe((event: Event) => {
       // If navigation is beginning, reset
+      console.log('evaluating');
+
       if (event instanceof NavigationStart) {
         this.path = null;
         this.longPage = false;
+        console.log(this.path + 'false');
+
       }
 
       // If navigation is concluding, check for long page
@@ -29,6 +33,7 @@ export class ArticleFooterComponent implements OnInit {
         this.path = get(event, 'url');
 
         if (startsWith(this.path, '/work/')) {
+          console.log(this.path + 'true');
           this.longPage = true;
         }
       }
@@ -41,6 +46,7 @@ export class ArticleFooterComponent implements OnInit {
       top: 0,
       behavior: "auto"
     });
+    console.log('scrolling');
   }
 
   ngOnInit() {}
