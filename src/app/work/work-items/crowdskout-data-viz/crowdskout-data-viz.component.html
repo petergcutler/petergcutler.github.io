@@ -6,6 +6,26 @@
     </p>
   </app-work-header>
 
+
+      <div class="swiper">
+      <!-- image -->
+      <swiper-container appSwiper #swiper [config]="swiperConfig" thumbs-swiper=".mySwiper2" (slidechange)="slideChange($event)" class="swiper-wrapper">
+        <swiper-slide *ngFor="let item of contents">
+          <div class="swiper-slide ratio ratio-4x3" [ngStyle]="{background: 'url(' + item.url +') no-repeat top center / contain'}"></div>
+        </swiper-slide>
+      </swiper-container>
+      <!-- /image -->
+
+      <!-- thumbnails -->
+      <swiper-container appSwiper #swiperThumbs [config]="swiperThumbsConfig" class="mySwiper2" *ngIf="contents.length > 1" class="swiper-wrapper">
+        <swiper-slide *ngFor="let item of contents" class="swiper-slide">
+          <div class="swiper-slide ratio ratio-4x3" role="button" [ngStyle]="{background: 'url(' + item.url +') center / cover'}"></div>
+        </swiper-slide>
+      </swiper-container>
+      <!-- /thumbnails -->
+      </div>
+      
+
   <section class="work-section">
     <h2 class="work-body-h2">
       Building a System with D3 and AmCharts
@@ -17,7 +37,7 @@
       Using a multi-step editor, a user could select an audience segment, criteria, and a graph type, and create a graph that could be customized or exported in a variety of ways.
     </p>
 
-  <div class="gallery">
+<!--   <div class="gallery">
     <a
       *ngFor="let gallery of csDataVizImages; index as i"
       class="glightbox"
@@ -27,7 +47,7 @@
       <img class="image" [src]="gallery.path" alt="">
     </a>
   </div>
-
+ -->
 <!--     <app-image-viewer
       [images]="csDataVizImages"
       path="../assets/images/work/crowdskout-data-viz/viz-4a.png"

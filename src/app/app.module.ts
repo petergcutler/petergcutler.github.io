@@ -1,5 +1,6 @@
 // Angular and Env
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+
 import { EnvServiceProvider } from './env.service.provider';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule, HammerModule } from '@angular/platform-browser';
@@ -14,6 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { WorkService } from './work/work.service';
 
 // External
+import { SwiperDirective } from './swiper.directive';
+import { register } from 'swiper/element/bundle';
 import { LightgalleryModule } from 'lightgallery/angular';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
@@ -52,6 +55,9 @@ import { VoxGlobalMotionDesignComponent }   from './work/work-items/vox-global-m
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WritingComponent } from './writing/writing.component';
 
+// For Swiper
+register();
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,6 +69,7 @@ import { WritingComponent } from './writing/writing.component';
     ArticleFooterComponent,
     WorkHeaderComponent,
     // External
+    SwiperDirective,
     // Era
     CrowdskoutComponent,
     FleishmanComponent,
@@ -114,6 +121,9 @@ import { WritingComponent } from './writing/writing.component';
   ],
   bootstrap: [
     AppComponent
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 
