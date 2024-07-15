@@ -1,5 +1,4 @@
 export interface SwiperCard {
-  title: string;
-  description: string;
   url: string;
+  description: string;
 }

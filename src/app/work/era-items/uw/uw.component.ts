@@ -67,7 +67,7 @@ export class UwComponent implements OnInit {
     this.getWorks();
     this.getEras();
 
-    this.filteredWorks = this.works.filter((work) => work.client === 'University of Washington');
+    this.filteredWorks = this.works.filter((work) => work.client === 'University of Washington' || work.client === 'International Federation of Red Cross and Red Crescent Societies');
   }
 
   ngAfterViewInit() {

@@ -1,0 +1,133 @@
+.lg-wrapper-1 {
+	display: grid;
+  	grid-template-columns: 1fr;
+  	justify-content: space-evenly;
+    grid-gap: 1em;
+    margin: 2em auto;
+    width: 90vw;
+    position: relative;
+  	left: calc(-45vw + 50%);
+
+	/* Style downstream description decoration */
+	a:link, a:visited, a:hover, a:active {
+		text-decoration: none!important;
+		color: $mini-heading-gray;
+	}
+
+	@include respond-to('large') {
+    width: auto;
+    left: 0;
+    right: 0;
+	}
+
+}
+
+
+.lg-wrapper-2 {
+	display: grid;
+  	grid-template-columns: 1fr;
+  	justify-content: space-evenly;
+    grid-gap: 1em;
+    margin: 2em auto;
+    width: 90vw;
+    position: relative;
+  	left: calc(-45vw + 50%);
+
+	/* Style downstream description decoration */
+	a:link, a:visited, a:hover, a:active {
+		text-decoration: none!important;
+		color: $mini-heading-gray;
+	}
+
+  @include respond-to('large') {
+  	grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
+}
+
+.lg-wrapper-2-small {
+	display: grid;
+  	grid-template-columns: 1fr;
+  	justify-content: space-evenly;
+  	justify-items: center;
+    margin: 2em auto;
+    width: 100vw;
+    position: relative;
+  	left: calc(-50vw + 50%);
+
+	/* Style downstream description decoration */
+	a:link, a:visited, a:hover, a:active {
+		text-decoration: none!important;
+		color: $mini-heading-gray;
+	}
+
+	.gallery-image-container {
+		max-height: 24em;
+	}
+
+	.gallery-image {
+		object-fit: contain;
+	}
+
+	@include respond-to('marge') {
+	  	grid-template-columns: repeat(2, 1fr);
+	    width: auto;
+	    left: 0;
+	    right: 0;
+  	}
+}
+
+.lg-wrapper-3 {
+	display: grid;
+  	grid-template-columns: 1fr;
+  	justify-content: space-evenly;
+    grid-gap: 2em;
+    margin: 2em auto;
+    width: 90vw;
+    position: relative;
+  	left: calc(-45vw + 50%);
+
+	/* Style downstream description decoration */
+	a:link, a:visited, a:hover, a:active {
+		text-decoration: none!important;
+		color: $mini-heading-gray;
+	}
+
+	@include respond-to('marge') {
+	  	grid-template-columns: repeat(2, 1fr);
+  	}
+
+	@include respond-to('huge') {
+	  	grid-template-columns: repeat(3, 1fr);
+  	}
+}
+
+.gallery-link {
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery-image-container {
+	width: 100%;
+	height: 100%;
+	background-color: #fbfbfb;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+	width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.gallery-link .gallery-description {
+	text-align: center;
+	font-size: $small;
+	font-family: $mini-heading-font;
+}
+
+.lg-sub-html {
+	color: $mini-heading-gray;
+}

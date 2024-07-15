@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+
+import { LightgalleryModule } from 'lightgallery/angular';
+import MediumZoom from 'lightgallery/plugins/mediumZoom';
+
+import { BeforeSlideDetail } from 'lightgallery/lg-events';
+
 @Component({
   selector: 'app-crowdskout-segmenting',
   templateUrl: './crowdskout-segmenting.component.html',
@@ -8,37 +14,52 @@ import { Component, OnInit } from '@angular/core';
 
 export class CrowdskoutSegmentingComponent implements OnInit {
 
-  constructor() {}
 
-  ngOnInit() {}
+  // LightGallery Settings
+  settings = {
+    counter: false,
+    plugins: [MediumZoom],
+    backgroundColor: '#fff'
+  };
 
-  public csProfileImages: object[] = [
+  onBeforeSlide = (detail: BeforeSlideDetail): void => {
+    const { index, prevIndex } = detail;
+    console.log(index, prevIndex);
+  };
+
+  public galleryContentsProfile: object[] = [
     {
-      path: '../assets/images/work/crowdskout-segmenting/segmenting-0a.png',
+      url: '../assets/images/work/crowdskout-segmenting/segmenting-0a.png',
       description: 'Demographics fields of a Crowdskout profile'
     },
     {
-      path: '../assets/images/work/crowdskout-segmenting/segmenting-0b.png',
+      url: '../assets/images/work/crowdskout-segmenting/segmenting-0b.png',
       description: 'Activity fields from a Crowdskout profile'
     }
   ];
 
-  public csSegmentingImages: object[] = [
+  public galleryContentsSegmenting: object[] = [
     {
-      path: '../assets/images/work/crowdskout-segmenting/segmenting-1a.png',
-      description: 'Users can explore and drill-down into criteria to build a segment'
+      url: '../assets/images/work/crowdskout-segmenting/segmenting-1a.png',
+      description: 'Users can explore and select criteria to build a segment'
     },
     {
-      path: '../assets/images/work/crowdskout-segmenting/segmenting-2a.png',
-      description: 'As users select criteria to segment on, their selections appear, and their profiles filter to the matching criteria'
+      url: '../assets/images/work/crowdskout-segmenting/segmenting-2a.png',
+      description: 'As users select criteria, profiles filter dynamically'
     },
+    // {
+    //   url: '../assets/images/work/crowdskout-segmenting/segmenting-3a.png',
+    //   description: 'Power users may write complex segments using CQL strings - a variant of SQL parsed by Crowdskout'
+    // },
     {
-      path: '../assets/images/work/crowdskout-segmenting/segmenting-3a.png',
-      description: 'Power users may write complex segments using CQL strings - a variant of SQL parsed by Crowdskout'
-    },
-    {
-      path: '../assets/images/work/crowdskout-segmenting/segmenting-4a.png',
-      description: 'Users immediately see statistics about their segments\' usable data and demographics. They may create unique graphs to see other detailed statistics about their segments.'
+      url: '../assets/images/work/crowdskout-segmenting/segmenting-4a.png',
+      description: 'Segments instantly provide data and demographic details'
     }
   ];
+
+  constructor() {}
+
+  ngOnInit() {}
+
+
 }

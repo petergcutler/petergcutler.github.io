@@ -33,18 +33,18 @@
     <p>
       We first wanted to define what audiences were involved and what resource constraints we would face. Seattle presents many distinct populations of homeless residents who are relying on a variety of housing programs for support. Beyond existing housing programs, we also wanted to understand the financial resources that the city puts towards homelessness.
     </p>
-    <div class="work-body-image-grid">
-<!--       <app-image-viewer
-        path="../assets/images/work/uw-secure-storage/homeless-housing-programs.png"
-        description="The four types of homeless housing programs in Seattle"
-        [borderOn]="true">
-      </app-image-viewer>
-      <app-image-viewer
-        path="../assets/images/work/uw-secure-storage/homelessness-budgets.jpeg"
-        description="The homelessness spending budget in Seattle"
-        [borderOn]="true">
-      </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+        <a *ngFor="let gallery of galleryContentsA; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
     </div>
+
     <p>
       Housing programs differ in many ways. A single solution may not work for each type of shelter. And the budgetary resources here are scarce.
     </p>
@@ -69,16 +69,18 @@
     <p>
       We found that many existing solutions didn't account for the range of housing programs that exist. They frequently used costly materials or had trouble scaling.
     </p>
-    <div class="work-body-image-grid">
-<!--       <app-image-viewer
-        path="../assets/images/work/uw-secure-storage/hope-lockers.png"
-        description="Sketches of the H.O.P.E. lockers in Salt Lake City">
-      </app-image-viewer>
-      <app-image-viewer
-        path="../assets/images/work/uw-secure-storage/denver-lockers.jpg"
-        description="One of the lockers from Denver's program">
-      </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+        <a *ngFor="let gallery of galleryContentsB; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
     </div>
+
     <p>
       The H.O.P.E. lockers, shown above, cost $10,000 each to build. Another storage pilot program in Denver, shown below, cost $100,000 to initiate, and included a high upkeep cost each month onward. Based on these problems with existing solutions, we saw an opportunity for a cheaper, more sustainable, community-oriented system.
     </p>
@@ -121,12 +123,18 @@
     <p>
       Our group was also interested in solutions that helped Seattle's tent cities. These communities are transitional, vulnerable, and have been contentious in housing discussions. To gain an understanding of the needs of residents of transitional housing, we visited Nickelsville Ballard to transect-walk and interview.
     </p>
-<!--     <app-image-viewer
-      [images]="nickelsvilleImages"
-      path="../assets/images/work/uw-secure-storage/nickelsville-1a.png"
-      description="Gallery of Nickelsville Ballard"
-      [borderOn]="true">
-    </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-3">
+        <a *ngFor="let gallery of nickelsvilleImages; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
+    </div>
+
     <p>
       Our guide gave us a tour and joined us in an interview. We gained a much deeper understanding of the relationship residents have with their belongings and storage. Some of our takeaways included:
     </p>
@@ -159,20 +167,18 @@
     <p>
       We created a set of personas to represent the most common findings from our research. Rather than editorialize approximate stories for our personas, we based the descriptions and metadata of each persona on the most common, real tropes we found in our data.
     </p>
-    <div class="work-body-image-grid">
-<!--       <app-image-viewer
-        [images]="personaImages"
-        path="../assets/images/work/uw-secure-storage/HCDE518_Personas-3.jpg"
-        description="A gallery of our scenario-based personas"
-        [borderOn]="true"
-        textColor="black">
-      </app-image-viewer>
-      <app-image-viewer
-        [images]="sketchImages"
-        path="../assets/images/work/uw-secure-storage/sketch-2.png"
-        description="A gallery of early sketches from design brainstorms">
-      </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-3">
+        <a *ngFor="let gallery of personaImages; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
     </div>
+
     <p>
       We began to design simple, sketched concepts for solutions. I developed three sketches that each explored ways to add storage at a minimal cost, using commonly available materials.
     </p>
@@ -187,6 +193,17 @@
         Finally, taking my idea from the field visit to Nickelsville, create a library of "component-based" storage solutions that users can browse to create a storage solution from the materials they have on hand.
       </li>
     </ul>
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-3">
+        <a *ngFor="let gallery of sketchImages; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
+    </div>
   </section>
 
   <section class="work-section">
@@ -245,16 +262,18 @@
     <p>
       While it's exciting to think ahead to the digital feature-set and high fidelity design, a functional MVP of this product would work as a printed booklet full of multi-page schematics. The booklet could be downloadable from anywhere, printed, and distributed to shelters, donors, and volunteer contractors.
     </p>
-    <div class="work-body-image-grid">
-<!--       <app-image-viewer
-        path="../assets/images/work/uw-secure-storage/shed-mockup-1.jpg"
-        description="Schematics function well on paper for an MVP">
-      </app-image-viewer>
-      <app-image-viewer
-        path="../assets/images/work/uw-secure-storage/shed-mockup-2.jpg"
-        description="Compiling many schematics as a single toolkit">
-      </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+        <a *ngFor="let gallery of galleryContentsC; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
     </div>
+
     <p>
       By hosting the schematics on GitHub using a standard markup language and asset directories, we can also open the documents up for forks and pull requests.
     </p>

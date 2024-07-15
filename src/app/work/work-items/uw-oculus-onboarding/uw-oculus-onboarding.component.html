@@ -26,16 +26,18 @@
     <p>
       We wanted to test an interface-driven product, rather than a game. I had purchased the Rift back when it launched and used it for 3d design &mdash; as a team, we explored Tilt Brush together and decided it was a great candidate.
     </p>
-    <div class="work-body-image-grid">
-<!--       <app-image-viewer
-        path="../assets/images/work/uw-oculus-onboarding/first-contact.jpg"
-        description="Oculus First Contact">
-      </app-image-viewer>
-      <app-image-viewer
-        path="../assets/images/work/uw-oculus-onboarding/tilt-brush.jpg"
-        description="Tilt Brush by Google">
-      </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+        <a *ngFor="let gallery of galleryContentsA; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
     </div>
+
   </section>
 
   <section class="work-section">
@@ -126,16 +128,18 @@
     <p>
       We brought 8 individuals to Facebook's offices for our study. Each of us moderated two, one-hour sessions with participants.
     </p>
-    <div class="work-body-image-grid">
-<!--       <app-image-viewer
-        path="../assets/images/work/uw-oculus-onboarding/moderation-3a.png"
-        description="Helping participants into VR">
-      </app-image-viewer>
-      <app-image-viewer
-        path="../assets/images/work/uw-oculus-onboarding/moderation-2a.png"
-        description="Moderating with Tilt Brush">
-      </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+        <a *ngFor="let gallery of galleryContentsB; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
     </div>
+
     <p>
       We each navigated many of the unique hurdles to testing in VR:
     </p>
@@ -162,10 +166,18 @@
     <p>
       We began to analyze our findings after testing our first participant. Typically, we would each note our own findings, and then begin to compare after reflecting independently. By the time we completed our eighth and final test, we had a growing body of findings, and were approaching consensus among the most severe issues.
     </p>
-<!--     <app-image-viewer
-      path="../assets/images/work/uw-oculus-onboarding/team-oasis-at-work.png"
-      description="Our team, in a not-at-all-staged photograph">
-    </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-1">
+        <a *ngFor="let gallery of galleryContentsC; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
+    </div>
+
     <p>
       We met a number of times following the study to prioritize our findings, put together affinity diagrams, and draft out our presentation and report.
     </p>

@@ -109,10 +109,18 @@
     <p>
       VCA facilitators were experienced applying these practices on pen & paper, in small groups. This methodology ensured the egalitarian nature of the process: everyone in the room could voice their concerns and be heard. But it was inherently limiting to the number of participants. This became our challenge:
     </p>
-<!--     <app-image-viewer
-      path="../assets/images/work/uw-complex-systems/problem-solving.png"
-      description="VCAs have traditionally relied on analog, participatory methods">
-    </app-image-viewer> -->
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-1">
+        <a *ngFor="let gallery of galleryContentsA; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
+    </div>
+
     <p>
       How can we use technology to enhance the human-centered processes of the VCA without hindering the participatory, equitable nature of the model?
     </p>
