@@ -24,7 +24,7 @@
     "@angular/router": "^16.2.12",
     "@types/lodash-es": "^4.17.3",
     "ajv": "^6.12.0",
-    "angular-cli-ghpages": "^0.6.2",
+    "angular-cli-ghpages": "1.0.6",
     "angular-in-memory-web-api": "^0.10.0",
     "angular-runkit": "^0.6.0",
     "core-js": "^3.6.5",
