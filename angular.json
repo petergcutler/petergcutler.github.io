@@ -42,7 +42,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -101,6 +100,16 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "cname": "petercutler.co",
+            "name": "Peter Cutler",
+            "email": "petergcutler@gmail.com",
+            "branch": "master"
+
           }
         }
       }
