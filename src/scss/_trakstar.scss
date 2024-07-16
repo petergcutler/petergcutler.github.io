@@ -1,0 +1,46 @@
+.pw-form {
+  max-width: fit-content;
+  margin: 2em auto 4em auto;
+
+  @include respond-to('large') {
+    margin: 0 auto 8em auto;
+  }
+}
+
+.pw-fail {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+  width: 320px;
+}
+
+label {
+  display: block;
+  padding-bottom: 1em;
+}
+
+input {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: .4em;
+  margin-right: .8em;
+  min-width: 160px;
+  height: 36px;
+  transition: border-color 0.5s ease-out;
+}
+
+.submit-button {
+  height: 36px;
+  padding: .4em 1.2em;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(64,68,93);
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(rgb(64,68,93), 10%);
+  }
+}
+
