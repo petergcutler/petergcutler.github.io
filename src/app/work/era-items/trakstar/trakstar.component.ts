@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Component, Input, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Work } from '../../work-schema';
@@ -41,6 +41,15 @@ import {
 })
 
 export class TrakstarComponent implements OnInit {
+
+  inputText: string = '';
+  passwordFails: boolean = false;
+
+  checkPassword() {
+    if (this.inputText !== 'password') {
+      this.passwordFails = true;
+    }
+  };
 
   public works: Work[];
   public eras: Era[];

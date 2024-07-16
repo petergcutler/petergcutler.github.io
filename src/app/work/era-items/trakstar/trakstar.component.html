@@ -3,9 +3,22 @@
 
     <div class="grid-header" id="scrollTop">
       <div class="era-detail-item header">
-        From 2019-Present, I've worked at <a class="basic-link" target="_blank" href="https://trakstar.com">Trakstar</a>, recently acquired by Mitratech. This page is under construction.
+        From 2019 to today, I've worked at <a class="basic-link" target="_blank" href="https://trakstar.com">Trakstar</a>, recently acquired by Mitratech.
       </div>
     </div>
+
+    <!-- Yes, this is a farce. Reach out to me for a PW protected PDF of recent case studies. -->
+    <form class="pw-form">
+      <div class="single-field">
+        <label for="password">This page is password protected</label>
+        <input type="text" [(ngModel)]="inputText" placeholder="Enter password">
+        <button (click)="checkPassword()" class="submit-button">Submit</button>
+      </div>
+
+      <div *ngIf="passwordFails">
+        <div class="pw-fail">The password provided is incorrect</div>
+      </div>
+    </form>
 
     <div class="grid-main">
       <div class="era-detail-item"

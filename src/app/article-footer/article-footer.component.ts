@@ -32,6 +32,10 @@ export class ArticleFooterComponent implements OnInit {
         if (startsWith(this.path, '/work/')) {
           this.longPage = true;
         }
+
+        if (startsWith(this.path, '/work/trakstar')) {
+          this.longPage = false;
+        }
       }
 
     });
