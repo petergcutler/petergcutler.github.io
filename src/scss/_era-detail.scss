@@ -1,6 +1,45 @@
 .era-detail-content {
   width: 90%;
   margin: 0 auto;
+
+  .gallery-subsection {
+    lightgallery {
+      position: unset;
+    }
+  }
+
+  .video-height-wrapper {
+    max-width: 760px;
+  }
+
+  .work-body-youtube-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    width: 100%;
+
+    iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .work-video-embed {
+    max-width: 760px;
+  }
+
+  .work-section {
+    p {
+      max-width: 48em;
+    }
+
+    p:last-of-type {
+      margin-bottom: 4em;
+    }
+  }
 }
 
 .era-detail-main {

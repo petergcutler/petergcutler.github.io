@@ -5,6 +5,11 @@ import { Work } from '../../work-schema';
 import { Era } from '../../era-schema';
 import { WorkService } from '../../work.service';
 
+import { LightgalleryModule } from 'lightgallery/angular';
+import MediumZoom from 'lightgallery/plugins/mediumZoom';
+
+import { BeforeSlideDetail } from 'lightgallery/lg-events';
+
 import { get, startsWith } from 'lodash-es';
 
 import {
@@ -53,6 +58,40 @@ export class FleishmanComponent implements OnInit {
   ) {}
 
   revealList: string = 'loading';
+
+  // LightGallery Settings
+  settings = {
+    counter: false,
+    plugins: [MediumZoom],
+    backgroundColor: '#fff'
+  };
+
+  onBeforeSlide = (detail: BeforeSlideDetail): void => {
+    const { index, prevIndex } = detail;
+    console.log(index, prevIndex);
+  };
+
+  public galleryContentsATT: object[] = [
+    {
+      url: '../assets/images/work/fleishman/att-csr.png',
+      description: 'AT&T Sustainability'
+    },
+    {
+      url: '../assets/images/work/fleishman/att-icw.png',
+      description: 'AT&T It Can Wait'
+    },
+  ];
+
+  public galleryContentsNP: object[] = [
+    {
+      url: '../assets/images/work/fleishman/easterseals.png',
+      description: 'Easterseals UCP'
+    },
+    {
+      url: '../assets/images/work/fleishman/rwjf.png',
+      description: 'Robert Wood Johnson Foundation'
+    },
+  ];
 
   getWorks(): void {
     this.workService.getWorks().subscribe(works => this.works = works);

@@ -3,11 +3,107 @@
 
     <div class="grid-header" id="scrollTop">
       <div class="era-detail-item header">
-        From 2011-2015, I worked for a range of <a class="basic-link" target="_blank" href="https://fleishmanhillard.com/">FleishmanHillard</a> creative teams. I worked across brand strategy, design, and UX, ultimately leading VOX Global's video & motion design group.
+        From 2011-2015, I worked for <a class="basic-link" target="_blank" href="https://fleishmanhillard.com/">FleishmanHillard</a> creative teams. I worked across brand strategy, design, and UX, ultimately leading VOX Global's video & motion design group.
       </div>
     </div>
 
-    <div class="grid-main">
+    <section class="work-section">
+      <h2 class="work-body-h2">
+        Sustainability for AT&T
+      </h2>
+      <p>
+        Our firm produced AT&T's sustainability media & reporting. We built a range of web presences, supporting mitigation efforts including climate and carbon impact, and unique interventions like AT&T's campaign against texting while driving. Our media campaigns drove millions of impressions to their sites through advertising across both traditional paid media and social media. Our custom creative across web and video won AT&T CSR Webby Awards for over 5 years running.
+      </p>
+
+      <div class="gallery-subsection">
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+          <a *ngFor="let gallery of galleryContentsATT; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+            <div class="gallery-image-container">
+              <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+            </div>
+            <div class="gallery-description">{{gallery.description}}</div>
+          </a>
+        </lightgallery> 
+      </div>
+
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-body-h2">
+        Reducing Texting While Driving with AT&T & Werner Herzog
+      </h2>
+      <p>
+        At FleishmanHillard, we grew AT&T's sustainability campaign against texting while driving, called "It Can Wait," to record success. This was an initiative that came out of our offices, and as it reached its heights, we collaborated with our sibling company, <a class="basic-link" target="_blank" href="https://www.bbdo.nyc/">BBDO New York</a>, and writer/director <a class="basic-link" target="_blank" href="https://www.wernerherzog.com/">Werner Herzog</a>, to produce a branded documentary around it. The film, "From One Second to the Next," was tweeted over 150,000 times and shown in over 40,000 high schools after it was produced, and it helped AT&T Sustainability have its <a class="basic-link" target="_blank" href="https://www.latimes.com/entertainment/envelope/cotown/la-et-ct-werner-herzog-texting-documentary-20130816-story.html">biggest year in media to date</a>.
+      </p>
+      <div class="video-height-wrapper">
+        <div class="work-body-youtube-video work-video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/9qf85X3extY?rel=0"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-body-h2">
+        Robert Wood Johnson Foundation & Easter Seals Online
+      </h2>
+      <p>
+        We developed and managed online communications for many philanthropic organizations and non-profits. I supported Robert Wood Johnson Foundation and Easterseals both for a number of years. When RWJF contributed funding to the Center for Health and Health Care in Schools, we developed websites and content for them, where I contributed content audits, web design, and heuristic review. With Easterseals, we worked with their North Carolina branch contributing web and motion design.
+      </p>
+
+      <div class="gallery-subsection">
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+          <a *ngFor="let gallery of galleryContentsNP; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+            <div class="gallery-image-container">
+              <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+            </div>
+            <div class="gallery-description">{{gallery.description}}</div>
+          </a>
+        </lightgallery> 
+      </div>
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-body-h2">
+        Video Campaigns for Lumina Foundation
+      </h2>
+      <p>
+        I developed motion graphics for many of our clients, including AT&T for their sustainability reporting, and Lumina Foundation for their efforts to increase educational attainment rates in the United States. I communicated with clients using early storyboards and animatics to nail down our visual and narrative approach, then developed final animations using a mix of Adobe After Effects and Maxon Cinema 4d. Each of these campaigns went on to win Hermes Awards.
+      </p>
+
+      <h3 class="work-body-h3">
+        AT&T People Planet Possibilities
+      </h3>
+      <div class="video-height-wrapper">
+        <div class="work-video-embed" style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/118919919?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <h3 class="work-body-h3">
+        Lumina Foundation Financial Aid
+      </h3>
+      <div class="video-height-wrapper">
+        <div class="work-video-embed" style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/112713629?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <h3 class="work-body-h3">
+        Lumina Foundation Stronger Nation
+      </h3>
+      <div class="video-height-wrapper">
+        <div class="work-video-embed" style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/132273214?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+<!--     <div class="grid-main">
       <div class="era-detail-item"
          *ngFor="let work of filteredWorks; index as i;"
          routerLink="/work/{{work.url}}">
@@ -19,7 +115,7 @@
         <div class="era-detail-item-title">{{work.display}}</div>
         <div class="era-detail-item-subtitle">{{work.subtitle}}</div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </article>
