@@ -6,7 +6,104 @@
         From 2015-2017, I worked for Crowdskout as a founding software engineer, where we made CRM tools for political and advocacy campaigns. I specialized in developing its systems for audience segmenting, analytics, and data visualization. Crowdskout was acquired by <a class="basic-link" target="_blank" href="https://murmuration.org">Murmuration</a> in 2018.</div>
     </div>
 
-    <div class="grid-main">
+    <section class="work-section">
+      <h2 class="work-body-h2">
+        Core Features for Crowdskout
+      </h2>
+      <p>
+        The engineering work I did for Crowdskout often didn't involve a visual component. One of my main responsibilities was developing the state machine for our app, to maintain data configuration as users moved among complex, multi-step flows. But my work over time trended towards data analytics, and inolved more well-designed front-end components.
+      </p>
+
+      <h3 class="work-body-h3">
+        User Profiles and Data Fields
+      </h3>
+      <p>
+        One core feature I worked on was Crowdskout's user profiles and field management. As an advocacy CRM, Crowdskout tracked hundreds of possible data fields on our user profiles that could be used to track and assess voting populations.
+      </p>
+
+      <div class="gallery-subsection">
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+          <a *ngFor="let gallery of galleryContentsProfile; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+            <div class="gallery-image-container">
+              <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+            </div>
+            <div class="gallery-description">{{gallery.description}}</div>
+          </a>
+        </lightgallery> 
+      </div>
+
+      <h3 class="work-body-h3">
+        User Segmenting
+      </h3>
+      <p>
+        Fueled by these detailed user profiles, I also built custom tooling to filter, parse, and save collections of profiles that match queries into segments. Segments could be used across Crowdskout to track and visualize campaign engagements.
+      </p>
+
+      <div class="gallery-subsection">
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-3">
+          <a *ngFor="let gallery of galleryContentsSegmenting; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+            <div class="gallery-image-container">
+              <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+            </div>
+            <div class="gallery-description">{{gallery.description}}</div>
+          </a>
+        </lightgallery> 
+      </div>
+
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-body-h2">
+        Interactive Forms for Canvassing and Polling
+      </h2>
+      <p>
+        One way that Crowdskout users can interact with their profiles is to deliver surveys and forms for a variety of circumstances. I overhauled the form system and added a system for conditionally branching questions to facilitate rich survey creation entirely within the Crowdskout platform.
+      </p>
+
+      <p>
+        A Crowdskout user may use forms to ask any number of questions. These questions in turn can fuel the creating or updating of any of the hundreds of Crowdskout profile fields that exist in their database.
+      </p>
+
+      <div class="gallery-subsection">
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-2">
+          <a *ngFor="let gallery of galleryContentsForms; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+            <div class="gallery-image-container">
+              <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+            </div>
+            <div class="gallery-description">{{gallery.description}}</div>
+          </a>
+        </lightgallery> 
+      </div>
+  </section>
+
+  <section class="work-section">
+    <h2 class="work-body-h2">
+      Building a System with D3 and AmCharts
+    </h2>
+    <p>
+      One of my roles was to research and build the foundations of Crowdskout's data visualization system. I designed it so that a novice user could quickly learn and operate it and deliver complex visualizations without dedicated training.
+    </p>
+    <p>
+      We built the system using a mix of <a class="basic-link" target="_blank" href="https://d3js.org/">D3</a> and a library called <a class="basic-link" target="_blank" href="https://www.amcharts.com/">amCharts</a>, also built on D3.
+    </p>
+    <p>
+      Using a multi-step editor, a user could select an audience segment, criteria, and a graph type, and create a graph that could be customized or exported in a variety of ways.
+    </p>
+
+    <div class="gallery-subsection">
+      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide" class="lg-wrapper-3">
+        <a *ngFor="let gallery of galleryContentsViz; index as i" [href]="gallery.url" class="gallery-link" [attr.data-gallery]="'gallery' + (i + 1)">
+          <div class="gallery-image-container">
+            <img [alt]="gallery.description" [src]="gallery.url" class="gallery-image" />
+          </div>
+          <div class="gallery-description">{{gallery.description}}</div>
+        </a>
+      </lightgallery> 
+    </div>
+  </section>
+
+
+<!--     <div class="grid-main">
       <div class="era-detail-item"
          *ngFor="let work of filteredWorks; index as i;"
          routerLink="/work/{{work.url}}">
@@ -18,7 +115,7 @@
         <div class="era-detail-item-title">{{work.display}}</div>
         <div class="era-detail-item-subtitle">{{work.subtitle}}</div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </article>

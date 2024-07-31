@@ -7,7 +7,6 @@ import { WorkService } from '../../work.service';
 
 import { LightgalleryModule } from 'lightgallery/angular';
 import MediumZoom from 'lightgallery/plugins/mediumZoom';
-
 import { BeforeSlideDetail } from 'lightgallery/lg-events';
 
 import { get, startsWith } from 'lodash-es';
@@ -49,7 +48,7 @@ export class FleishmanComponent implements OnInit {
 
   public works: Work[];
   public eras: Era[];
-  public filteredWorks: any[];
+  // public filteredWorks: any[];
 
   constructor(
     private route: ActivatedRoute,
@@ -105,7 +104,7 @@ export class FleishmanComponent implements OnInit {
     this.getWorks();
     this.getEras();
 
-    this.filteredWorks = this.works.filter((work) => work.client === 'VOX Global');
+    // this.filteredWorks = this.works.filter((work) => work.client === 'VOX Global');
   }
 
   ngAfterViewInit() {
